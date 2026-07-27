@@ -38,6 +38,7 @@ const TreasuryPage = () => {
   useEffect(() => {
     const result = calculateReturns();
     setCalculation(result);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [investedAmount, days]);
 
   const fetchFunds = async () => {
