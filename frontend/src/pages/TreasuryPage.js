@@ -44,7 +44,7 @@ const TreasuryPage = () => {
   const fetchFunds = async () => {
     try {
       const response = await axios.get(`${API}/treasury/funds`);
-      setFunds(response.data);
+      setFunds(Array.isArray(response.data) ? response.data : []);
     } catch (error) {
       console.error("Error fetching funds:", error);
     }
@@ -53,7 +53,7 @@ const TreasuryPage = () => {
   const fetchPartners = async () => {
     try {
       const response = await axios.get(`${API}/partners?category=treasury`);
-      setPartners(response.data);
+      setPartners(Array.isArray(response.data) ? response.data : []);
     } catch (error) {
       console.error("Error fetching partners:", error);
     }
@@ -104,6 +104,8 @@ const TreasuryPage = () => {
       const investwellPromise = axios.post(
         "https://finofii.investwell.app/api/aggregator/utils/createOutsideLead",
         {
+          authName: "finofii141",
+          apiKey: "278323c7c100794e2895a011f6e2d10c0f49a85c9d8d2e1b3656e24e48175392",
           name: formData.contact_person || formData.company_name,
           email: formData.email || "",
           phone: formData.phone || "",
@@ -112,8 +114,6 @@ const TreasuryPage = () => {
         {
           headers: {
             "Content-Type": "application/json",
-            authName: "finofii141",
-            apiKey: "278323c7c100794e2895a011f6e2d10c0f49a85c9d8d2e1b3656e24e48175392",
           },
         }
       );

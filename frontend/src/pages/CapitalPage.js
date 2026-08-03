@@ -51,7 +51,7 @@ export default function CapitalPage() {
   const [tenure, setTenure] = useState(60);
 
   useEffect(() => {
-    axios.get(`${API}/loan-products`).then((r) => setProducts(r.data)).catch((e) => console.error(e)).finally(() => setLoading(false));
+    axios.get(`${API}/loan-products`).then((r) => setProducts(Array.isArray(r.data) ? r.data : [])).catch((e) => console.error(e)).finally(() => setLoading(false));
   }, []);
 
   const emi = useMemo(() => {

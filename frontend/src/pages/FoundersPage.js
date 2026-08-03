@@ -111,6 +111,8 @@ const FoundersPage = () => {
       const investwellPromise = axios.post(
         "https://finofii.investwell.app/api/aggregator/utils/createOutsideLead",
         {
+          authName: "finofii141",
+          apiKey: "278323c7c100794e2895a011f6e2d10c0f49a85c9d8d2e1b3656e24e48175392",
           name: formData.founder_name,
           email: formData.email || "",
           phone: formData.phone || "",
@@ -119,8 +121,6 @@ const FoundersPage = () => {
         {
           headers: {
             "Content-Type": "application/json",
-            authName: "finofii141",
-            apiKey: "278323c7c100794e2895a011f6e2d10c0f49a85c9d8d2e1b3656e24e48175392",
           },
         }
       );

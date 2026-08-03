@@ -55,6 +55,8 @@ export default function LeadForm({
       const investwellPromise = axios.post(
         "https://finofii.investwell.app/api/aggregator/utils/createOutsideLead",
         {
+          authName: "finofii141",
+          apiKey: "278323c7c100794e2895a011f6e2d10c0f49a85c9d8d2e1b3656e24e48175392",
           name: form.name.trim(),
           email: form.email.trim() || "",
           phone: form.phone.replace(/\s+/g, ""),
@@ -69,8 +71,6 @@ export default function LeadForm({
         {
           headers: {
             "Content-Type": "application/json",
-            authName: "finofii141",
-            apiKey: "278323c7c100794e2895a011f6e2d10c0f49a85c9d8d2e1b3656e24e48175392",
           },
         }
       );
