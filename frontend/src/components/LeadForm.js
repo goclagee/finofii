@@ -51,12 +51,10 @@ export default function LeadForm({
         product_interest: productInterest,
       }) : Promise.resolve();
 
-      // Send to Investwell CRM
+      // Send to Investwell CRM via Netlify serverless function
       const investwellPromise = axios.post(
-        "https://finofii.investwell.app/api/aggregator/utils/createOutsideLead",
+        "/.netlify/functions/create-lead",
         {
-          authName: "finofii141",
-          apiKey: "278323c7c100794e2895a011f6e2d10c0f49a85c9d8d2e1b3656e24e48175392",
           name: form.name.trim(),
           email: form.email.trim() || "",
           phone: form.phone.replace(/\s+/g, ""),
@@ -67,11 +65,6 @@ export default function LeadForm({
             form.city ? `City: ${form.city}` : "",
             form.amount ? `Amount: ${form.amount}` : "",
           ].filter(Boolean).join(" | "),
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
         }
       );
 

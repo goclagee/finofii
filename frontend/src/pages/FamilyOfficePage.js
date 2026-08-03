@@ -145,24 +145,17 @@ const FamilyOfficePage = () => {
     setLoading(true);
 
     try {
-      // Send to existing backend
-      const backendPromise = axios.post(`${API}/mfo/inquiry`, formData);
+      // Send to existing backend (skip if no backend URL configured)
+      const backendPromise = BACKEND_URL ? axios.post(`${API}/mfo/inquiry`, formData) : Promise.resolve();
 
-      // Send to Investwell CRM
+      // Send to Investwell CRM via Netlify serverless function
       const investwellPromise = axios.post(
-        "https://finofii.investwell.app/api/aggregator/utils/createOutsideLead",
+        "/.netlify/functions/create-lead",
         {
-          authName: "finofii141",
-          apiKey: "278323c7c100794e2895a011f6e2d10c0f49a85c9d8d2e1b3656e24e48175392",
           name: formData.contact_person || formData.family_name,
           email: formData.email || "",
           phone: formData.phone || "",
           message: `Family Office Inquiry | Family: ${formData.family_name} | Services: ${(formData.services_interested || []).join(", ")} | ${formData.message || ""}`.trim(),
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
         }
       );
 
