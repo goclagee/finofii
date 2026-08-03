@@ -87,7 +87,7 @@ const HomePage = () => {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-extrabold mb-8 leading-[1.05] tracking-tight">
+            <h1 className="text-7xl md:text-9xl lg:text-[10rem] font-extrabold mb-8 leading-[1.0] tracking-tight">
               <span className="text-white">India's Premier AI-Based</span>
               <br />
               <span
