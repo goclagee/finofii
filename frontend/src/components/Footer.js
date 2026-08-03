@@ -3,8 +3,8 @@ import { Mail, Phone, MapPin, Shield, Award, Lock, CheckCircle } from "lucide-re
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-slate-900 text-white relative overflow-hidden">
-      <div className="absolute inset-0 opacity-[0.03]">
+    <footer id="contact" className="bg-black text-white relative overflow-hidden">
+      <div className="absolute inset-0 opacity-[0.02]">
         <div className="absolute top-0 left-0 w-96 h-96 bg-amber-500 rounded-full filter blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl"></div>
       </div>
@@ -118,9 +118,9 @@ const Footer = () => {
         </div>
 
         {/* Compliance */}
-        <div className="border-t border-slate-700 pt-8 mb-8">
+        <div className="border-t border-white/10 pt-8 mb-8">
           <div className="grid md:grid-cols-3 gap-6 text-center">
-            <div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700">
+            <div className="bg-white/5 rounded-lg p-4 border border-white/10">
               <h5 className="font-semibold text-sm mb-2 text-amber-400">Regulatory</h5>
               <p className="text-xs text-gray-400 leading-relaxed">
                 <strong className="text-gray-300">SEBI Registered</strong><br />
@@ -130,7 +130,7 @@ const Footer = () => {
                 Startup India: DIPP80252
               </p>
             </div>
-            <div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700">
+            <div className="bg-white/5 rounded-lg p-4 border border-white/10">
               <h5 className="font-semibold text-sm mb-2 text-amber-400">Security</h5>
               <div className="space-y-2 text-xs text-gray-400">
                 <div className="flex items-center justify-center space-x-2">
@@ -147,7 +147,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700">
+            <div className="bg-white/5 rounded-lg p-4 border border-white/10">
               <h5 className="font-semibold text-sm mb-2 text-amber-400">Trust</h5>
               <div className="text-xs text-gray-400 leading-relaxed">
                 <strong className="text-gray-300">₹2,800 Cr</strong> Gross Sales<br />
@@ -159,8 +159,8 @@ const Footer = () => {
         </div>
 
         {/* Disclaimers */}
-        <div className="border-t border-slate-700 pt-8 space-y-4">
-          <div className="bg-amber-900/20 rounded-lg p-6 border border-amber-700/30">
+        <div className="border-t border-white/10 pt-8 space-y-4">
+          <div className="bg-amber-900/20 rounded-lg p-6 border border-amber-700/20">
             <p className="text-xs text-amber-100 leading-relaxed text-center">
               <strong className="text-amber-300">Investment Disclaimer:</strong> Mutual Fund investments are subject to market risks. 
               Please read all scheme-related documents carefully. Past performance is not indicative of future returns. 

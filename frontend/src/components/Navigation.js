@@ -36,7 +36,7 @@ const Navigation = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                className={`px-3 py-2 rounded-md text-base font-semibold transition-colors ${
                   isActive(link.path)
                     ? "text-amber-700 bg-amber-50"
                     : "text-gray-700 hover:text-amber-700 hover:bg-gray-50"
