@@ -122,6 +122,7 @@ const HomePage = () => {
               </Link>
               <a
                 href="#contact"
+                onClick={(e) => { e.preventDefault(); if (window.Calendly) window.Calendly.initPopupWidget({url: 'https://calendly.com/ms--165'}); }}
                 className="px-10 py-4 bg-transparent text-white rounded-lg font-semibold text-lg hover:bg-white/10 transition-all border border-white/20 hover:border-white/40"
                 data-testid="book-demo-btn"
               >

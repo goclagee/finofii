@@ -22,11 +22,27 @@
         Learn how to configure a non-root public URL by running `npm run build`.
         -->
         <title>Finofii | Unified Investment Platform</title>
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
         <script>window.addEventListener("error",function(e){if(e.error instanceof DOMException&&e.error.name==="DataCloneError"&&e.message&&e.message.includes("PerformanceServerTiming")){e.stopImmediatePropagation();e.preventDefault()}},true);</script>
     </head>
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
+        <!-- Calendly Badge Widget -->
+        <script>
+            window.addEventListener('load', function() {
+                if (window.Calendly) {
+                    Calendly.initBadgeWidget({
+                        url: 'https://calendly.com/ms--165',
+                        text: 'Schedule a Call',
+                        color: '#d97706',
+                        textColor: '#ffffff',
+                        branding: false
+                    });
+                }
+            });
+        </script>
         <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
