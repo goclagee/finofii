@@ -135,7 +135,7 @@ const HomePage = () => {
       </section>
 
       {/* Stats Banner — animated counter style */}
-      <section className="bg-white py-16 relative overflow-hidden" data-testid="stats-section">
+      <section className="bg-[#FDFBF7] py-16 relative overflow-hidden" data-testid="stats-section">
         <div className="absolute inset-0 bg-gradient-to-r from-amber-50/50 via-transparent to-indigo-50/50"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -160,7 +160,7 @@ const HomePage = () => {
       </section>
 
       {/* Current Account Monetisation */}
-      <section className="py-20 bg-gradient-to-b from-gray-50 to-white" data-testid="monetisation-section">
+      <section className="py-20 bg-[#FAF8F5]" data-testid="monetisation-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -243,7 +243,7 @@ const HomePage = () => {
       </section>
 
       {/* Three Services */}
-      <section className="py-20 bg-white" data-testid="services-section">
+      <section className="py-20 bg-[#FDFBF7]" data-testid="services-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -349,7 +349,7 @@ const HomePage = () => {
       </section>
 
       {/* Trust Indicators — Horizontal cards */}
-      <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
+      <section className="py-24 bg-[#F9F7F3]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 bg-blue-100 text-blue-700 text-xs font-bold rounded-full uppercase tracking-wider mb-4">Trust & Compliance</span>
@@ -386,7 +386,7 @@ const HomePage = () => {
       </section>
 
       {/* Who We Serve — Interactive persona cards */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#FDFBF7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 bg-emerald-100 text-emerald-700 text-xs font-bold rounded-full uppercase tracking-wider mb-4">Our Clients</span>
@@ -427,7 +427,7 @@ const HomePage = () => {
       </section>
 
       {/* How It Works — Interactive Timeline */}
-      <section className="py-24 bg-white relative overflow-hidden">
+      <section className="py-24 bg-[#FAF8F5] relative overflow-hidden">
         <div className="absolute top-0 left-1/2 w-px h-full bg-gradient-to-b from-transparent via-gray-200 to-transparent hidden md:block"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
@@ -474,7 +474,7 @@ const HomePage = () => {
       </section>
 
       {/* Insights — Magazine layout */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-[#F9F7F3]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 bg-violet-100 text-violet-700 text-xs font-bold rounded-full uppercase tracking-wider mb-4">Insights</span>
@@ -532,7 +532,7 @@ const HomePage = () => {
       </section>
 
       {/* FAQ — Clean accordion style */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#FDFBF7]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 bg-gray-100 text-gray-700 text-xs font-bold rounded-full uppercase tracking-wider mb-4">FAQ</span>
