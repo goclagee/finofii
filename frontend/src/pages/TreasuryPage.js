@@ -336,63 +336,74 @@ const TreasuryPage = () => {
         </div>
       </section>
 
-      {/* Available Funds */}
-      <section className="py-16 bg-white" data-testid="funds-section">
+      {/* Available Funds — Logo Slider */}
+      <section className="py-16 bg-white overflow-hidden" data-testid="funds-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">
             Available Mutual Funds
           </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {funds.map((fund) => (
-              <div
-                key={fund.id}
-                className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-6 border border-gray-200 hover:shadow-lg transition-shadow"
-                data-testid={`fund-card-${fund.id}`}
-              >
-                <div className="flex justify-between items-start mb-4">
-                  <div>
-                    <div className="text-sm text-gray-600 font-medium">
-                      {fund.amc}
+          <p className="text-center text-gray-500 mb-12">Partnered with India's top AMCs</p>
+        </div>
+        {/* Infinite scroll slider */}
+        <div className="relative">
+          <div className="flex animate-scroll gap-10 items-center">
+            {[...Array(2)].map((_, setIdx) => (
+              <div key={setIdx} className="flex gap-10 items-center shrink-0">
+                {[
+                  { src: "/mf1.png", name: "HDFC MF" },
+                  { src: "/mf2.jpeg", name: "SBI MF" },
+                  { src: "/mf3.png", name: "ICICI Prudential" },
+                  { src: "/mf4.png", name: "Axis MF" },
+                  { src: "/mf5.webp", name: "Kotak MF" },
+                  { src: "/mf6.png", name: "Nippon India" },
+                  { src: "/mf7.png", name: "Aditya Birla" },
+                ].map((fund, i) => (
+                  <div key={i} className="flex flex-col items-center gap-2 group">
+                    <div className="w-20 h-20 rounded-full bg-white border-2 border-gray-100 shadow-md flex items-center justify-center overflow-hidden group-hover:border-amber-400 group-hover:shadow-lg transition-all duration-300 group-hover:scale-110">
+                      <img src={fund.src} alt={fund.name} className="w-14 h-14 object-contain" />
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900">
-                      {fund.name}
-                    </h3>
+                    <span className="text-xs text-gray-500 font-medium">{fund.name}</span>
                   </div>
-                  <div className="bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full">
-                    {fund.category}
-                  </div>
-                </div>
-                <p className="text-gray-600 text-sm mb-4">{fund.description}</p>
-                <div className="flex justify-between items-center mb-2">
-                  <span className="text-gray-600 text-sm">Return Rate</span>
-                  <span className="text-green-600 font-bold">
-                    {fund.return_rate}%
-                  </span>
-                </div>
-                <div className="flex justify-between items-center mb-2">
-                  <span className="text-gray-600 text-sm">Min Investment</span>
-                  <span className="font-semibold">
-                    {formatCurrency(fund.min_investment)}
-                  </span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-600 text-sm">Risk Level</span>
-                  <span
-                    className={`text-sm font-semibold ${
-                      fund.risk_level === "Low"
-                        ? "text-green-600"
-                        : fund.risk_level === "Medium"
-                        ? "text-yellow-600"
-                        : "text-red-600"
-                    }`}
-                  >
-                    {fund.risk_level}
-                  </span>
-                </div>
+                ))}
               </div>
             ))}
           </div>
         </div>
+        {/* Fund cards from API */}
+        {funds.length > 0 && (
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+            <div className="grid md:grid-cols-3 gap-6">
+              {funds.map((fund) => (
+                <div
+                  key={fund.id}
+                  className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-6 border border-gray-200 hover:shadow-lg transition-shadow"
+                  data-testid={`fund-card-${fund.id}`}
+                >
+                  <div className="flex justify-between items-start mb-4">
+                    <div>
+                      <div className="text-sm text-gray-600 font-medium">{fund.amc}</div>
+                      <h3 className="text-lg font-bold text-gray-900">{fund.name}</h3>
+                    </div>
+                    <div className="bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full">{fund.category}</div>
+                  </div>
+                  <p className="text-gray-600 text-sm mb-4">{fund.description}</p>
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-gray-600 text-sm">Return Rate</span>
+                    <span className="text-green-600 font-bold">{fund.return_rate}%</span>
+                  </div>
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-gray-600 text-sm">Min Investment</span>
+                    <span className="font-semibold">{formatCurrency(fund.min_investment)}</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-600 text-sm">Risk Level</span>
+                    <span className={`text-sm font-semibold ${fund.risk_level === "Low" ? "text-green-600" : fund.risk_level === "Medium" ? "text-yellow-600" : "text-red-600"}`}>{fund.risk_level}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </section>
 
       {/* Partners */}
