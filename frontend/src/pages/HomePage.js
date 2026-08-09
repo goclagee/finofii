@@ -87,7 +87,7 @@ const HomePage = () => {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <h1 className="text-6xl md:text-[117px] lg:text-[117px] font-extrabold mb-8 leading-[0.95] tracking-tighter">
+            <h1 style={{fontSize: 'clamp(3rem, 8vw, 117px)'}} className="font-extrabold mb-8 leading-[0.95] tracking-tighter">
               <span className="text-white">India's Premier AI-Based</span>
               <br />
               <span
