@@ -87,7 +87,7 @@ const HomePage = () => {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <h1 className="text-[4.5rem] md:text-[8rem] lg:text-[12rem] font-extrabold mb-8 leading-[0.95] tracking-tighter">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-8 leading-[0.95] tracking-tighter">
               <span className="text-white">India's Premier AI-Based</span>
               <br />
               <span
@@ -134,25 +134,26 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Stats Banner */}
-      <section className="bg-white py-12 border-b border-gray-100 shadow-sm" data-testid="stats-section">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-amber-600 mb-2">₹2,800 Cr</div>
-              <div className="text-gray-600 font-medium">Total Investment via Platform</div>
+      {/* Stats Banner — animated counter style */}
+      <section className="bg-white py-16 relative overflow-hidden" data-testid="stats-section">
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-50/50 via-transparent to-indigo-50/50"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100 hover:shadow-lg hover:scale-105 transition-all duration-300">
+              <div className="text-4xl md:text-5xl font-extrabold text-amber-600 mb-1">₹2,800 Cr</div>
+              <div className="text-sm text-gray-600 font-medium">Investments via Platform</div>
             </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-blue-700 mb-2">1,000+</div>
-              <div className="text-gray-600 font-medium">Businesses Served</div>
+            <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 hover:shadow-lg hover:scale-105 transition-all duration-300">
+              <div className="text-4xl md:text-5xl font-extrabold text-blue-700 mb-1">1,000+</div>
+              <div className="text-sm text-gray-600 font-medium">Businesses Served</div>
             </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-emerald-600 mb-2">7%*</div>
-              <div className="text-gray-600 font-medium">Avg Annual Returns</div>
+            <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-emerald-50 to-green-50 border border-emerald-100 hover:shadow-lg hover:scale-105 transition-all duration-300">
+              <div className="text-4xl md:text-5xl font-extrabold text-emerald-600 mb-1">7%*</div>
+              <div className="text-sm text-gray-600 font-medium">Avg Annual Returns</div>
             </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-indigo-600 mb-2">T+1</div>
-              <div className="text-gray-600 font-medium">Fast Liquidity</div>
+            <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-violet-50 to-purple-50 border border-violet-100 hover:shadow-lg hover:scale-105 transition-all duration-300">
+              <div className="text-4xl md:text-5xl font-extrabold text-indigo-600 mb-1">T+1</div>
+              <div className="text-sm text-gray-600 font-medium">Fast Liquidity</div>
             </div>
           </div>
         </div>
@@ -347,228 +348,237 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Trust Indicators */}
-      <section className="py-20 bg-gray-50">
+      {/* Trust Indicators — Horizontal cards */}
+      <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Finofii</h2>
-            <p className="text-xl text-gray-600">Trusted by India's leading businesses and entrepreneurs</p>
+          <div className="text-center mb-16">
+            <span className="inline-block px-4 py-1.5 bg-blue-100 text-blue-700 text-xs font-bold rounded-full uppercase tracking-wider mb-4">Trust & Compliance</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Why India's Elite Choose Finofii</h2>
+            <p className="text-xl text-gray-500">Regulated. Secure. Transparent.</p>
           </div>
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="text-center p-6 bg-white rounded-xl shadow-md border border-gray-100">
-              <Shield className="w-12 h-12 text-amber-600 mx-auto mb-4" />
-              <h3 className="font-bold text-gray-900 mb-2">SEBI Registered</h3>
-              <p className="text-sm text-gray-600">Fully compliant & regulated</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="relative group p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-amber-200 transition-all duration-300 overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-amber-50 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <Shield className="w-10 h-10 text-amber-600 mb-4" />
+              <h3 className="font-bold text-gray-900 text-lg mb-2">SEBI Registered</h3>
+              <p className="text-sm text-gray-500">Fully regulated investment advisor with clean compliance record</p>
             </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-md border border-gray-100">
-              <Award className="w-12 h-12 text-indigo-600 mx-auto mb-4" />
-              <h3 className="font-bold text-gray-900 mb-2">AMFI Certified</h3>
-              <p className="text-sm text-gray-600">ARN-176236</p>
+            <div className="relative group p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-indigo-200 transition-all duration-300 overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-indigo-50 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <Award className="w-10 h-10 text-indigo-600 mb-4" />
+              <h3 className="font-bold text-gray-900 text-lg mb-2">AMFI Certified</h3>
+              <p className="text-sm text-gray-500">ARN-176236 | BSE StAR MF execution platform for all transactions</p>
             </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-md border border-gray-100">
-              <Zap className="w-12 h-12 text-emerald-600 mx-auto mb-4" />
-              <h3 className="font-bold text-gray-900 mb-2">Fast Processing</h3>
-              <p className="text-sm text-gray-600">T+1 liquidity</p>
+            <div className="relative group p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-emerald-200 transition-all duration-300 overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-emerald-50 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <Zap className="w-10 h-10 text-emerald-600 mb-4" />
+              <h3 className="font-bold text-gray-900 text-lg mb-2">T+1 Liquidity</h3>
+              <p className="text-sm text-gray-500">Access your money next business day. Some funds offer instant redemption.</p>
             </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-md border border-gray-100">
-              <Globe className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-              <h3 className="font-bold text-gray-900 mb-2">Global Access</h3>
-              <p className="text-sm text-gray-600">LRS & GIFT City</p>
+            <div className="relative group p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-blue-200 transition-all duration-300 overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-blue-50 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <Globe className="w-10 h-10 text-blue-600 mb-4" />
+              <h3 className="font-bold text-gray-900 text-lg mb-2">Global Access</h3>
+              <p className="text-sm text-gray-500">Invest globally via LRS & GIFT City routes with expert guidance</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonials / Trusted By */}
-      <section className="py-20 bg-white">
+      {/* Who We Serve — Interactive persona cards */}
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Trusted by Leading Investors & Businesses</h2>
-            <p className="text-xl text-gray-600">Join India's most sophisticated investors and entrepreneurs</p>
+            <span className="inline-block px-4 py-1.5 bg-emerald-100 text-emerald-700 text-xs font-bold rounded-full uppercase tracking-wider mb-4">Our Clients</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Built for India's Elite</h2>
+            <p className="text-xl text-gray-500">From unicorn CFOs to UHNW families — we serve the top 1%</p>
           </div>
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-shadow border border-gray-100">
-              <div className="w-20 h-20 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg shadow-amber-500/20">
-                <Users className="w-10 h-10 text-white" />
-              </div>
-              <h3 className="font-bold text-gray-900 mb-1">Tech Founders</h3>
-              <p className="text-sm text-gray-600">Startup & Unicorn CFOs</p>
+          <div className="grid md:grid-cols-4 gap-6">
+            <div className="group relative bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-6 text-white overflow-hidden hover:scale-[1.03] transition-all duration-300 shadow-lg shadow-amber-500/20">
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-white/10 rounded-full"></div>
+              <Users className="w-10 h-10 mb-4 opacity-90" />
+              <h3 className="font-bold text-xl mb-1">Tech Founders</h3>
+              <p className="text-white/80 text-sm">Startup & Unicorn CFOs managing runway capital</p>
+              <div className="mt-4 text-xs bg-white/20 inline-block px-3 py-1 rounded-full">500+ founders</div>
             </div>
-            <div className="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-shadow border border-gray-100">
-              <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg shadow-indigo-500/20">
-                <Building2 className="w-10 h-10 text-white" />
-              </div>
-              <h3 className="font-bold text-gray-900 mb-1">Family Offices</h3>
-              <p className="text-sm text-gray-600">UHNW Families</p>
+            <div className="group relative bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl p-6 text-white overflow-hidden hover:scale-[1.03] transition-all duration-300 shadow-lg shadow-indigo-500/20">
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-white/10 rounded-full"></div>
+              <Building2 className="w-10 h-10 mb-4 opacity-90" />
+              <h3 className="font-bold text-xl mb-1">Family Offices</h3>
+              <p className="text-white/80 text-sm">UHNW families preserving & growing generational wealth</p>
+              <div className="mt-4 text-xs bg-white/20 inline-block px-3 py-1 rounded-full">₹25 Cr+ NW</div>
             </div>
-            <div className="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-shadow border border-gray-100">
-              <div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg shadow-emerald-500/20">
-                <TrendingUp className="w-10 h-10 text-white" />
-              </div>
-              <h3 className="font-bold text-gray-900 mb-1">HNI Investors</h3>
-              <p className="text-sm text-gray-600">Angels & VCs</p>
+            <div className="group relative bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl p-6 text-white overflow-hidden hover:scale-[1.03] transition-all duration-300 shadow-lg shadow-emerald-500/20">
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-white/10 rounded-full"></div>
+              <TrendingUp className="w-10 h-10 mb-4 opacity-90" />
+              <h3 className="font-bold text-xl mb-1">HNI Investors</h3>
+              <p className="text-white/80 text-sm">Angels, VCs & serial investors maximizing idle capital</p>
+              <div className="mt-4 text-xs bg-white/20 inline-block px-3 py-1 rounded-full">₹1 Cr+ tickets</div>
             </div>
-            <div className="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-shadow border border-gray-100">
-              <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg shadow-blue-500/20">
-                <Briefcase className="w-10 h-10 text-white" />
-              </div>
-              <h3 className="font-bold text-gray-900 mb-1">Corporates</h3>
-              <p className="text-sm text-gray-600">MSMEs & Enterprises</p>
+            <div className="group relative bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl p-6 text-white overflow-hidden hover:scale-[1.03] transition-all duration-300 shadow-lg shadow-blue-500/20">
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-white/10 rounded-full"></div>
+              <Briefcase className="w-10 h-10 mb-4 opacity-90" />
+              <h3 className="font-bold text-xl mb-1">Corporates</h3>
+              <p className="text-white/80 text-sm">MSMEs & enterprises optimizing treasury operations</p>
+              <div className="mt-4 text-xs bg-white/20 inline-block px-3 py-1 rounded-full">1,000+ companies</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* How It Works */}
-      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+      {/* How It Works — Interactive Timeline */}
+      <section className="py-24 bg-white relative overflow-hidden">
+        <div className="absolute top-0 left-1/2 w-px h-full bg-gradient-to-b from-transparent via-gray-200 to-transparent hidden md:block"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">How Finofii Works</h2>
-            <p className="text-xl text-gray-600">Start earning in 3 simple steps</p>
+          <div className="text-center mb-20">
+            <span className="inline-block px-4 py-1.5 bg-amber-100 text-amber-700 text-xs font-bold rounded-full uppercase tracking-wider mb-4">Simple Process</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">How Finofii Works</h2>
+            <p className="text-xl text-gray-500 max-w-2xl mx-auto">Start earning in 3 simple steps. No paperwork headaches.</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-12">
-            <div className="text-center">
-              <div className="bg-gradient-to-br from-amber-500 to-amber-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-3xl font-bold shadow-xl shadow-amber-500/30">
+          <div className="grid md:grid-cols-3 gap-8 relative">
+            <div className="relative group">
+              <div className="bg-gradient-to-br from-amber-500 to-orange-500 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-xl shadow-amber-500/30 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
                 1
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Pick Investment Mix</h3>
-              <p className="text-gray-600 text-lg">
-                Choose from personalized strategies based on your risk profile, runway, and business needs
-              </p>
+              <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all duration-300">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Pick Your Strategy</h3>
+                <p className="text-gray-600 text-center">
+                  Choose from AI-recommended portfolios based on your risk appetite, cash runway, and business goals.
+                </p>
+              </div>
             </div>
-            <div className="text-center">
-              <div className="bg-gradient-to-br from-indigo-500 to-indigo-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-3xl font-bold shadow-xl shadow-indigo-500/30">
+            <div className="relative group">
+              <div className="bg-gradient-to-br from-indigo-500 to-blue-500 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-xl shadow-indigo-500/30 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
                 2
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Activate Automation</h3>
-              <p className="text-gray-600 text-lg">
-                Set up smart automations to streamline transfers between your accounts seamlessly
-              </p>
+              <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all duration-300">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Automate & Invest</h3>
+                <p className="text-gray-600 text-center">
+                  Set auto-sweep rules. Idle cash moves to high-yield instruments automatically — zero manual intervention.
+                </p>
+              </div>
             </div>
-            <div className="text-center">
-              <div className="bg-gradient-to-br from-emerald-500 to-emerald-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-3xl font-bold shadow-xl shadow-emerald-500/30">
+            <div className="relative group">
+              <div className="bg-gradient-to-br from-emerald-500 to-teal-500 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-xl shadow-emerald-500/30 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
                 3
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Track Growth</h3>
-              <p className="text-gray-600 text-lg">
-                Focus on your business while earning up to 7%* annually on idle funds with real-time tracking
-              </p>
+              <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all duration-300">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Track & Withdraw</h3>
+                <p className="text-gray-600 text-center">
+                  Real-time dashboard with instant insights. Withdraw anytime with T+1 liquidity — your money, your control.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Financial News Widget */}
-      <section className="py-20 bg-white">
+      {/* Insights — Magazine layout */}
+      <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Financial News & Insights</h2>
-            <p className="text-xl text-gray-600">Stay updated with the latest market trends</p>
+          <div className="text-center mb-16">
+            <span className="inline-block px-4 py-1.5 bg-violet-100 text-violet-700 text-xs font-bold rounded-full uppercase tracking-wider mb-4">Insights</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Market Intelligence</h2>
+            <p className="text-xl text-gray-500">Fresh perspectives on wealth, markets & treasury</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-xl p-6 hover:shadow-xl transition-shadow border border-gray-100 shadow-md">
-              <div className="text-xs text-amber-600 font-semibold mb-2">MARKET UPDATE</div>
-              <h3 className="text-lg font-bold text-gray-900 mb-3">
-                Indian Markets Hit New Highs: Nifty Crosses 25,000
-              </h3>
-              <p className="text-sm text-gray-600 mb-4">
-                Strong corporate earnings and FII inflows drive benchmark indices to record levels...
-              </p>
-              <div className="text-xs text-gray-400">2 hours ago</div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="h-2 bg-gradient-to-r from-amber-400 to-orange-500"></div>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="text-xs font-bold text-amber-600 bg-amber-50 px-2 py-1 rounded">MARKETS</span>
+                  <span className="text-xs text-gray-400">2 hours ago</span>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-amber-600 transition-colors">
+                  Indian Markets Hit New Highs: Nifty Crosses 25,000
+                </h3>
+                <p className="text-sm text-gray-500 leading-relaxed">
+                  Strong corporate earnings and FII inflows drive benchmark indices to record levels as mid-cap momentum continues...
+                </p>
+              </div>
             </div>
-            <div className="bg-white rounded-xl p-6 hover:shadow-xl transition-shadow border border-gray-100 shadow-md">
-              <div className="text-xs text-indigo-600 font-semibold mb-2">TREASURY INSIGHTS</div>
-              <h3 className="text-lg font-bold text-gray-900 mb-3">
-                Why Liquid Funds Are Better Than Bank FDs in 2025
-              </h3>
-              <p className="text-sm text-gray-600 mb-4">
-                Discover how liquid funds offer higher returns with better liquidity than traditional fixed deposits...
-              </p>
-              <div className="text-xs text-gray-400">5 hours ago</div>
+            <div className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="h-2 bg-gradient-to-r from-indigo-400 to-blue-500"></div>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="text-xs font-bold text-indigo-600 bg-indigo-50 px-2 py-1 rounded">TREASURY</span>
+                  <span className="text-xs text-gray-400">5 hours ago</span>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                  Why Liquid Funds Beat Bank FDs in 2025
+                </h3>
+                <p className="text-sm text-gray-500 leading-relaxed">
+                  Higher post-tax returns, better liquidity, and no penalty on early withdrawal — the case for liquid funds has never been stronger...
+                </p>
+              </div>
             </div>
-            <div className="bg-white rounded-xl p-6 hover:shadow-xl transition-shadow border border-gray-100 shadow-md">
-              <div className="text-xs text-emerald-600 font-semibold mb-2">WEALTH MANAGEMENT</div>
-              <h3 className="text-lg font-bold text-gray-900 mb-3">
-                Tax-Efficient Strategies for HNI Investors
-              </h3>
-              <p className="text-sm text-gray-600 mb-4">
-                Learn about the latest tax optimization strategies for high-net-worth individuals and family offices...
-              </p>
-              <div className="text-xs text-gray-400">1 day ago</div>
+            <div className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="h-2 bg-gradient-to-r from-emerald-400 to-teal-500"></div>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-1 rounded">WEALTH</span>
+                  <span className="text-xs text-gray-400">1 day ago</span>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors">
+                  Tax-Efficient Strategies for HNI Investors
+                </h3>
+                <p className="text-sm text-gray-500 leading-relaxed">
+                  From debt fund indexation benefits to international diversification — how India's wealthy are optimizing their tax burden...
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-20 bg-gray-50">
+      {/* FAQ — Clean accordion style */}
+      <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
-            <p className="text-xl text-gray-600">Everything you need to know about Finofii</p>
+          <div className="text-center mb-16">
+            <span className="inline-block px-4 py-1.5 bg-gray-100 text-gray-700 text-xs font-bold rounded-full uppercase tracking-wider mb-4">FAQ</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Common Questions</h2>
           </div>
-          <div className="space-y-6">
-            <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                How does Finofii work?
-              </h3>
-              <p className="text-gray-600">
-                Finofii helps you manage idle cash through intelligent treasury management. We invest your current account balance in SEBI-regulated liquid and debt mutual funds, generating returns of up to 7%* annually while maintaining high liquidity.
-              </p>
-            </div>
-            <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Is my money safe with Finofii?
-              </h3>
-              <p className="text-gray-600">
-                Absolutely. Your money is invested in SEBI and AMFI regulated mutual fund schemes with daily NAV declarations. Finofii is just a platform - no money is transferred to Finofii's account. All transactions happen through BSE Star MF execution channel.
-              </p>
-            </div>
-            <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                What is the minimum investment amount?
-              </h3>
-              <p className="text-gray-600">
-                For Treasury Management, the minimum is ₹1 Crore. For Founders Wealth, investments start from ₹100 (Mutual Funds) to ₹1 Crore (PMS/AIF/Unlisted). For Multi-Family Office, minimum net worth is ₹25 Crores.
-              </p>
-            </div>
-            <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                How quickly can I access my money?
-              </h3>
-              <p className="text-gray-600">
-                Liquid funds offer T+1 liquidity, meaning you can redeem your investments and get your money back in 1-3 business days. Some funds offer instant redemption for amounts up to ₹50,000.
-              </p>
-            </div>
-            <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                What are your fees?
-              </h3>
-              <p className="text-gray-600">
-                We don't charge account opening or transaction fees. You'll be charged a small percentage (as low as 0.08%) of your total monthly treasury positions. For Family Office, we work on a transparent fee-for-service model.
-              </p>
-            </div>
+          <div className="space-y-4">
+            {[
+              { q: "How does Finofii work?", a: "Finofii invests your idle current account balance in SEBI-regulated liquid and debt mutual funds via BSE StAR MF, generating up to 7%* annually while maintaining T+1 liquidity." },
+              { q: "Is my money safe?", a: "Your money never touches Finofii's account. All investments go directly to SEBI-regulated AMCs through BSE StAR MF execution channel with daily NAV declarations." },
+              { q: "What's the minimum investment?", a: "Treasury Management starts at ₹1 Crore. Founders Wealth from ₹100 (MFs) to ₹1 Cr (PMS/AIF). Family Office requires ₹25 Cr+ net worth." },
+              { q: "How quickly can I withdraw?", a: "Liquid funds offer T+1 liquidity — money back in 1-3 business days. Some schemes offer instant redemption up to ₹50,000." },
+              { q: "What are your fees?", a: "No account opening or transaction fees. A small percentage (as low as 0.08%) on monthly treasury positions. Family Office uses a transparent fee-for-service model." },
+            ].map((item, i) => (
+              <details key={i} className="group bg-gray-50 rounded-xl border border-gray-100 hover:border-amber-200 transition-colors">
+                <summary className="flex items-center justify-between p-5 cursor-pointer list-none">
+                  <h3 className="text-lg font-semibold text-gray-900 group-hover:text-amber-700 transition-colors">{item.q}</h3>
+                  <span className="text-2xl text-gray-400 group-open:rotate-45 transition-transform duration-200">+</span>
+                </summary>
+                <div className="px-5 pb-5 text-gray-600 leading-relaxed">{item.a}</div>
+              </details>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-gradient-to-r from-slate-900 via-blue-950 to-indigo-900 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Transform Your Finances?</h2>
-          <p className="text-2xl mb-8 text-blue-100/80">
-            Join 1,000+ businesses maximizing returns on idle cash
+      <section className="py-24 bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-900 text-white relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full filter blur-[100px]"></div>
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full filter blur-[100px]"></div>
+        </div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
+          <h2 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">Ready to Earn More?</h2>
+          <p className="text-xl md:text-2xl mb-10 text-blue-100/70 max-w-2xl mx-auto">
+            Join 1,000+ businesses that stopped letting idle cash sit at 0% returns.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="https://platform.finofii.com/app/#/login"
-              className="inline-block px-12 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-lg font-bold text-lg hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg shadow-amber-500/30 hover:shadow-amber-500/50 transform hover:scale-[1.02]"
+              className="inline-block px-12 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-xl font-bold text-lg hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg shadow-amber-500/30 hover:shadow-amber-500/50 transform hover:scale-[1.02]"
             >
-              Monetise ₹1 Cr+ Today →
+              Start Earning Today →
             </a>
             <a
               href="https://wa.me/919311361888"
-              className="inline-block px-12 py-4 bg-white text-slate-900 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all shadow-xl"
+              className="inline-block px-12 py-4 bg-white/10 backdrop-blur text-white rounded-xl font-bold text-lg border border-white/20 hover:bg-white/20 hover:border-white/40 transition-all"
             >
               Talk to Expert
             </a>
