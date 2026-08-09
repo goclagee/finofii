@@ -148,8 +148,8 @@ const TreasuryPage = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-transparent"></div>
         </div>
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
-          <div className="max-w-xl">
+        <div className="relative z-10 py-20 pl-8 sm:pl-16 lg:pl-24 xl:pl-32">
+          <div className="max-w-lg">
             <span className="inline-block px-4 py-1.5 bg-amber-500/20 border border-amber-400/30 text-amber-300 text-xs font-bold rounded-full uppercase tracking-wider mb-6">
               Treasury Management
             </span>
