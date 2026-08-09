@@ -141,20 +141,38 @@ const TreasuryPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20" data-testid="treasury-hero">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
-              Monetise Your<br />Current Account
+      <section className="relative min-h-[85vh] flex items-center overflow-hidden" data-testid="treasury-hero">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img src="/treasury-hero.png" alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30"></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
+          <div className="max-w-2xl">
+            <span className="inline-block px-4 py-1.5 bg-amber-500/20 border border-amber-400/30 text-amber-300 text-xs font-bold rounded-full uppercase tracking-wider mb-6">
+              Treasury Management
+            </span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-[1.05]">
+              Monetise Your<br />
+              <span className="text-amber-400">Current Account</span>
             </h1>
-            <p className="text-3xl md:text-4xl text-amber-300 mb-6 font-semibold italic">
+            <p className="text-2xl text-amber-300/90 mb-4 font-semibold italic">
               "Higher Interest is in Your Best Interest"
             </p>
-            <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto mb-8 font-light">
-              Work and optimize treasury like bigger corporates do for operational excellence
+            <p className="text-lg text-gray-300 max-w-xl mb-8 leading-relaxed">
+              Work and optimize treasury like bigger corporates do for operational excellence. Get up to 7%* annually on idle cash with T+1 liquidity.
             </p>
-            <div className="mt-8 inline-block bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-xl shadow-xl">
-              Minimum Investment: ₹1 Crore
+            <div className="flex flex-wrap gap-4 items-center">
+              <a
+                href="https://platform.finofii.com/app/#/login"
+                className="px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-lg font-bold text-lg hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg shadow-amber-500/30"
+              >
+                Start Earning Today
+              </a>
+              <div className="px-6 py-3 bg-white/10 backdrop-blur border border-white/20 rounded-lg text-white font-semibold">
+                Min Investment: ₹1 Crore
+              </div>
             </div>
           </div>
         </div>
