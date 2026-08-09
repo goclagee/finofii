@@ -145,25 +145,25 @@ const TreasuryPage = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img src="/treasury-hero.png" alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-transparent"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
-          <div className="max-w-2xl">
+          <div className="max-w-xl">
             <span className="inline-block px-4 py-1.5 bg-amber-500/20 border border-amber-400/30 text-amber-300 text-xs font-bold rounded-full uppercase tracking-wider mb-6">
               Treasury Management
             </span>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-[1.05]">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-[1.05] text-left">
               Monetise Your<br />
               <span className="text-amber-400">Current Account</span>
             </h1>
-            <p className="text-2xl text-amber-300/90 mb-4 font-semibold italic">
+            <p className="text-2xl text-amber-300/90 mb-4 font-semibold italic text-left">
               "Higher Interest is in Your Best Interest"
             </p>
-            <p className="text-lg text-gray-300 max-w-xl mb-8 leading-relaxed">
+            <p className="text-lg text-gray-300 mb-8 leading-relaxed text-left">
               Work and optimize treasury like bigger corporates do for operational excellence. Get up to 7%* annually on idle cash with T+1 liquidity.
             </p>
-            <div className="flex flex-wrap gap-4 items-center">
+            <div className="flex flex-wrap gap-4 items-center justify-start">
               <a
                 href="https://platform.finofii.com/app/#/login"
                 className="px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-lg font-bold text-lg hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg shadow-amber-500/30"
