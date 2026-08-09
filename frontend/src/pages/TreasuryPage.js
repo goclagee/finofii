@@ -340,15 +340,15 @@ const TreasuryPage = () => {
       <section className="py-16 bg-white overflow-hidden" data-testid="funds-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">
-            Available Mutual Funds
+            Available Mutual Funds & AMC Partners
           </h2>
-          <p className="text-center text-gray-500 mb-12">Partnered with India's top AMCs</p>
+          <p className="text-center text-gray-500 mb-12">Partnered with India's leading Asset Management Companies</p>
         </div>
         {/* Infinite scroll slider */}
-        <div className="relative">
-          <div className="flex animate-scroll gap-10 items-center">
-            {[...Array(2)].map((_, setIdx) => (
-              <div key={setIdx} className="flex gap-10 items-center shrink-0">
+        <div className="relative overflow-hidden">
+          <div className="flex animate-scroll gap-12 items-center">
+            {[...Array(4)].map((_, setIdx) => (
+              <div key={setIdx} className="flex gap-12 items-center shrink-0">
                 {[
                   { src: "/mf1.png", name: "HDFC MF" },
                   { src: "/mf2.jpeg", name: "SBI MF" },
@@ -404,29 +404,6 @@ const TreasuryPage = () => {
             </div>
           </div>
         )}
-      </section>
-
-      {/* Partners */}
-      <section className="py-16 bg-gray-50" data-testid="partners-section">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-            Our AMC Partners
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {partners.map((partner) => (
-              <div
-                key={partner.id}
-                className="bg-white rounded-lg p-6 flex items-center justify-center hover:shadow-md transition-shadow"
-              >
-                <img
-                  src={partner.logo_url}
-                  alt={partner.name}
-                  className="max-h-12"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
       </section>
 
       {/* Inquiry Form */}
