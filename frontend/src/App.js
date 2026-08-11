@@ -11,6 +11,13 @@ import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import TermsConditions from "@/pages/TermsConditions";
 import Disclaimer from "@/pages/Disclaimer";
 import RiskDisclosure from "@/pages/RiskDisclosure";
+import IdleCashStartup3mo from "@/pages/IdleCashStartup3mo";
+import IdleCashMSME6mo from "@/pages/IdleCashMSME6mo";
+import TreasuryVsFD from "@/pages/TreasuryVsFD";
+import TreasuryVsSIP from "@/pages/TreasuryVsSIP";
+import TreasuryBangalore from "@/pages/TreasuryBangalore";
+import WhatIsTreasury from "@/pages/WhatIsTreasury";
+import UnderstandingNAV from "@/pages/UnderstandingNAV";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -40,6 +47,13 @@ function App() {
           <Route path="/terms-conditions" element={<TermsConditions />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/risk-disclosure" element={<RiskDisclosure />} />
+          <Route path="/idlecashstartup3mo" element={IdleCashStartup3mo} />
+          <Route path="/idlecashmsme6mo" element={IdleCashMSME6mo} />
+          <Route path="/treasuryvsfd" element={TreasuryVsFD} />
+          <Route path="/treasuryvssip" element={TreasuryVsSIP} />
+          <Route path="/treasurybangalore" element={TreasuryBangalore} />
+          <Route path="/whatistreasury" element={WhatIsTreasury} />
+          <Route path="/understandingnav" element={UnderstandingNAV} />
         </Routes>
         <Footer />
         <WhatsAppButton />
