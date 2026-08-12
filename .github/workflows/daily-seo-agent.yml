@@ -16,21 +16,20 @@ jobs:
         with:
           python-version: '3.10'
       
+      - name: Generate pages
+        run: python3 seo_agent.py
+      
       - name: Configure git
         run: |
           git config user.email "seo-agent@finofii.com"
           git config user.name "Finofii SEO Agent"
-          git config http.extraheader "Authorization: Basic $(echo -n x-access-token:${{ secrets.GITHUB_TOKEN }} | base64)"
-      
-      - name: Generate pages
-        run: python3 seo_agent.py
       
       - name: Commit & push
         run: |
           git add -A
-          if ! git diff --cached --quiet; then
-            git commit -m "Daily SEO batch — $(date +%Y-%m-%d) — pages generated"
-            git push origin main
-          else
+          if git diff --cached --quiet; then
             echo "No changes to commit"
+            exit 0
           fi
+          git commit -m "Daily SEO batch — $(date +%Y-%m-%d) — pages generated"
+          git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/goclagee/finofii.git HEAD:main
