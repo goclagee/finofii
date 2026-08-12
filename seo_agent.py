@@ -1,10 +1,22 @@
 #!/usr/bin/env python3
 import os
+import sys
 from pathlib import Path
-from datetime import datetime
 
-repo_path = Path(".")
-pages_dir = repo_path / "frontend/src/pages"
+print("🚀 Starting SEO agent...")
+print(f"Working directory: {os.getcwd()}")
+
+# Use absolute paths
+repo_path = Path(os.getcwd()).resolve()
+pages_dir = repo_path / "frontend" / "src" / "pages"
+
+print(f"Repo path: {repo_path}")
+print(f"Pages dir: {pages_dir}")
+
+# Check if paths exist
+if not pages_dir.exists():
+    print(f"❌ ERROR: Pages directory not found: {pages_dir}")
+    sys.exit(1)
 
 pages_config = [
     ("IdleCashStartup3mo", "Idle Cash Calculator for Startups"),
@@ -63,31 +75,52 @@ const {name} = () => {{
 export default {name};
 '''
 
+generated_count = 0
 for name, title in pages_config:
-    code = template.replace("{name}", name).replace("{title}", title)
-    file_path = pages_dir / f"{name}.js"
-    file_path.write_text(code)
-    print(f"✓ {name}.js")
+    try:
+        code = template.replace("{name}", name).replace("{title}", title)
+        file_path = pages_dir / f"{name}.js"
+        file_path.write_text(code)
+        print(f"✓ {name}.js")
+        generated_count += 1
+    except Exception as e:
+        print(f"❌ Failed to write {name}.js: {e}")
+        sys.exit(1)
 
-print(f"\nGenerated {len(pages_config)} pages")
+print(f"\n✅ Generated {generated_count} pages")
 
-app_js_path = repo_path / "frontend/src/App.js"
-app_content = app_js_path.read_text()
+# Update App.js
+app_js_path = repo_path / "frontend" / "src" / "App.js"
 
-for name, _ in pages_config:
-    import_line = f'import {name} from "@/pages/{name}";'
-    if import_line not in app_content:
-        app_content = app_content.replace(
-            'import RiskDisclosure from "@/pages/RiskDisclosure";',
-            f'import RiskDisclosure from "@/pages/RiskDisclosure";\nimport {name} from "@/pages/{name}";'
-        )
+if not app_js_path.exists():
+    print(f"❌ ERROR: App.js not found at {app_js_path}")
+    sys.exit(1)
+
+try:
+    app_content = app_js_path.read_text()
     
-    route_line = f'<Route path="/{name.lower()}" element={{{name}}} />'
-    if route_line not in app_content:
-        app_content = app_content.replace(
-            "</Routes>",
-            f'{route_line}\n        </Routes>'
-        )
+    for name, _ in pages_config:
+        import_line = f'import {name} from "@/pages/{name}";'
+        route_line = f'          <Route path="/{name.lower()}" element={{{name}}} />'
+        
+        if import_line not in app_content:
+            app_content = app_content.replace(
+                'import RiskDisclosure from "@/pages/RiskDisclosure";',
+                f'import RiskDisclosure from "@/pages/RiskDisclosure";\nimport {name} from "@/pages/{name}";'
+            )
+        
+        if route_line not in app_content:
+            app_content = app_content.replace(
+                "        </Routes>",
+                f"{route_line}\n        </Routes>"
+            )
+    
+    app_js_path.write_text(app_content)
+    print("✅ App.js updated with imports and routes")
+    
+except Exception as e:
+    print(f"❌ Failed to update App.js: {e}")
+    sys.exit(1)
 
-app_js_path.write_text(app_content)
-print("✅ App.js updated")
+print("\n✅ SEO agent completed successfully!")
+sys.exit(0)
