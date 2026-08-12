@@ -1,0 +1,158 @@
+name: Finofii Daily SEO Agent
+
+on:
+  schedule:
+    - cron: '30 2 * * 1-5'  # 08:00 IST, Monday-Friday (02:30 UTC)
+  workflow_dispatch:
+
+jobs:
+  generate-seo-pages:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Configure git
+        run: |
+          git config user.email "seo-agent@finofii.com"
+          git config user.name "Finofii SEO Agent"
+      
+      - name: Generate SEO pages
+        run: |
+          python3 << 'AGENT_SCRIPT'
+import os
+import subprocess
+from pathlib import Path
+from datetime import datetime
+
+repo_path = Path(".")
+pages_dir = repo_path / "frontend/src/pages"
+date = datetime.now().strftime("%Y-%m-%d")
+
+pages_config = [
+    ("IdleCashStartup3mo", "Idle Cash Calculator for Startups", "Startup 3-month treasury calculator"),
+    ("IdleCashMSME6mo", "Idle Cash Calculator for MSMEs", "MSME 6-month treasury calculator"),
+    ("TreasuryVsFD", "Treasury vs Fixed Deposits", "Compare treasury vs FD returns"),
+    ("TreasuryVsSIP", "Treasury vs SIPs", "Compare treasury vs SIP investments"),
+    ("TreasuryBangalore", "Treasury for Bangalore Startups", "Bangalore startup treasury solutions"),
+    ("WhatIsTreasury", "What is Treasury Management?", "Treasury management guide"),
+    ("UnderstandingNAV", "Understanding NAV", "Net Asset Value explained"),
+    ("ComparisonCurrentAccount", "Treasury vs Current Account", "Compare treasury vs current account"),
+    ("NavCalculator", "NAV Calculator", "Calculate NAV and fund returns"),
+    ("RiskDisclosureGuide", "Risk Disclosure Guide", "Understanding mutual fund risks"),
+]
+
+for component_name, title, desc in pages_config:
+    code = f'''import {{ useState }} from "react";
+import {{ Calculator }} from "lucide-react";
+
+const {component_name} = () => {{
+  const [amount, setAmount] = useState(500000);
+  const [rate, setRate] = useState(6.5);
+  const [result, setResult] = useState(null);
+
+  const calc = () => {{
+    const returns = (amount * (rate / 100) * (3 / 12));
+    setResult({{ returns, total: amount + returns }});
+  }};
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
+      <div className="bg-gradient-to-r from-slate-900 to-blue-900 text-white py-20 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl font-bold mb-2">{title}</h1>
+          <p className="text-lg text-slate-200">Up to 7%* p.a. indicative returns</p>
+        </div>
+      </div>
+
+      <div className="max-w-4xl mx-auto px-4 py-16">
+        <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mb-12 rounded-r">
+          <p className="text-slate-800"><strong>What is this?</strong> {desc}</p>
+        </div>
+
+        <div className="bg-white rounded-xl shadow-lg p-8 mb-12">
+          <h2 className="text-2xl font-bold mb-6">Calculate Your Returns</h2>
+          <div className="space-y-4">
+            <div>
+              <label className="block font-semibold text-slate-700 mb-2">Amount (₹)</label>
+              <input type="number" value={{amount}} onChange={{(e) => setAmount(Number(e.target.value))}} className="w-full px-4 py-2 border rounded-lg" />
+            </div>
+            <div>
+              <label className="block font-semibold text-slate-700 mb-2">Annual Rate (%)</label>
+              <input type="number" value={{rate}} onChange={{(e) => setRate(Number(e.target.value))}} step="0.1" className="w-full px-4 py-2 border rounded-lg" />
+            </div>
+            <button onClick={{calc}} className="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700">Calculate</button>
+            {{result && <div className="mt-4 p-4 bg-orange-50 rounded"><p><strong>Return:</strong> ₹{{result.returns.toLocaleString()}}</p><p><strong>Total:</strong> ₹{{result.total.toLocaleString()}}</p></div>}}
+          </div>
+        </div>
+
+        <a href="https://wa.me/919311361888" className="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700">💬 Ask Finofii</a>
+
+        <div className="mt-12 bg-slate-100 p-6 rounded-lg text-sm">
+          <p className="font-semibold mb-2">⚠️ Compliance</p>
+          <p>Finofii (ARN-176236) is an MFD. Mutual fund investments subject to market risks. Returns indicative, not guaranteed.</p>
+        </div>
+      </div>
+    </div>
+  );
+}};
+
+export default {component_name};
+'''
+    
+    file_path = pages_dir / f"{component_name}.js"
+    file_path.write_text(code)
+    print(f"✓ {component_name}.js")
+
+print(f"\n✅ Generated {len(pages_config)} pages")
+
+# Update App.js
+app_js_path = repo_path / "frontend/src/App.js"
+app_content = app_js_path.read_text()
+
+imports = "\n".join([f"import {name} from \"@/pages/{name}\";" for name, _, _ in pages_config])
+
+if imports not in app_content:
+    app_content = app_content.replace(
+        'import RiskDisclosure from "@/pages/RiskDisclosure";',
+        f'import RiskDisclosure from "@/pages/RiskDisclosure";\n{imports}'
+    )
+
+routes = "\n".join([
+    f'          <Route path="/{name.lower()}" element={{{name}}} />'
+    for name, _, _ in pages_config
+])
+
+if routes not in app_content:
+    app_content = app_content.replace(
+        "        </Routes>",
+        f"{routes}\n        </Routes>"
+    )
+
+app_js_path.write_text(app_content)
+print("✅ App.js updated")
+AGENT_SCRIPT
+        
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit & push
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git add -A
+          git commit -m "Daily SEO batch — $(date +%Y-%m-%d) — 10 pages generated"
+          git push origin main
