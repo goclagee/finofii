@@ -8,6 +8,8 @@ on:
 jobs:
   generate-seo:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
       - uses: actions/checkout@v3
@@ -19,17 +21,16 @@ jobs:
       - name: Generate pages
         run: python3 seo_agent.py
       
-      - name: Configure git
+      - name: Commit & push
         run: |
           git config user.email "seo-agent@finofii.com"
           git config user.name "Finofii SEO Agent"
-      
-      - name: Commit & push
-        run: |
           git add -A
-          if git diff --cached --quiet; then
+          if ! git diff --cached --quiet; then
+            git commit -m "Daily SEO batch — $(date +%Y-%m-%d) — pages generated"
+            git push origin main
+          else
             echo "No changes to commit"
-            exit 0
           fi
-          git commit -m "Daily SEO batch — $(date +%Y-%m-%d) — pages generated"
-          git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/goclagee/finofii.git HEAD:main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
