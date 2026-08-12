@@ -11,6 +11,9 @@ import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import TermsConditions from "@/pages/TermsConditions";
 import Disclaimer from "@/pages/Disclaimer";
 import RiskDisclosure from "@/pages/RiskDisclosure";
+import RiskDisclosureGuide from "@/pages/RiskDisclosureGuide";
+import NavCalculator from "@/pages/NavCalculator";
+import ComparisonCurrentAccount from "@/pages/ComparisonCurrentAccount";
 import IdleCashStartup3mo from "@/pages/IdleCashStartup3mo";
 import IdleCashMSME6mo from "@/pages/IdleCashMSME6mo";
 import TreasuryVsFD from "@/pages/TreasuryVsFD";
@@ -54,6 +57,9 @@ function App() {
           <Route path="/treasurybangalore" element={TreasuryBangalore} />
           <Route path="/whatistreasury" element={WhatIsTreasury} />
           <Route path="/understandingnav" element={UnderstandingNAV} />
+          <Route path="/comparisoncurrentaccount" element={ComparisonCurrentAccount} />
+          <Route path="/navcalculator" element={NavCalculator} />
+          <Route path="/riskdisclosureguide" element={RiskDisclosureGuide} />
         </Routes>
         <Footer />
         <WhatsAppButton />
