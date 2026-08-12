@@ -60,6 +60,16 @@ function App() {
           <Route path="/comparisoncurrentaccount" element={ComparisonCurrentAccount} />
           <Route path="/navcalculator" element={NavCalculator} />
           <Route path="/riskdisclosureguide" element={RiskDisclosureGuide} />
+          <Route path="/idlecashstartup3mo" element={<IdleCashStartup3mo />} />
+          <Route path="/idlecashmsme6mo" element={<IdleCashMSME6mo />} />
+          <Route path="/treasuryvsfd" element={<TreasuryVsFD />} />
+          <Route path="/treasuryvssip" element={<TreasuryVsSIP />} />
+          <Route path="/treasurybangalore" element={<TreasuryBangalore />} />
+          <Route path="/whatistreasury" element={<WhatIsTreasury />} />
+          <Route path="/understandingnav" element={<UnderstandingNAV />} />
+          <Route path="/comparisoncurrentaccount" element={<ComparisonCurrentAccount />} />
+          <Route path="/navcalculator" element={<NavCalculator />} />
+          <Route path="/riskdisclosureguide" element={<RiskDisclosureGuide />} />
         </Routes>
         <Footer />
         <WhatsAppButton />

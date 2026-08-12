@@ -4,13 +4,9 @@ import sys
 from pathlib import Path
 
 print("🚀 Starting SEO agent...")
-print(f"Working directory: {os.getcwd()}")
 
 repo_path = Path(os.getcwd()).resolve()
 pages_dir = repo_path / "frontend" / "src" / "pages"
-
-print(f"Repo path: {repo_path}")
-print(f"Pages dir: {pages_dir}")
 
 if not pages_dir.exists():
     print(f"❌ ERROR: Pages directory not found: {pages_dir}")
@@ -29,7 +25,6 @@ pages_config = [
     ("RiskDisclosureGuide", "Risk Disclosure Guide"),
 ]
 
-# IMPORTANT: Use SINGLE braces for JSX, not double
 template = """import { useState } from "react";
 
 const NAME_PLACEHOLDER = () => {
@@ -88,7 +83,6 @@ for name, title in pages_config:
 
 print(f"\n✅ Generated {generated_count} pages")
 
-# Update App.js
 app_js_path = repo_path / "frontend" / "src" / "App.js"
 
 if not app_js_path.exists():
@@ -100,7 +94,8 @@ try:
     
     for name, _ in pages_config:
         import_line = f'import {name} from "@/pages/{name}";'
-        route_line = f'          <Route path="/{name.lower()}" element={{{name}}} />'
+        # CRITICAL: Use JSX element syntax with angle brackets
+        route_line = f'          <Route path="/{name.lower()}" element={{<{name} />}} />'
         
         if import_line not in app_content:
             app_content = app_content.replace(
