@@ -50,26 +50,16 @@ function App() {
           <Route path="/terms-conditions" element={<TermsConditions />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/risk-disclosure" element={<RiskDisclosure />} />
-          <Route path="/idlecashstartup3mo" element={<IdleCashStartup3mo />} />
-          <Route path="/idlecashmsme6mo" element={<IdleCashMSME6mo />} />
-          <Route path="/treasuryvsfd" element={<TreasuryVsFD />} />
-          <Route path="/treasuryvssip" element={<TreasuryVsSIP />} />
-          <Route path="/treasurybangalore" element={<TreasuryBangalore />} />
-          <Route path="/whatistreasury" element={<WhatIsTreasury />} />
-          <Route path="/understandingnav" element={<UnderstandingNAV />} />
-          <Route path="/comparisoncurrentaccount" element={<ComparisonCurrentAccount />} />
-          <Route path="/navcalculator" element={<NavCalculator />} />
-          <Route path="/riskdisclosureguide" element={<RiskDisclosureGuide />} />
-          <Route path="/idlecashstartup3mo" element={<IdleCashStartup3mo />} />
-          <Route path="/idlecashmsme6mo" element={<IdleCashMSME6mo />} />
-          <Route path="/treasuryvsfd" element={<TreasuryVsFD />} />
-          <Route path="/treasuryvssip" element={<TreasuryVsSIP />} />
-          <Route path="/treasurybangalore" element={<TreasuryBangalore />} />
-          <Route path="/whatistreasury" element={<WhatIsTreasury />} />
-          <Route path="/understandingnav" element={<UnderstandingNAV />} />
-          <Route path="/comparisoncurrentaccount" element={<ComparisonCurrentAccount />} />
-          <Route path="/navcalculator" element={<NavCalculator />} />
-          <Route path="/riskdisclosureguide" element={<RiskDisclosureGuide />} />
+          <Route path="/idlecashstartup3mo" element={IdleCashStartup3mo} />
+          <Route path="/idlecashmsme6mo" element={IdleCashMSME6mo} />
+          <Route path="/treasuryvsfd" element={TreasuryVsFD} />
+          <Route path="/treasuryvssip" element={TreasuryVsSIP} />
+          <Route path="/treasurybangalore" element={TreasuryBangalore} />
+          <Route path="/whatstreasury" element={WhatIsTreasury} />
+          <Route path="/understandingnav" element={UnderstandingNAV} />
+          <Route path="/comparisoncurrentaccount" element={ComparisonCurrentAccount} />
+          <Route path="/navcalculator" element={NavCalculator} />
+          <Route path="/riskdisclosureguide" element={RiskDisclosureGuide} />
         </Routes>
         <Footer />
         <WhatsAppButton />
