@@ -1,0 +1,259 @@
+/* FINOFII BRAND PAGES — Montserrat + Groww/ClearTax Style */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* Brand Colors */
+  --fino-navy: #1B3A5C;
+  --fino-teal: #3DD4B0;
+  --fino-blue: #3B9DC8;
+  --fino-deep-blue: #2E6B9E;
+  --fino-white: #FFFFFF;
+  
+  /* Extended Palette */
+  --fino-bg-light: #F8FAFC;
+  --fino-bg-lighter: #F1F5F9;
+  --fino-border: #E2E8F0;
+  --fino-text-primary: #1B3A5C;
+  --fino-text-secondary: #475569;
+  --fino-text-tertiary: #94A3B8;
+  
+  /* Spacing */
+  --fino-spacing-xs: 4px;
+  --fino-spacing-sm: 8px;
+  --fino-spacing-md: 12px;
+  --fino-spacing-lg: 16px;
+  --fino-spacing-xl: 24px;
+  --fino-spacing-2xl: 32px;
+  --fino-spacing-3xl: 48px;
+}
+
+* {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  background: var(--fino-white);
+  color: var(--fino-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* PAGE CONTAINER */
+.page {
+  width: 100%;
+  background: var(--fino-white);
+  padding: var(--fino-spacing-2xl) var(--fino-spacing-lg);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: var(--fino-spacing-xl) var(--fino-spacing-lg);
+  }
+}
+
+/* TYPOGRAPHY */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--fino-navy);
+  line-height: 1.2;
+  margin-bottom: var(--fino-spacing-lg);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--fino-navy);
+  line-height: 1.3;
+  margin: var(--fino-spacing-2xl) 0 var(--fino-spacing-lg);
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--fino-navy);
+  line-height: 1.4;
+  margin: var(--fino-spacing-xl) 0 var(--fino-spacing-md);
+}
+
+.lead {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--fino-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--fino-spacing-xl);
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--fino-text-primary);
+  line-height: 1.7;
+  margin-bottom: var(--fino-spacing-lg);
+}
+
+strong {
+  font-weight: 700;
+  color: var(--fino-navy);
+}
+
+small {
+  font-size: 0.875rem;
+  color: var(--fino-text-secondary);
+}
+
+/* LISTS */
+ul {
+  margin: var(--fino-spacing-lg) 0;
+  padding-left: var(--fino-spacing-2xl);
+}
+
+li {
+  font-size: 1rem;
+  color: var(--fino-text-primary);
+  line-height: 1.7;
+  margin-bottom: var(--fino-spacing-md);
+}
+
+ul li:before {
+  content: '▸';
+  color: var(--fino-teal);
+  font-weight: bold;
+  margin-right: var(--fino-spacing-md);
+  margin-left: calc(-1 * var(--fino-spacing-2xl));
+}
+
+/* TABLES */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--fino-spacing-xl) 0;
+  background: var(--fino-bg-light);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th {
+  background: var(--fino-navy);
+  color: var(--fino-white);
+  font-weight: 700;
+  padding: var(--fino-spacing-lg);
+  text-align: left;
+}
+
+td {
+  padding: var(--fino-spacing-lg);
+  border-bottom: 1px solid var(--fino-border);
+  color: var(--fino-text-primary);
+}
+
+tr:nth-child(even) {
+  background: var(--fino-bg-lighter);
+}
+
+/* CARDS */
+.card, .section {
+  background: var(--fino-bg-light);
+  border-radius: 12px;
+  padding: var(--fino-spacing-2xl);
+  margin-bottom: var(--fino-spacing-2xl);
+  border: 1px solid var(--fino-border);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(27, 58, 92, 0.08);
+  border-color: var(--fino-teal);
+}
+
+/* BUTTONS */
+.btn, a.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary, a.btn-primary {
+  background: var(--fino-blue);
+  color: var(--fino-white);
+}
+
+.btn-primary:hover, a.btn-primary:hover {
+  background: var(--fino-deep-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(59, 157, 200, 0.3);
+}
+
+.btn-secondary, a.btn-secondary {
+  background: var(--fino-teal);
+  color: var(--fino-navy);
+}
+
+.btn-secondary:hover, a.btn-secondary:hover {
+  background: #2db89e;
+  transform: translateY(-2px);
+}
+
+.btn-whatsapp, a.btn-whatsapp {
+  background: #25D366;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--fino-spacing-md);
+}
+
+.btn-whatsapp:hover, a.btn-whatsapp:hover {
+  background: #20ba5a;
+  transform: translateY(-2px);
+}
+
+/* CTA SECTION */
+.cta {
+  background: linear-gradient(135deg, var(--fino-navy) 0%, var(--fino-deep-blue) 100%);
+  border-radius: 12px;
+  padding: var(--fino-spacing-2xl);
+  margin: var(--fino-spacing-3xl) 0;
+  color: var(--fino-white);
+  text-align: center;
+}
+
+.cta p {
+  color: var(--fino-white);
+  font-size: 1.1rem;
+  margin-bottom: var(--fino-spacing-lg);
+}
+
+.cta a {
+  display: inline-block;
+  margin-top: var(--fino-spacing-lg);
+}
+
+/* COMPLIANCE FOOTER */
+.compliance {
+  background: var(--fino-bg-lighter);
+  border-radius: 8px;
+  padding: var(--fino-spacing-lg);
+  margin-top: var(--fino-spacing-3xl);
+  border-left: 4px solid var(--fino-teal);
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+  .page { padding: var(--fino-spacing-xl) var(--fino-spacing-lg); }
+  .btn, a.btn { width: 100%; text-align: center; }
+}
