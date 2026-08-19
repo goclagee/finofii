@@ -13,17 +13,62 @@ import Disclaimer from "@/pages/Disclaimer";
 import RiskDisclosure from "@/pages/RiskDisclosure";
 import RiskDisclosureGuide from "@/pages/RiskDisclosureGuide";
 import NavCalculator from "@/pages/NavCalculator";
-import ComparisonCurrentAccount from "@/pages/ComparisonCurrentAccount";
-import IdleCashStartup3mo from "@/pages/IdleCashStartup3mo";
-import IdleCashMSME6mo from "@/pages/IdleCashMSME6mo";
-import TreasuryVsFD from "@/pages/TreasuryVsFD";
-import TreasuryVsSIP from "@/pages/TreasuryVsSIP";
-import TreasuryBangalore from "@/pages/TreasuryBangalore";
-import WhatIsTreasury from "@/pages/WhatIsTreasury";
-import UnderstandingNAV from "@/pages/UnderstandingNAV";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+
+// Comparison Pages
+import {
+  TreasuryVsFD,
+  TreasuryVsSIP,
+  TreasuryVsSavings,
+  TreasuryVsDebt,
+  TreasuryVsEquity,
+  TreasuryVsRealEstate,
+  LiquidFundsVsFD,
+  MFDDifference,
+} from "@/pages/ComparisonPages";
+
+// Education Pages
+import {
+  WhatIsTreasury,
+  LiquidFunds101,
+  CurrentAccountExplained,
+  NavExplained,
+  ExpenseRatio,
+  ExitLoadExplained,
+  CutoffTimeExplained,
+} from "@/pages/EducationPages";
+
+// Segment Pages
+import {
+  IdleCashStartups,
+  IdleCashMSME,
+  CorporateTreasury,
+  WealthFamilyOffice,
+  NRIDollarParking,
+} from "@/pages/SegmentPages";
+
+// City Pages
+import {
+  TreasuryDelhi,
+  TreasuryNoida,
+  TreasuryMumbai,
+  TreasuryPune,
+  TreasuryBangalore,
+  TreasuryHyderabad,
+  TreasuryGurgaon,
+} from "@/pages/CityPages";
+
+// Use-case Pages
+import {
+  EmergencyFund,
+  QuarterlyPlanning,
+  TaxOptimization,
+  LiquidityPlanning,
+  FreelancerBusiness,
+  ProjectBasedBusiness,
+} from "@/pages/UseCasePages";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -40,6 +85,7 @@ function App() {
         <ScrollToTop />
         <Navigation />
         <Routes>
+          {/* Main Pages */}
           <Route path="/" element={<HomePage />} />
           <Route path="/treasury" element={<TreasuryPage />} />
           <Route path="/founders" element={<FoundersPage />} />
@@ -50,16 +96,51 @@ function App() {
           <Route path="/terms-conditions" element={<TermsConditions />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/risk-disclosure" element={<RiskDisclosure />} />
-          <Route path="/idlecashstartup3mo" element={<IdleCashStartup3mo />} />
-          <Route path="/idlecashmsme6mo" element={<IdleCashMSME6mo />} />
+          <Route path="/risk-disclosure-guide" element={<RiskDisclosureGuide />} />
+          <Route path="/nav-calculator" element={<NavCalculator />} />
+
+          {/* Comparison Routes */}
           <Route path="/treasuryvsfd" element={<TreasuryVsFD />} />
           <Route path="/treasuryvssip" element={<TreasuryVsSIP />} />
-          <Route path="/treasurybangalore" element={<TreasuryBangalore />} />
+          <Route path="/treasuryvssavings" element={<TreasuryVsSavings />} />
+          <Route path="/treasuryvsdebt" element={<TreasuryVsDebt />} />
+          <Route path="/treasuryvsequity" element={<TreasuryVsEquity />} />
+          <Route path="/treasuryvsrealstate" element={<TreasuryVsRealEstate />} />
+          <Route path="/liquidfundsvsfd" element={<LiquidFundsVsFD />} />
+          <Route path="/mfddifference" element={<MFDDifference />} />
+
+          {/* Education Routes */}
           <Route path="/whatstreasury" element={<WhatIsTreasury />} />
-          <Route path="/understandingnav" element={<UnderstandingNAV />} />
-          <Route path="/comparisoncurrentaccount" element={<ComparisonCurrentAccount />} />
-          <Route path="/navcalculator" element={<NavCalculator />} />
-          <Route path="/riskdisclosureguide" element={<RiskDisclosureGuide />} />
+          <Route path="/liquidfunds101" element={<LiquidFunds101 />} />
+          <Route path="/currentaccount" element={<CurrentAccountExplained />} />
+          <Route path="/nav" element={<NavExplained />} />
+          <Route path="/expenseratio" element={<ExpenseRatio />} />
+          <Route path="/exitload" element={<ExitLoadExplained />} />
+          <Route path="/cutofftime" element={<CutoffTimeExplained />} />
+
+          {/* Segment Routes */}
+          <Route path="/idlecashstartups" element={<IdleCashStartups />} />
+          <Route path="/idlecashmsme" element={<IdleCashMSME />} />
+          <Route path="/corporatetreasury" element={<CorporateTreasury />} />
+          <Route path="/wealthfamilyoffice" element={<WealthFamilyOffice />} />
+          <Route path="/nridollarparking" element={<NRIDollarParking />} />
+
+          {/* City Routes */}
+          <Route path="/treasurydelhi" element={<TreasuryDelhi />} />
+          <Route path="/treasurynoida" element={<TreasuryNoida />} />
+          <Route path="/treasurymumbai" element={<TreasuryMumbai />} />
+          <Route path="/treasurypune" element={<TreasuryPune />} />
+          <Route path="/treasurybangalore" element={<TreasuryBangalore />} />
+          <Route path="/treasuryhyderabad" element={<TreasuryHyderabad />} />
+          <Route path="/treasurygurgaon" element={<TreasuryGurgaon />} />
+
+          {/* Use-case Routes */}
+          <Route path="/emergencyfund" element={<EmergencyFund />} />
+          <Route path="/quarterlyplanning" element={<QuarterlyPlanning />} />
+          <Route path="/taxoptimization" element={<TaxOptimization />} />
+          <Route path="/liquidityplanning" element={<LiquidityPlanning />} />
+          <Route path="/freelancerbusiness" element={<FreelancerBusiness />} />
+          <Route path="/projectbased" element={<ProjectBasedBusiness />} />
         </Routes>
         <Footer />
         <WhatsAppButton />
