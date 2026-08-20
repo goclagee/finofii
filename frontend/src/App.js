@@ -16,25 +16,6 @@ import NavCalculator from "@/pages/NavCalculator";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import TreasuryVsCurrentAccount from "@/pages/TreasuryVsCurrentAccount";
-import WhatIsTreasury from "@/pages/WhatIsTreasury";
-import UnderstandingNAV from "@/pages/UnderstandingNAV";
-import UnderstandingLiquidFunds from "@/pages/UnderstandingLiquidFunds";
-import ComparisonCurrentAccount from "@/pages/ComparisonCurrentAccount";
-import TermsAndConditions from "@/pages/TermsAndConditions";
-import IdleCashStartups from "@/pages/IdleCashStartups";
-import IdleCashMSMEs from "@/pages/IdleCashMSMEs";
-import TreasuryCorporates from "@/pages/TreasuryCorporates";
-import WealthFamilyOffices from "@/pages/WealthFamilyOffices";
-import TreasuryDelhi from "@/pages/TreasuryDelhi";
-import TreasuryBangalore from "@/pages/TreasuryBangalore";
-import TreasuryMumbai from "@/pages/TreasuryMumbai";
-import TreasuryPune from "@/pages/TreasuryPune";
-import TreasuryHyderabad from "@/pages/TreasuryHyderabad";
-import EmergencyFundPlanning from "@/pages/EmergencyFundPlanning";
-import QuarterlyPlanning from "@/pages/QuarterlyPlanning";
-import TaxOptimization from "@/pages/TaxOptimization";
-import LiquidityPlanning from "@/pages/LiquidityPlanning";
 
 // ✅ NEW: All comparison pages from ComparisonPages.js (ICICI-grade design)
 import {
@@ -182,10 +163,6 @@ function App() {
                   <Route path="/navcalculator" element={<NavCalculator />} />
                   <Route path="/riskdisclosureguide" element={<RiskDisclosureGuide />} />
                   <Route path="/termsandconditions" element={<TermsAndConditions />} />
-                  <Route path="/idlecashmsmes" element={<IdleCashMSMEs />} />
-                  <Route path="/treasurycorporates" element={<TreasuryCorporates />} />
-                  <Route path="/wealthfamilyoffices" element={<WealthFamilyOffices />} />
-                  <Route path="/emergencyfundplanning" element={<EmergencyFundPlanning />} />
         </Routes>
         <Footer />
         <WhatsAppButton />
