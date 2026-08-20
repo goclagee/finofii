@@ -16,7 +16,6 @@ import NavCalculator from "@/pages/NavCalculator";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import TreasuryVsFD from "@/pages/TreasuryVsFD";
 import TreasuryVsSIP from "@/pages/TreasuryVsSIP";
 import TreasuryVsCurrentAccount from "@/pages/TreasuryVsCurrentAccount";
 import WhatIsTreasury from "@/pages/WhatIsTreasury";
@@ -38,7 +37,7 @@ import QuarterlyPlanning from "@/pages/QuarterlyPlanning";
 import TaxOptimization from "@/pages/TaxOptimization";
 import LiquidityPlanning from "@/pages/LiquidityPlanning";
 
-// Comparison Pages
+// ✅ NEW: All comparison pages from ComparisonPages.js (ICICI-grade design)
 import {
   TreasuryVsFD,
   TreasuryVsSIP,
