@@ -16,7 +16,6 @@ import NavCalculator from "@/pages/NavCalculator";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import TreasuryVsSIP from "@/pages/TreasuryVsSIP";
 import TreasuryVsCurrentAccount from "@/pages/TreasuryVsCurrentAccount";
 import WhatIsTreasury from "@/pages/WhatIsTreasury";
 import UnderstandingNAV from "@/pages/UnderstandingNAV";
