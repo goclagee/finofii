@@ -1,4 +1,4 @@
-/* FINOFII BRAND PAGES — Montserrat + Groww/ClearTax Style */
+/* FINOFII BRAND PAGES — ICICI/Axis Grade: Montserrat + Navy/Teal Design System */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
@@ -13,10 +13,14 @@
   /* Extended Palette */
   --fino-bg-light: #F8FAFC;
   --fino-bg-lighter: #F1F5F9;
+  --fino-teal-light: #E0F9F6;
+  --fino-blue-light: #E0F1F8;
   --fino-border: #E2E8F0;
   --fino-text-primary: #1B3A5C;
   --fino-text-secondary: #475569;
   --fino-text-tertiary: #94A3B8;
+  --fino-success: #10B981;
+  --fino-danger: #EF4444;
   
   /* Spacing */
   --fino-spacing-xs: 4px;
@@ -130,7 +134,7 @@ ul li:before {
   margin-left: calc(-1 * var(--fino-spacing-2xl));
 }
 
-/* TABLES */
+/* TABLES — ICICI Standard */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -138,24 +142,59 @@ table {
   background: var(--fino-bg-light);
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 2px 8px rgba(27, 58, 92, 0.06);
 }
 
 th {
-  background: var(--fino-navy);
+  background: linear-gradient(90deg, var(--fino-navy) 0%, var(--fino-deep-blue) 100%);
   color: var(--fino-white);
   font-weight: 700;
-  padding: var(--fino-spacing-lg);
+  padding: var(--fino-spacing-lg) var(--fino-spacing-xl);
   text-align: left;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  border-left: 4px solid var(--fino-teal);
+}
+
+th:first-child {
+  border-left: none;
 }
 
 td {
-  padding: var(--fino-spacing-lg);
+  padding: var(--fino-spacing-lg) var(--fino-spacing-xl);
   border-bottom: 1px solid var(--fino-border);
   color: var(--fino-text-primary);
+  font-weight: 500;
 }
 
-tr:nth-child(even) {
-  background: var(--fino-bg-lighter);
+/* Alternating row colors */
+tbody tr:nth-child(odd) {
+  background: var(--fino-white);
+}
+
+tbody tr:nth-child(even) {
+  background: var(--fino-teal-light);
+}
+
+tbody tr:hover {
+  background: var(--fino-blue-light);
+}
+
+/* Table icons and checkmarks */
+.table-icon {
+  display: inline-block;
+  margin-right: var(--fino-spacing-sm);
+  font-size: 1.1em;
+}
+
+.check-mark {
+  color: var(--fino-success);
+  font-weight: bold;
+}
+
+.cross-mark {
+  color: var(--fino-danger);
+  font-weight: bold;
 }
 
 /* CARDS */
@@ -251,9 +290,196 @@ tr:nth-child(even) {
   border-left: 4px solid var(--fino-teal);
 }
 
+/* TRUST BADGES — Top of Page (ICICI/SEBI Style) */
+.trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--fino-spacing-md);
+  margin-bottom: var(--fino-spacing-2xl);
+  justify-content: center;
+  align-items: center;
+}
+
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--fino-spacing-sm);
+  background: var(--fino-bg-lighter);
+  padding: var(--fino-spacing-sm) var(--fino-spacing-lg);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--fino-navy);
+  border: 1px solid var(--fino-teal);
+}
+
+.trust-badge-icon {
+  font-size: 1.1em;
+}
+
+/* READING TIME */
+.reading-time {
+  display: flex;
+  gap: var(--fino-spacing-sm);
+  align-items: center;
+  color: var(--fino-text-tertiary);
+  font-size: 0.9rem;
+  margin-bottom: var(--fino-spacing-lg);
+  font-weight: 500;
+}
+
+/* STAT CARD — Real Examples with ₹ Numbers */
+.stat-card {
+  background: linear-gradient(135deg, var(--fino-teal-light) 0%, var(--fino-blue-light) 100%);
+  border-radius: 12px;
+  padding: var(--fino-spacing-2xl);
+  margin: var(--fino-spacing-xl) 0 var(--fino-spacing-2xl);
+  border: 2px solid var(--fino-teal);
+  box-shadow: 0 4px 12px rgba(61, 212, 176, 0.15);
+}
+
+.stat-card h3 {
+  color: var(--fino-navy);
+  margin-bottom: var(--fino-spacing-lg);
+}
+
+.stat-example {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--fino-spacing-xl);
+  margin: var(--fino-spacing-lg) 0;
+}
+
+.stat-item {
+  background: var(--fino-white);
+  padding: var(--fino-spacing-lg);
+  border-radius: 8px;
+  text-align: center;
+  border-left: 4px solid var(--fino-navy);
+}
+
+.stat-item.winner {
+  border-left-color: var(--fino-teal);
+  background: var(--fino-teal-light);
+}
+
+.stat-amount {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--fino-navy);
+  margin: var(--fino-spacing-md) 0;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--fino-text-secondary);
+  font-weight: 600;
+}
+
+.stat-comparison {
+  background: var(--fino-white);
+  padding: var(--fino-spacing-lg);
+  border-radius: 8px;
+  text-align: center;
+  border-top: 3px solid var(--fino-success);
+  margin-top: var(--fino-spacing-lg);
+}
+
+.stat-diff {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--fino-success);
+}
+
+.stat-diff-label {
+  font-size: 0.85rem;
+  color: var(--fino-text-secondary);
+  margin-top: var(--fino-spacing-sm);
+}
+
+/* WHO SHOULD CHOOSE */
+.who-should-choose {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--fino-spacing-xl);
+  margin: var(--fino-spacing-2xl) 0;
+}
+
+.choose-option {
+  background: var(--fino-bg-light);
+  border: 2px solid var(--fino-border);
+  border-radius: 12px;
+  padding: var(--fino-spacing-xl);
+  transition: all 0.3s ease;
+}
+
+.choose-option:hover {
+  border-color: var(--fino-teal);
+  box-shadow: 0 8px 16px rgba(61, 212, 176, 0.2);
+}
+
+.choose-option h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--fino-navy);
+  margin-bottom: var(--fino-spacing-md);
+  display: flex;
+  align-items: center;
+  gap: var(--fino-spacing-sm);
+}
+
+.choose-option ul {
+  margin: 0;
+  padding-left: var(--fino-spacing-lg);
+}
+
+.choose-option li {
+  margin-bottom: var(--fino-spacing-sm);
+  font-size: 0.95rem;
+}
+
+/* OPENING CONTEXT */
+.context-paragraph {
+  font-size: 1.05rem;
+  color: var(--fino-text-secondary);
+  line-height: 1.8;
+  font-weight: 500;
+  margin-bottom: var(--fino-spacing-xl);
+  padding: var(--fino-spacing-lg);
+  background: var(--fino-bg-lighter);
+  border-left: 4px solid var(--fino-teal);
+  border-radius: 4px;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
   h1 { font-size: 1.8rem; }
   h2 { font-size: 1.4rem; }
   .page { padding: var(--fino-spacing-xl) var(--fino-spacing-lg); }
   .btn, a.btn { width: 100%; text-align: center; }
+  
+  .trust-badges {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .trust-badge {
+    justify-content: center;
+  }
+  
+  .stat-example {
+    grid-template-columns: 1fr;
+  }
+  
+  .who-should-choose {
+    grid-template-columns: 1fr;
+  }
+  
+  table {
+    font-size: 0.9rem;
+  }
+  
+  th, td {
+    padding: var(--fino-spacing-md) var(--fino-spacing-sm);
+  }
 }
