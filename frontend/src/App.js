@@ -89,6 +89,14 @@ import {
   ProjectBasedBusiness,
 } from "@/pages/UseCasePages";
 
+// New Pages (added today)
+import {
+  TreasuryVsInsurance,
+  CollegeFundPlanning,
+  RetirementPlanning,
+  InternationalTreasury,
+} from "@/pages/NewPages";
+
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -160,6 +168,13 @@ function App() {
           <Route path="/liquidityplanning" element={<LiquidityPlanning />} />
           <Route path="/freelancerbusiness" element={<FreelancerBusiness />} />
           <Route path="/projectbased" element={<ProjectBasedBusiness />} />
+
+          {/* New Pages (Today) */}
+          <Route path="/treasuryvsinsurance" element={<TreasuryVsInsurance />} />
+          <Route path="/collegefund" element={<CollegeFundPlanning />} />
+          <Route path="/retirementplanning" element={<RetirementPlanning />} />
+          <Route path="/internationaltreasury" element={<InternationalTreasury />} />
+
                   <Route path="/treasuryvsca" element={<TreasuryVsCurrentAccount />} />
                   <Route path="/understandingnav" element={<UnderstandingNAV />} />
                   <Route path="/understandingliquidfunds" element={<UnderstandingLiquidFunds />} />
