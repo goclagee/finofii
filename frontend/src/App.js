@@ -26,8 +26,6 @@ import TermsAndConditions from "@/pages/TermsAndConditions";
 
 // ✅ NEW: All comparison pages from ComparisonPages.js (ICICI-grade design)
 import {
-  TreasuryVsFD as TreasuryVsFDComparison,
-  TreasuryVsSIP as TreasuryVsSIPComparison,
   TreasuryVsSavings,
   TreasuryVsDebt,
   TreasuryVsEquity,
@@ -163,17 +161,12 @@ function App() {
           <Route path="/retirementplanning" element={<RetirementPlanning />} />
           <Route path="/internationaltreasury" element={<InternationalTreasury />} />
 
-                  <Route path="/treasuryvsca" element={<TreasuryVsCurrentAccount />} />
-                  <Route path="/understandingnav" element={<UnderstandingNAV />} />
-                  <Route path="/understandingliquidfunds" element={<UnderstandingLiquidFunds />} />
-                  <Route path="/comparisoncurrentaccount" element={<ComparisonCurrentAccount />} />
-                  <Route path="/navcalculator" element={<NavCalculator />} />
-                  <Route path="/riskdisclosureguide" element={<RiskDisclosureGuide />} />
-                  <Route path="/termsandconditions" element={<TermsAndConditions />} />
-                  <Route path="/idlecashmsmes" element={<IdleCashMSMEs />} />
-                  <Route path="/treasurycorporates" element={<TreasuryCorporates />} />
-                  <Route path="/wealthfamilyoffices" element={<WealthFamilyOffices />} />
-                  <Route path="/emergencyfundplanning" element={<EmergencyFundPlanning />} />
+          {/* Legacy routes */}
+          <Route path="/treasuryvsca" element={<TreasuryVsCurrentAccount />} />
+          <Route path="/understandingnav" element={<UnderstandingNAV />} />
+          <Route path="/understandingliquidfunds" element={<UnderstandingLiquidFunds />} />
+          <Route path="/comparisoncurrentaccount" element={<ComparisonCurrentAccount />} />
+          <Route path="/termsandconditions" element={<TermsAndConditions />} />
         </Routes>
         <Footer />
         <WhatsAppButton />
