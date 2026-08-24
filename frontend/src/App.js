@@ -19,29 +19,15 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import TreasuryVsFD from "@/pages/TreasuryVsFD";
 import TreasuryVsSIP from "@/pages/TreasuryVsSIP";
 import TreasuryVsCurrentAccount from "@/pages/TreasuryVsCurrentAccount";
-import WhatIsTreasury from "@/pages/WhatIsTreasury";
 import UnderstandingNAV from "@/pages/UnderstandingNAV";
 import UnderstandingLiquidFunds from "@/pages/UnderstandingLiquidFunds";
 import ComparisonCurrentAccount from "@/pages/ComparisonCurrentAccount";
 import TermsAndConditions from "@/pages/TermsAndConditions";
-import IdleCashStartups from "@/pages/IdleCashStartups";
-import IdleCashMSMEs from "@/pages/IdleCashMSMEs";
-import TreasuryCorporates from "@/pages/TreasuryCorporates";
-import WealthFamilyOffices from "@/pages/WealthFamilyOffices";
-import TreasuryDelhi from "@/pages/TreasuryDelhi";
-import TreasuryBangalore from "@/pages/TreasuryBangalore";
-import TreasuryMumbai from "@/pages/TreasuryMumbai";
-import TreasuryPune from "@/pages/TreasuryPune";
-import TreasuryHyderabad from "@/pages/TreasuryHyderabad";
-import EmergencyFundPlanning from "@/pages/EmergencyFundPlanning";
-import QuarterlyPlanning from "@/pages/QuarterlyPlanning";
-import TaxOptimization from "@/pages/TaxOptimization";
-import LiquidityPlanning from "@/pages/LiquidityPlanning";
 
 // ✅ NEW: All comparison pages from ComparisonPages.js (ICICI-grade design)
 import {
-  TreasuryVsFD,
-  TreasuryVsSIP,
+  TreasuryVsFD as TreasuryVsFDComparison,
+  TreasuryVsSIP as TreasuryVsSIPComparison,
   TreasuryVsSavings,
   TreasuryVsDebt,
   TreasuryVsEquity,
