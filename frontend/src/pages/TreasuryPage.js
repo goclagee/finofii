@@ -361,7 +361,6 @@ const TreasuryPage = () => {
                   { src: "/amc-logos/Tata_Mutual_Fund.avif", name: "Tata MF" },
                   { src: "/amc-logos/Motilal_Oswal_Mutual_Fund.jpg", name: "Motilal Oswal" },
                   { src: "/amc-logos/HSBC_Mutual_Fund.svg", name: "HSBC MF" },
-                  { src: "/amc-logos/Bandhan_Mutual_Fund.svg", name: "Bandhan MF" },
                   { src: "/amc-logos/Sundaram_Mutual_Fund.svg", name: "Sundaram MF" },
                   { src: "/amc-logos/Edelweiss_Mutual_Fund.svg", name: "Edelweiss MF" },
                   { src: "/amc-logos/Canara_Robeco_Mutual_Fund.png", name: "Canara Robeco" },
