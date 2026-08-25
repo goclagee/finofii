@@ -1,0 +1,11 @@
+Options -MultiViews
+RewriteEngine On
+RewriteBase /
+
+# Bypass URL rewrite for the /api folder so Apache runs the PHP script directly
+RewriteRule ^api/ - [L,NC]
+
+# Route all other non-file/non-folder requests to index.html for React Router
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
