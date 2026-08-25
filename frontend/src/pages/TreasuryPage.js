@@ -141,39 +141,40 @@ const TreasuryPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] flex items-center overflow-hidden" data-testid="treasury-hero">
-        {/* Background Image */}
+      <section className="relative bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-900 py-32 md:py-40 overflow-hidden" data-testid="treasury-hero">
         <div className="absolute inset-0">
-          <img src="/treasury-hero.png" alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-transparent"></div>
+          <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-blue-500/10 rounded-full filter blur-[120px]"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-amber-500/10 rounded-full filter blur-[100px]"></div>
         </div>
-        
-        <div className="relative z-10 py-20 pl-8 sm:pl-16 lg:pl-24 xl:pl-32">
-          <div className="max-w-lg">
-            <span className="inline-block px-4 py-1.5 bg-amber-500/20 border border-amber-400/30 text-amber-300 text-xs font-bold rounded-full uppercase tracking-wider mb-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center">
+            <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-sm border border-white/20 text-xs font-bold rounded-full uppercase tracking-wider mb-6" style={{ color: '#bfdbfe' }}>
               Treasury Management
             </span>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-[1.05] text-left">
+            <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 72px)', color: '#ffffff' }} className="font-extrabold mb-6 leading-[0.95] tracking-tighter">
               Monetise Your<br />
-              <span className="text-amber-400">Current Account</span>
+              <span className="bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent">
+                Current Account
+              </span>
             </h1>
-            <p className="text-2xl text-amber-300/90 mb-4 font-semibold italic text-left">
+            <p className="text-2xl mb-4 max-w-3xl mx-auto font-semibold italic" style={{ color: '#fcd34d' }}>
               "Higher Interest is in Your Best Interest"
             </p>
-            <p className="text-lg text-gray-300 mb-8 leading-relaxed text-left">
-              Work and optimize treasury like bigger corporates do for operational excellence. Get up to 7%* annually on idle cash with T+1 liquidity.
+            <p className="text-lg mb-10 max-w-3xl mx-auto" style={{ color: 'rgba(191, 219, 254, 0.7)' }}>
+              Get up to 7%* annually on idle cash | T+1 Liquidity | ₹2,800 Cr Investments | 1,000+ Businesses Trust Us
             </p>
-            <div className="flex flex-wrap gap-4 items-center justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="https://platform.finofii.com/app/#/login"
-                className="px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-lg font-bold text-lg hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg shadow-amber-500/30"
+                className="px-10 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-lg font-bold text-lg hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg shadow-amber-500/30 hover:shadow-amber-500/50 transform hover:scale-[1.02]"
               >
                 Start Earning Today
               </a>
-              <div className="px-6 py-3 bg-white/10 backdrop-blur border border-white/20 rounded-lg text-white font-semibold">
+              <div className="px-10 py-4 bg-white/10 backdrop-blur-sm rounded-lg font-semibold text-lg border border-white/30" style={{ color: '#ffffff' }}>
                 Min Investment: ₹1 Crore
               </div>
             </div>
+            <p className="text-xs mt-6" style={{ color: 'rgba(191, 219, 254, 0.5)' }}>*Based on 6-month liquid fund average returns</p>
           </div>
         </div>
       </section>

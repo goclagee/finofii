@@ -202,19 +202,41 @@ const FamilyOfficePage = () => {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section
-        className="bg-gradient-to-r from-amber-600 to-orange-700 text-white py-20"
+        className="relative bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-900 py-32 md:py-40 overflow-hidden"
         data-testid="mfo-hero"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-blue-500/10 rounded-full filter blur-[120px]"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-amber-500/10 rounded-full filter blur-[100px]"></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-sm border border-white/20 text-xs font-bold rounded-full uppercase tracking-wider mb-6" style={{ color: '#bfdbfe' }}>
               Multi-Family Office
+            </span>
+            <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 72px)', color: '#ffffff' }} className="font-extrabold mb-6 leading-[0.95] tracking-tighter">
+              Multi-Family <span className="bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent">Office</span>
             </h1>
-            <p className="text-2xl md:text-3xl text-amber-100 max-w-4xl mx-auto mb-8 font-light leading-relaxed">
+            <p className="text-lg md:text-xl mb-5 max-w-4xl mx-auto font-light tracking-wide" style={{ color: 'rgba(191, 219, 254, 0.8)' }}>
               Helping you and your family define and achieve your evolving objectives.
             </p>
-            <div className="inline-block bg-white text-amber-600 px-8 py-4 rounded-xl font-semibold text-lg shadow-xl">
+            <p className="text-2xl mb-10 max-w-3xl mx-auto font-semibold italic" style={{ color: '#fcd34d' }}>
               Minimum Net Worth: ₹25 Crores
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://platform.finofii.com/app/#/login"
+                className="px-10 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-lg font-bold text-lg hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg shadow-amber-500/30 hover:shadow-amber-500/50 transform hover:scale-[1.02]"
+              >
+                Get Started
+              </a>
+              <a
+                href="#contact"
+                onClick={(e) => { e.preventDefault(); if (window.Calendly) window.Calendly.initPopupWidget({url: 'https://calendly.com/ms--165'}); }}
+                className="px-10 py-4 bg-white/10 backdrop-blur-sm rounded-lg font-semibold text-lg border border-white/30 hover:bg-white/20 transition-all" style={{ color: '#ffffff' }}
+              >
+                Schedule Consultation
+              </a>
             </div>
           </div>
         </div>

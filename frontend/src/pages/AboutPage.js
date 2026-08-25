@@ -173,46 +173,40 @@ export default function AboutPage() {
 
   return (
     <>
-      {/* HERO — royal blue gradient with serif italic accent */}
-      <section className="relative fino-deep-gradient text-white overflow-hidden text-luxury" data-testid="about-hero">
-        <div className="absolute inset-0 dot-grid opacity-50" />
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute -left-32 -top-32 w-[28rem] h-[28rem] rounded-full bg-blue-600 blur-3xl opacity-40" />
-          <div className="absolute right-0 bottom-0 w-[28rem] h-[28rem] rounded-full bg-indigo-700 blur-3xl opacity-40" />
+      {/* HERO — matching homepage style */}
+      <section className="relative bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-900 py-32 md:py-40 overflow-hidden" data-testid="about-hero">
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-blue-500/10 rounded-full filter blur-[120px]"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-amber-500/10 rounded-full filter blur-[100px]"></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-5 lg:px-8 pt-24 pb-24 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur text-xs font-bold tracking-widest uppercase mb-8">
-            <Sparkles size={14} className="text-amber-400" /> About Finofii · Asset Manager Led
-          </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-sm border border-white/20 text-xs font-bold rounded-full uppercase tracking-wider mb-6" style={{ color: '#bfdbfe' }}>
+            About Finofii · Asset Manager Led
+          </span>
 
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] max-w-5xl mx-auto">
-            India's Premier <br className="hidden md:block" />
-            <span className="amber-italic font-bold">Asset Manager-Led</span> <br className="hidden md:block" />
-            Treasury &amp; Wealth Platform
+          <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 72px)', color: '#ffffff' }} className="font-extrabold mb-6 leading-[0.95] tracking-tighter max-w-5xl mx-auto">
+            India's Premier<br />
+            <span className="bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent">Asset Manager-Led</span><br />
+            Treasury & Wealth Platform
           </h1>
 
-          <p className="font-serif-display text-amber-400 text-xl md:text-2xl mt-7 italic">
+          <p className="text-2xl mb-4 max-w-3xl mx-auto font-semibold italic" style={{ color: '#fcd34d' }}>
             "Built by Asset Managers. Backed by ₹10 Lakh Crore of Experience."
           </p>
 
-          <p className="mt-8 text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
-            Finofii was founded on a simple conviction: every Indian business — from a first-year
-            startup to a 50-year family enterprise — deserves the same calibre of treasury,
-            wealth and capital advice that the largest institutions have always enjoyed. We've put
-            <span className="text-amber-400 font-semibold"> 130+ years of combined asset management experience </span>
-            behind a single, beautifully simple platform — and we're humbled that
-            <span className="text-amber-400 font-semibold"> ₹2,500 Crore+ </span>
-            has already moved through it.
+          <p className="text-lg mb-10 max-w-3xl mx-auto" style={{ color: 'rgba(191, 219, 254, 0.7)' }}>
+            130+ years of combined asset management experience behind a single platform — ₹2,500 Crore+ already moved through it.
           </p>
 
-          <div className="mt-10 flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap justify-center gap-3">
             {trustSignals.map((t) => (
               <span
                 key={t.label}
                 className="inline-flex items-center gap-2 bg-white/10 border border-white/20 backdrop-blur rounded-full px-4 py-2 text-xs font-semibold"
+                style={{ color: '#ffffff' }}
               >
-                <span className="text-amber-400">{t.icon}</span>
+                <span style={{ color: '#fbbf24' }}>{t.icon}</span>
                 {t.label}
               </span>
             ))}

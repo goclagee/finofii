@@ -163,22 +163,43 @@ const FoundersPage = () => {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section
-        className="bg-gradient-to-r from-purple-600 to-pink-700 text-white py-20"
+        className="relative bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-900 py-32 md:py-40 overflow-hidden"
         data-testid="founders-hero"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-blue-500/10 rounded-full filter blur-[120px]"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-amber-500/10 rounded-full filter blur-[100px]"></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <div className="inline-block mb-4 px-6 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-semibold uppercase tracking-wider">
-              ⚡ Invitation-Only Investment Platform
-            </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Founders Wealth</h1>
-            <p className="text-xl md:text-2xl text-purple-100 max-w-3xl mx-auto mb-8">
+            <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-sm border border-white/20 text-xs font-bold rounded-full uppercase tracking-wider mb-6" style={{ color: '#bfdbfe' }}>
+              Invitation-Only Investment Platform
+            </span>
+            <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 72px)', color: '#ffffff' }} className="font-extrabold mb-6 leading-[0.95] tracking-tighter">
+              Founders <span className="bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent">Wealth</span>
+            </h1>
+            <p className="text-lg md:text-xl mb-5 max-w-4xl mx-auto font-light tracking-wide" style={{ color: 'rgba(191, 219, 254, 0.8)' }}>
               Access to Curated Equity Investment Opportunities Reserved for Select Investors
             </p>
-            <div className="inline-block bg-gradient-to-r from-amber-400 to-orange-400 text-gray-900 px-8 py-4 rounded-xl font-bold text-xl shadow-2xl">
+            <p className="text-2xl mb-10 max-w-3xl mx-auto font-semibold italic" style={{ color: '#fcd34d' }}>
               Starts from ₹1 Crore
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://platform.finofii.com/app/#/login"
+                className="px-10 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-lg font-bold text-lg hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg shadow-amber-500/30 hover:shadow-amber-500/50 transform hover:scale-[1.02]"
+              >
+                Start Investing
+              </a>
+              <a
+                href="#contact"
+                onClick={(e) => { e.preventDefault(); if (window.Calendly) window.Calendly.initPopupWidget({url: 'https://calendly.com/ms--165'}); }}
+                className="px-10 py-4 bg-white/10 backdrop-blur-sm rounded-lg font-semibold text-lg border border-white/30 hover:bg-white/20 transition-all" style={{ color: '#ffffff' }}
+              >
+                Book a Call
+              </a>
             </div>
-            <p className="mt-6 text-purple-200 text-sm max-w-2xl mx-auto">
+            <p className="mt-6 text-sm max-w-2xl mx-auto" style={{ color: 'rgba(191, 219, 254, 0.5)' }}>
               Join an exclusive circle of sophisticated investors with dedicated portfolio managers
             </p>
           </div>

@@ -70,95 +70,45 @@ export default function CapitalPage() {
   return (
     <>
       {/* HERO — royal blue */}
-      <section className="relative fino-deep-gradient text-white overflow-hidden text-luxury" data-testid="capital-hero">
-        <div className="absolute inset-0 dot-grid opacity-40" />
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute -right-32 top-0 w-[28rem] h-[28rem] rounded-full bg-amber-500/20 blur-3xl" />
-          <div className="absolute left-0 -bottom-32 w-96 h-96 rounded-full bg-violet-700 blur-3xl opacity-40" />
+      <section className="relative bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-900 py-32 md:py-40 overflow-hidden" data-testid="capital-hero">
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-blue-500/10 rounded-full filter blur-[120px]"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-amber-500/10 rounded-full filter blur-[100px]"></div>
         </div>
-        <div className="relative max-w-7xl mx-auto px-5 lg:px-8 pt-20 pb-24">
-          <div className="grid lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-7">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur text-xs font-bold tracking-widest uppercase mb-7">
-                <Sparkles size={14} className="text-amber-400" /> Finofiii Capital · Lending Marketplace
-              </div>
-              <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05]">
-                The right <span className="amber-italic">capital,</span><br className="hidden md:block" />
-                at the right stage.
-              </h1>
-              <p className="font-serif-display text-amber-400 text-xl md:text-2xl mt-5 italic">
-                "Capital that fits your business — not the other way around."
-              </p>
-              <p className="mt-6 text-lg text-white/80 max-w-xl leading-relaxed">
-                From personal &amp; home loans to working capital, SME credit, venture debt and
-                private equity — Finofiii Capital connects you to{" "}
-                <span className="text-amber-400 font-semibold">50+ lenders</span> and capital
-                partners through a single application.{" "}
-                <span className="text-amber-400 font-semibold">₹2,500 Cr+</span> already moved.
-              </p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <a
-                  href="#products"
-                  className="fino-amber-pill px-6 py-3.5 rounded-full font-bold text-sm flex items-center gap-2"
-                  data-testid="capital-explore-cta"
-                >
-                  Explore products <ChevronRight size={16} />
-                </a>
-                <button
-                  onClick={() => {
-                    setSelected({ name: "Get Eligibility Check" });
-                    setOpen(true);
-                  }}
-                  data-testid="capital-eligibility-cta"
-                  className="fino-ghost-btn px-6 py-3.5 rounded-full font-bold text-sm"
-                >
-                  Check eligibility
-                </button>
-              </div>
-            </div>
-
-            {/* EMI Calc */}
-            <div className="lg:col-span-5 text-slate-900">
-              <div className="bg-white text-[var(--fino-ink)] rounded-3xl shadow-2xl p-6 md:p-7" data-testid="emi-calculator">
-                <div className="flex items-center gap-2">
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 text-white grid place-items-center">
-                    <Calculator size={18} />
-                  </div>
-                  <h3 className="font-display text-xl font-bold">EMI Calculator</h3>
-                </div>
-
-                <Slider label="Loan Amount" value={`₹ ${amount.toLocaleString("en-IN")}`} min={50000} max={50000000} step={50000} val={amount} onChange={setAmount} testId="emi-amount" />
-                <Slider label="Interest Rate (p.a.)" value={`${rate.toFixed(2)} %`} min={6} max={20} step={0.05} val={rate} onChange={setRate} testId="emi-rate" />
-                <Slider label="Tenure" value={`${tenure} months`} min={6} max={360} step={6} val={tenure} onChange={setTenure} testId="emi-tenure" />
-
-                <div className="mt-5 pt-5 border-t border-[var(--fino-line)]">
-                  <div className="grid grid-cols-3 gap-3 text-center">
-                    <div>
-                      <div className="text-[10px] uppercase tracking-wider text-[var(--fino-ink-soft)] font-bold">Monthly EMI</div>
-                      <div className="font-display text-xl font-bold stat-amber mt-1">₹{emi.emi.toLocaleString("en-IN")}</div>
-                    </div>
-                    <div>
-                      <div className="text-[10px] uppercase tracking-wider text-[var(--fino-ink-soft)] font-bold">Total Interest</div>
-                      <div className="font-display text-base font-bold stat-blue mt-1">₹{(emi.interest / 100000).toFixed(2)}L</div>
-                    </div>
-                    <div>
-                      <div className="text-[10px] uppercase tracking-wider text-[var(--fino-ink-soft)] font-bold">Total Payable</div>
-                      <div className="font-display text-base font-bold stat-green mt-1">₹{(emi.total / 100000).toFixed(2)}L</div>
-                    </div>
-                  </div>
-                </div>
-
-                <button
-                  onClick={() => {
-                    setSelected({ name: "Best Loan Match" });
-                    setOpen(true);
-                  }}
-                  data-testid="emi-apply-cta"
-                  className="mt-5 w-full fino-amber-pill py-3.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2"
-                >
-                  Apply for this loan <ChevronRight size={16} />
-                </button>
-              </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center">
+            <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-sm border border-white/20 text-xs font-bold rounded-full uppercase tracking-wider mb-6" style={{ color: '#bfdbfe' }}>
+              Finofiii Capital · Lending Marketplace
+            </span>
+            <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 72px)', color: '#ffffff' }} className="font-extrabold mb-6 leading-[0.95] tracking-tighter">
+              The Right <span className="bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent">Capital,</span><br />
+              At The Right Stage.
+            </h1>
+            <p className="text-2xl mb-4 max-w-3xl mx-auto font-semibold italic" style={{ color: '#fcd34d' }}>
+              "Capital that fits your business — not the other way around."
+            </p>
+            <p className="text-lg mb-10 max-w-3xl mx-auto" style={{ color: 'rgba(191, 219, 254, 0.7)' }}>
+              From personal & home loans to working capital, SME credit, venture debt and private equity — 50+ lenders | ₹2,500 Cr+ transacted | Starting at 8.35% p.a.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="#products"
+                className="px-10 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-lg font-bold text-lg hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg shadow-amber-500/30 hover:shadow-amber-500/50 transform hover:scale-[1.02]"
+                data-testid="capital-explore-cta"
+              >
+                Explore Products
+              </a>
+              <button
+                onClick={() => {
+                  setSelected({ name: "Get Eligibility Check" });
+                  setOpen(true);
+                }}
+                data-testid="capital-eligibility-cta"
+                className="px-10 py-4 bg-white/10 backdrop-blur-sm rounded-lg font-semibold text-lg border border-white/30 hover:bg-white/20 transition-all"
+                style={{ color: '#ffffff' }}
+              >
+                Check Eligibility
+              </button>
             </div>
           </div>
         </div>
