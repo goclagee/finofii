@@ -348,16 +348,32 @@ const TreasuryPage = () => {
         {/* Infinite scroll slider */}
         <div className="relative overflow-hidden">
           <div className="flex animate-scroll gap-12 items-center">
-            {[...Array(4)].map((_, setIdx) => (
+            {[...Array(3)].map((_, setIdx) => (
               <div key={setIdx} className="flex gap-12 items-center shrink-0">
                 {[
-                  { src: "/mf1.png", name: "HDFC MF" },
-                  { src: "/mf2.jpeg", name: "SBI MF" },
-                  { src: "/mf3.png", name: "ICICI Prudential" },
-                  { src: "/mf4.png", name: "Axis MF" },
-                  { src: "/mf5.webp", name: "Kotak MF" },
-                  { src: "/mf6.png", name: "Nippon India" },
-                  { src: "/mf7.png", name: "Aditya Birla" },
+                  { src: "/amc-logos/SBI_Mutual_Fund.svg", name: "SBI MF" },
+                  { src: "/amc-logos/ICICI_Prudential_Mutual_Fund.jpg", name: "ICICI Prudential" },
+                  { src: "/amc-logos/Axis_Mutual_Fund.svg", name: "Axis MF" },
+                  { src: "/amc-logos/Nippon_India_Mutual_Fund.webp", name: "Nippon India" },
+                  { src: "/amc-logos/Aditya_Birla_Sun_Life_Mutual_Fund.webp", name: "Aditya Birla Sun Life" },
+                  { src: "/amc-logos/DSP_Mutual_Fund.svg", name: "DSP MF" },
+                  { src: "/amc-logos/Mirae_Asset_Mutual_Fund.png", name: "Mirae Asset" },
+                  { src: "/amc-logos/Tata_Mutual_Fund.avif", name: "Tata MF" },
+                  { src: "/amc-logos/Motilal_Oswal_Mutual_Fund.jpg", name: "Motilal Oswal" },
+                  { src: "/amc-logos/HSBC_Mutual_Fund.svg", name: "HSBC MF" },
+                  { src: "/amc-logos/Bandhan_Mutual_Fund.svg", name: "Bandhan MF" },
+                  { src: "/amc-logos/Sundaram_Mutual_Fund.svg", name: "Sundaram MF" },
+                  { src: "/amc-logos/Edelweiss_Mutual_Fund.svg", name: "Edelweiss MF" },
+                  { src: "/amc-logos/Canara_Robeco_Mutual_Fund.png", name: "Canara Robeco" },
+                  { src: "/amc-logos/Baroda_BNP_Paribas_Mutual_Fund.png", name: "Baroda BNP Paribas" },
+                  { src: "/amc-logos/LIC_Mutual_Fund.png", name: "LIC MF" },
+                  { src: "/amc-logos/PPFAS_Mutual_Fund.png", name: "PPFAS MF" },
+                  { src: "/amc-logos/Mahindra_Manulife_Mutual_Fund.png", name: "Mahindra Manulife" },
+                  { src: "/amc-logos/Bank_of_India_Mutual_Fund.png", name: "Bank of India MF" },
+                  { src: "/amc-logos/Union_Mutual_Fund.png", name: "Union MF" },
+                  { src: "/amc-logos/ITI_Mutual_Fund.png", name: "ITI MF" },
+                  { src: "/amc-logos/Helios_Mutual_Fund.png", name: "Helios MF" },
+                  { src: "/amc-logos/quant_Mutual_Fund.png", name: "Quant MF" },
                 ].map((fund, i) => (
                   <div key={i} className="flex flex-col items-center gap-2 group">
                     <div className="w-20 h-20 rounded-full bg-white border-2 border-gray-100 shadow-md flex items-center justify-center overflow-hidden group-hover:border-amber-400 group-hover:shadow-lg transition-all duration-300 group-hover:scale-110">
