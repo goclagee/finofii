@@ -73,12 +73,7 @@ const Footer = () => {
                 <span className="text-gray-600">Sector 135, Noida 201301</span>
               </li>
             </ul>
-            <div className="flex gap-3 mt-3">
-              <a href="https://www.linkedin.com/company/finofii/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-amber-600 text-sm font-bold">in</a>
-              <a href="https://twitter.com/finofii" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-amber-600 text-sm font-bold">X</a>
-              <a href="https://www.instagram.com/finofii" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-amber-600 text-sm font-bold">IG</a>
-              <a href="https://wa.me/919311361888" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-amber-600 text-sm font-bold">WA</a>
-            </div>
+
           </div>
         </div>
 
