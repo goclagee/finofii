@@ -184,7 +184,7 @@ const HomePage = () => {
                   <span className="text-2xl font-bold text-yellow-600">₹1,164</span>
                 </div>
                 <div className="flex justify-between items-center p-4 bg-emerald-50 rounded-lg border-2 border-emerald-400">
-                  <span className="font-semibold text-gray-700">Finofii Liquid</span>
+                  <span className="font-semibold text-gray-700">Finofiii Liquid</span>
                   <span className="text-3xl font-bold text-emerald-600">₹1,850*</span>
                 </div>
               </div>
@@ -353,7 +353,7 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 bg-blue-100 text-blue-700 text-xs font-bold rounded-full uppercase tracking-wider mb-4">Trust & Compliance</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Why India's Elite Choose Finofii</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Why India's Elite Choose Finofiii</h2>
             <p className="text-xl text-gray-500">Regulated. Secure. Transparent.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -432,7 +432,7 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <span className="inline-block px-4 py-1.5 bg-amber-100 text-amber-700 text-xs font-bold rounded-full uppercase tracking-wider mb-4">Simple Process</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">How Finofii Works</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">How Finofiii Works</h2>
             <p className="text-xl text-gray-500 max-w-2xl mx-auto">Start earning in 3 simple steps. No paperwork headaches.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 relative">
@@ -540,8 +540,8 @@ const HomePage = () => {
           </div>
           <div className="space-y-4">
             {[
-              { q: "How does Finofii work?", a: "Finofii invests your idle current account balance in SEBI-regulated liquid and debt mutual funds via BSE StAR MF, generating up to 7%* annually while maintaining T+1 liquidity." },
-              { q: "Is my money safe?", a: "Your money never touches Finofii's account. All investments go directly to SEBI-regulated AMCs through BSE StAR MF execution channel with daily NAV declarations." },
+              { q: "How does Finofiii work?", a: "Finofiii invests your idle current account balance in SEBI-regulated liquid and debt mutual funds via BSE StAR MF, generating up to 7%* annually while maintaining T+1 liquidity." },
+              { q: "Is my money safe?", a: "Your money never touches Finofiii's account. All investments go directly to SEBI-regulated AMCs through BSE StAR MF execution channel with daily NAV declarations." },
               { q: "What's the minimum investment?", a: "Treasury Management starts at ₹1 Crore. Founders Wealth from ₹100 (MFs) to ₹1 Cr (PMS/AIF). Family Office requires ₹25 Cr+ net worth." },
               { q: "How quickly can I withdraw?", a: "Liquid funds offer T+1 liquidity — money back in 1-3 business days. Some schemes offer instant redemption up to ₹50,000." },
               { q: "What are your fees?", a: "No account opening or transaction fees. A small percentage (as low as 0.08%) on monthly treasury positions. Family Office uses a transparent fee-for-service model." },

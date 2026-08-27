@@ -14,7 +14,7 @@ const PrivacyPolicy = () => {
                 1. Introduction
               </h2>
               <p>
-                Finofii Fintech Private Limited ("Finofii", "we", "us", or "our") 
+                Finofiii Fintech Private Limited ("Finofiii", "we", "us", or "our") 
                 is committed to protecting your privacy. This Privacy Policy explains how 
                 we collect, use, disclose, and safeguard your information when you use our 
                 wealth management platform and services.
@@ -149,7 +149,7 @@ const PrivacyPolicy = () => {
               </h2>
               <p className="mb-3">For privacy-related questions or concerns, please contact us at:</p>
               <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                <p><strong>Finofii Fintech Private Limited</strong></p>
+                <p><strong>Finofiii Fintech Private Limited</strong></p>
                 <p>Email: <a href="mailto:care@finofii.com" className="text-blue-600 hover:underline">care@finofii.com</a></p>
                 <p>Phone: <a href="tel:+919311361888" className="text-blue-600 hover:underline">+91 93113 61888</a></p>
                 <p className="mt-2">

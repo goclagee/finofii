@@ -138,14 +138,14 @@ export const TreasuryVsFD = () => (
     </div>
 
     <div className="cta">
-      <p>💡 <strong>Stop leaving ₹30,000+ annually on the table.</strong> Start earning more on your idle cash with Finofii's treasury management platform.</p>
+      <p>💡 <strong>Stop leaving ₹30,000+ annually on the table.</strong> Start earning more on your idle cash with Finofiii's treasury management platform.</p>
       <a href="https://wa.me/919311361888" className="btn btn-whatsapp">
         👉 Schedule Your Free Demo Now
       </a>
     </div>
 
     <div className="compliance">
-      <small><strong>⚖️ Compliance & Disclaimer:</strong> Finofii is registered as an MFD (Mutual Fund Distributor) under ARN-176236 with AMFI and is a BSE Star MF Partner. Returns are based on historical data and market performance; past performance does not guarantee future results. Liquid funds invest in money market instruments and carry interest rate risk. Please consult with a SEBI-certified financial advisor before making investment decisions. Finofii does not offer financial advice; we facilitate access to mutual funds.</small>
+      <small><strong>⚖️ Compliance & Disclaimer:</strong> Finofiii is registered as an MFD (Mutual Fund Distributor) under ARN-176236 with AMFI and is a BSE Star MF Partner. Returns are based on historical data and market performance; past performance does not guarantee future results. Liquid funds invest in money market instruments and carry interest rate risk. Please consult with a SEBI-certified financial advisor before making investment decisions. Finofiii does not offer financial advice; we facilitate access to mutual funds.</small>
     </div>
   </div>
 );
@@ -171,12 +171,12 @@ export const TreasuryVsSIP = () => (
     </div>
 
     <div className="cta">
-      <p>Build a balanced strategy that works. Finofii helps optimize both sides.</p>
+      <p>Build a balanced strategy that works. Finofiii helps optimize both sides.</p>
       <a href="https://wa.me/919311361888" className="btn btn-whatsapp">Let's Talk Strategy</a>
     </div>
 
     <div className="compliance">
-      <small><strong>Disclaimer:</strong> Finofii is an AMFI-registered MFD (ARN-176236). Investment returns are subject to market conditions. Please consult a financial advisor before making investment decisions.</small>
+      <small><strong>Disclaimer:</strong> Finofiii is an AMFI-registered MFD (ARN-176236). Investment returns are subject to market conditions. Please consult a financial advisor before making investment decisions.</small>
     </div>
   </div>
 );
@@ -212,7 +212,7 @@ export const TreasuryVsSavings = () => (
     </div>
 
     <div className="compliance">
-      <small><strong>Disclaimer:</strong> Finofii (ARN-176236) provides MFD services. Returns shown are illustrative. Actual returns depend on market conditions and fund performance.</small>
+      <small><strong>Disclaimer:</strong> Finofiii (ARN-176236) provides MFD services. Returns shown are illustrative. Actual returns depend on market conditions and fund performance.</small>
     </div>
   </div>
 );

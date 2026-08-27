@@ -19,7 +19,7 @@ const Disclaimer = () => {
                 IMPORTANT NOTICE
               </p>
               <p className="text-amber-900">
-                Please read this disclaimer carefully before using Finofii's services. 
+                Please read this disclaimer carefully before using Finofiii's services. 
                 By accessing or using our platform, you acknowledge that you have read, 
                 understood, and agree to be bound by this disclaimer.
               </p>
@@ -30,7 +30,7 @@ const Disclaimer = () => {
                 1. General Disclaimer
               </h2>
               <p>
-                The information provided on the Finofii platform is for general informational 
+                The information provided on the Finofiii platform is for general informational 
                 and educational purposes only. It does not constitute investment advice, financial 
                 advice, trading advice, or any other form of professional advice. You should not rely 
                 solely on this information to make investment decisions.
@@ -78,7 +78,7 @@ const Disclaimer = () => {
                 4. No Investment Advice
               </h2>
               <p>
-                Finofii does not provide personalized investment advice. All investment decisions 
+                Finofiii does not provide personalized investment advice. All investment decisions 
                 are made at your own discretion and risk. We strongly recommend:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4 mt-3">
@@ -91,10 +91,10 @@ const Disclaimer = () => {
 
             <section>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-                5. Role of Finofii
+                5. Role of Finofiii
               </h2>
               <p>
-                Finofii Fintech Private Limited acts solely as a <strong>platform facilitator</strong>:
+                Finofiii Fintech Private Limited acts solely as a <strong>platform facilitator</strong>:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4 mt-3">
                 <li>We do NOT hold, manage, or control customer funds</li>
@@ -110,7 +110,7 @@ const Disclaimer = () => {
                 6. Regulatory Compliance
               </h2>
               <p>
-                While Finofii operates in compliance with applicable regulations:
+                While Finofiii operates in compliance with applicable regulations:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4 mt-3">
                 <li>Investment products are subject to SEBI and AMFI regulations</li>
@@ -140,7 +140,7 @@ const Disclaimer = () => {
                 8. Third-Party Links
               </h2>
               <p>
-                Our platform may contain links to third-party websites or services. Finofii is not 
+                Our platform may contain links to third-party websites or services. Finofiii is not 
                 responsible for the content, accuracy, or practices of these third parties. Use of 
                 such links is at your own risk.
               </p>
@@ -151,7 +151,7 @@ const Disclaimer = () => {
                 9. Tax Implications
               </h2>
               <p>
-                Investment returns may have tax implications. Finofii does not provide tax advice. 
+                Investment returns may have tax implications. Finofiii does not provide tax advice. 
                 Please consult with a qualified tax professional regarding the tax treatment of your 
                 investments.
               </p>
@@ -162,7 +162,7 @@ const Disclaimer = () => {
                 10. Limitation of Liability
               </h2>
               <p>
-                To the maximum extent permitted by law, Finofii shall not be liable for any losses, 
+                To the maximum extent permitted by law, Finofiii shall not be liable for any losses, 
                 damages, or claims arising from:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4 mt-3">
@@ -198,7 +198,7 @@ const Disclaimer = () => {
                 12. Changes to Disclaimer
               </h2>
               <p>
-                Finofii reserves the right to modify this disclaimer at any time. Changes will be 
+                Finofiii reserves the right to modify this disclaimer at any time. Changes will be 
                 effective immediately upon posting on the platform. Your continued use constitutes 
                 acceptance of the updated disclaimer.
               </p>
@@ -210,7 +210,7 @@ const Disclaimer = () => {
               </h2>
               <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
                 <p className="font-semibold mb-3">For questions or grievances:</p>
-                <p><strong>Finofii Fintech Private Limited</strong></p>
+                <p><strong>Finofiii Fintech Private Limited</strong></p>
                 <p>Grievance Officer: [Name]</p>
                 <p>Email: <a href="mailto:care@finofii.com" className="text-blue-600 hover:underline">care@finofii.com</a></p>
                 <p>Phone: <a href="tel:+919311361888" className="text-blue-600 hover:underline">+91 93113 61888</a></p>

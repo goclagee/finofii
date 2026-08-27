@@ -164,7 +164,7 @@ export default function LeadForm({
               />
 
               <p className="text-[11px] text-[var(--fino-ink-soft)] leading-relaxed">
-                By submitting, you agree to be contacted by Finofii. We never share your data.
+                By submitting, you agree to be contacted by Finofiii. We never share your data.
               </p>
 
               <button

@@ -29,10 +29,10 @@ const TreasuryVsFD = () => {
             {result && <div className="p-4 bg-orange-50 rounded"><p>Return: ₹{result.returns.toFixed(0)}</p><p>Total: ₹{result.total.toFixed(0)}</p></div>}
           </div>
         </div>
-        <a href="https://wa.me/919311361888" className="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700">Ask Finofii</a>
+        <a href="https://wa.me/919311361888" className="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700">Ask Finofiii</a>
         <div className="mt-12 bg-slate-100 p-6 rounded text-sm">
           <p className="font-semibold mb-2">Compliance & Disclosure</p>
-          <p><strong>Finofii (ARN-176236)</strong> is an AMFI-registered Mutual Fund Distributor. Mutual fund investments are subject to market risks. Returns shown are indicative and not guaranteed. Past performance is not indicative of future results.</p>
+          <p><strong>Finofiii (ARN-176236)</strong> is an AMFI-registered Mutual Fund Distributor. Mutual fund investments are subject to market risks. Returns shown are indicative and not guaranteed. Past performance is not indicative of future results.</p>
         </div>
       </div>
     </div>

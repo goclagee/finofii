@@ -21,7 +21,7 @@ const iconMap = {
 
 export default function CapitalPage() {
   useSEO({
-    title: "Finofiii Capital — Personal, Business, SME Loans & Venture Capital | Finofii",
+    title: "Finofiii Capital — Personal, Business, SME Loans & Venture Capital | Finofiii",
     description:
       "Apply for Personal, Business, Home, LAP, LAS, WCDL, SME loans, Venture Debt and Private Equity through Finofiii Capital. 50+ lenders, starting rates from 8.35% p.a., 24-hour disbursal. India's most trusted asset-manager-led capital marketplace — ₹2,500 Cr+ transacted.",
     canonical: "https://finofii.com/finofii-capital",
@@ -31,7 +31,7 @@ export default function CapitalPage() {
       name: "Finofiii Capital",
       description:
         "Lending marketplace offering Personal, Business, Home, SME, LAP, LAS, WCDL loans, Venture Debt and Private Equity across 50+ partner lenders.",
-      provider: { "@type": "Organization", name: "Finofii Fintech Private Limited" },
+      provider: { "@type": "Organization", name: "Finofiii Fintech Private Limited" },
       areaServed: "IN",
       serviceType: [
         "Personal Loan", "Business Loan", "Home Loan", "Loan Against Property",

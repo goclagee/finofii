@@ -14,7 +14,7 @@ const TermsConditions = () => {
                 1. Acceptance of Terms
               </h2>
               <p>
-                By accessing and using the Finofii platform ("Platform"), you accept and agree to be 
+                By accessing and using the Finofiii platform ("Platform"), you accept and agree to be 
                 bound by the terms and conditions outlined in this agreement. If you do not agree to these 
                 terms, please do not use our services.
               </p>
@@ -24,7 +24,7 @@ const TermsConditions = () => {
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">
                 2. Services Provided
               </h2>
-              <p>Finofii provides the following wealth management services:</p>
+              <p>Finofiii provides the following wealth management services:</p>
               <ul className="list-disc list-inside space-y-2 ml-4 mt-3">
                 <li><strong>Treasury Management:</strong> Business idle cash management through mutual fund investments (minimum ₹1 Crore)</li>
                 <li><strong>Founders Wealth:</strong> Startup and pre-IPO investment opportunities (minimum ₹1 Crore)</li>
@@ -54,7 +54,7 @@ const TermsConditions = () => {
                 4.1 No Direct Fund Handling
               </h3>
               <p>
-                Finofii acts as a platform facilitator and does not hold or manage customer funds directly. 
+                Finofiii acts as a platform facilitator and does not hold or manage customer funds directly. 
                 All investments are executed through SEBI-registered Asset Management Companies (AMCs) via 
                 the BSE StAR MF platform as per SEBI Circular No. 20160603-13 dated 03 June, 2016.
               </p>
@@ -63,7 +63,7 @@ const TermsConditions = () => {
                 4.2 Investment Authorization
               </h3>
               <p>
-                By using our platform, you authorize Finofii to facilitate investment transactions on your 
+                By using our platform, you authorize Finofiii to facilitate investment transactions on your 
                 behalf based on your investment preferences and risk profile.
               </p>
             </section>
@@ -117,7 +117,7 @@ const TermsConditions = () => {
               </h2>
               <p>
                 All content, trademarks, logos, and intellectual property on the Platform are owned by 
-                Finofii Fintech Private Limited or its licensors. You may not reproduce, distribute, or 
+                Finofiii Fintech Private Limited or its licensors. You may not reproduce, distribute, or 
                 create derivative works without prior written permission.
               </p>
             </section>
@@ -127,7 +127,7 @@ const TermsConditions = () => {
                 9. Limitation of Liability
               </h2>
               <p>
-                Finofii shall not be liable for any direct, indirect, incidental, consequential, or special 
+                Finofiii shall not be liable for any direct, indirect, incidental, consequential, or special 
                 damages arising from:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4 mt-3">
@@ -165,7 +165,7 @@ const TermsConditions = () => {
                 12. Contact Information
               </h2>
               <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                <p><strong>Finofii Fintech Private Limited</strong></p>
+                <p><strong>Finofiii Fintech Private Limited</strong></p>
                 <p>Email: <a href="mailto:care@finofii.com" className="text-blue-600 hover:underline">care@finofii.com</a></p>
                 <p>Phone: <a href="tel:+919311361888" className="text-blue-600 hover:underline">+91 93113 61888</a></p>
                 <p className="mt-2">

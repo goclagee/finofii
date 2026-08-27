@@ -240,14 +240,14 @@ const RiskDisclosure = () => {
                 9. Acknowledgment of Risk
               </h2>
               <p>
-                By using Finofii's services, you acknowledge that:
+                By using Finofiii's services, you acknowledge that:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4 mt-3">
                 <li>You have read and understood this Risk Disclosure Statement</li>
                 <li>You are aware of the risks associated with your investments</li>
                 <li>You have evaluated your risk tolerance and investment suitability</li>
                 <li>You accept full responsibility for your investment decisions</li>
-                <li>You understand that Finofii does not guarantee any returns</li>
+                <li>You understand that Finofiii does not guarantee any returns</li>
               </ul>
             </section>
 
@@ -269,7 +269,7 @@ const RiskDisclosure = () => {
               </h2>
               <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
                 <p>For risk-related questions or concerns:</p>
-                <p className="mt-3"><strong>Finofii Fintech Private Limited</strong></p>
+                <p className="mt-3"><strong>Finofiii Fintech Private Limited</strong></p>
                 <p>Email: <a href="mailto:care@finofii.com" className="text-blue-600 hover:underline">care@finofii.com</a></p>
                 <p>Phone: <a href="tel:+919311361888" className="text-blue-600 hover:underline">+91 93113 61888</a></p>
               </div>

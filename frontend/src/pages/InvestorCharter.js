@@ -11,7 +11,7 @@ const InvestorCharter = () => {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-sm border border-white/20 text-xs font-bold rounded-full uppercase tracking-wider mb-6" style={{ color: '#bfdbfe' }}>
-            Finofii Fintech Private Limited
+            Finofiii Fintech Private Limited
           </span>
           <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 72px)', color: '#ffffff' }} className="font-extrabold mb-6 leading-[0.95] tracking-tighter">
             <span className="bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent">Investor Charter</span>
@@ -146,7 +146,7 @@ const InvestorCharter = () => {
                 <div className="mb-8">
                   <h4 className="text-lg font-bold mb-3" style={{ color: '#111827' }}>D. Details of grievance redressal mechanism and how to access it</h4>
                   <ol className="list-decimal list-inside space-y-3 ml-4">
-                    <li>In case of any grievance / complaint, an investor should approach Finofii Fintech Private Limited (via the Grievance Redressal/Escalation Matrix above) and Finofii shall ensure that the grievance is resolved within 30 days.</li>
+                    <li>In case of any grievance / complaint, an investor should approach Finofiii Fintech Private Limited (via the Grievance Redressal/Escalation Matrix above) and Finofiii shall ensure that the grievance is resolved within 30 days.</li>
                     <li>If the investor's complaint is not redressed satisfactorily, one may lodge a complaint with SEBI on SEBI's 'SCORES' portal (<a href="https://scores.sebi.gov.in" target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline" style={{ color: '#1d4ed8' }}>https://scores.sebi.gov.in</a>), a centralised web-based complaints redressal system. SEBI takes up complaints registered via SCORES with the concerned intermediary for timely redressal. SCORES facilitates tracking the status of the complaint.</li>
                     <li>With regard to physical complaints, investors may send their complaints to: Office of Investor Assistance and Education, Securities and Exchange Board of India, SEBI Bhavan, Plot No. C4-A, 'G' Block, Bandra-Kurla Complex, Bandra (E), Mumbai – 400051.</li>
                   </ol>
@@ -189,9 +189,9 @@ const InvestorCharter = () => {
 
               {/* Company Details */}
               <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 md:p-8">
-                <h3 className="text-xl font-bold mb-4" style={{ color: '#111827' }}>Finofii Fintech Private Limited</h3>
+                <h3 className="text-xl font-bold mb-4" style={{ color: '#111827' }}>Finofiii Fintech Private Limited</h3>
                 <div className="grid md:grid-cols-2 gap-3 text-sm">
-                  <p><span className="font-semibold">Name of Mutual Fund Distributor</span> – Finofii Fintech Private Limited</p>
+                  <p><span className="font-semibold">Name of Mutual Fund Distributor</span> – Finofiii Fintech Private Limited</p>
                   <p><span className="font-semibold">CIN</span> – U74999UP2021PTC140844</p>
                   <p><span className="font-semibold">AMFI Registration Number (ARN)</span> – ARN-176236</p>
                   <p><span className="font-semibold">Type of Registration</span> – Non-Individual (Corporate)</p>

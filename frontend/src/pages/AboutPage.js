@@ -12,7 +12,7 @@ const li = (name) =>
   `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&size=400&background=1E3A8A&color=F59E0B&bold=true&format=png`;
 
 const liSearch = (name) =>
-  `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(name + " Finofii")}`;
+  `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(name + " Finofiii")}`;
 
 const leadership = [
   {
@@ -32,7 +32,7 @@ const leadership = [
     linkedin: liSearch("Mayannkk Saxena"),
     badge: "12+ Yrs · Asset Management",
     bio:
-      "Mayannkk brings 12 years of asset-management leadership across Escorts Ltd, Sundaram Mutual Fund and Tata Mutual Funds — managing a book that exceeded ₹3 Lakh Crore. His deep network spans SMEs, fintechs, IFAs, National Distributors, PF trusts and large corporate treasuries. At Finofii, he leads product, distribution and the relentless pursuit of post-tax outperformance for every single client.",
+      "Mayannkk brings 12 years of asset-management leadership across Escorts Ltd, Sundaram Mutual Fund and Tata Mutual Funds — managing a book that exceeded ₹3 Lakh Crore. His deep network spans SMEs, fintechs, IFAs, National Distributors, PF trusts and large corporate treasuries. At Finofiii, he leads product, distribution and the relentless pursuit of post-tax outperformance for every single client.",
     pills: ["Escorts", "Sundaram MF", "Tata MF", "₹3L Cr+ Book"],
   },
 ];
@@ -68,7 +68,7 @@ const ibTeam = [
     linkedin: liSearch("Sandeep Rishi"),
     badge: "CA · Investment Banking",
     bio:
-      "A Chartered Accountant with deep transaction experience across SME IPOs, corporate fund raises, PE/VC syndication and SME credit structuring. Sandeep brings execution rigour and balance-sheet discipline to every mandate Finofii undertakes.",
+      "A Chartered Accountant with deep transaction experience across SME IPOs, corporate fund raises, PE/VC syndication and SME credit structuring. Sandeep brings execution rigour and balance-sheet discipline to every mandate Finofiii undertakes.",
     pills: ["SME IPO", "PE/VC", "Fund Raise", "Debt Syndication"],
   },
   {
@@ -91,7 +91,7 @@ const patialaTeam = [
     linkedin: liSearch("Vipul Malik"),
     badge: "25+ Yrs · Banking",
     bio:
-      "Vipul leads Finofii's Patiala branch — our flagship Punjab presence. With 25+ years as Branch Head across IndusInd, Axis and ICICI, he is one of Punjab's most respected retail and wholesale bankers. Under his leadership, the Patiala branch services the entire Punjab MSME corridor — from agri-processing units and exporters to traders and family-owned manufacturers.",
+      "Vipul leads Finofiii's Patiala branch — our flagship Punjab presence. With 25+ years as Branch Head across IndusInd, Axis and ICICI, he is one of Punjab's most respected retail and wholesale bankers. Under his leadership, the Patiala branch services the entire Punjab MSME corridor — from agri-processing units and exporters to traders and family-owned manufacturers.",
     pills: ["IndusInd", "Axis", "ICICI", "Patiala MSME"],
   },
   {
@@ -101,7 +101,7 @@ const patialaTeam = [
     linkedin: liSearch("Sukhwinder Singh"),
     badge: "30+ Yrs · Banking",
     bio:
-      "Sukhwinder co-anchors Finofii's Patiala branch with three decades of branch banking leadership at IndusInd, Axis and ICICI. A specialist in retail and wholesale banking, he brings deep, decades-old client relationships across Punjab's farmer-producer organisations, MSMEs and high-net-worth households.",
+      "Sukhwinder co-anchors Finofiii's Patiala branch with three decades of branch banking leadership at IndusInd, Axis and ICICI. A specialist in retail and wholesale banking, he brings deep, decades-old client relationships across Punjab's farmer-producer organisations, MSMEs and high-net-worth households.",
     pills: ["IndusInd", "Axis", "ICICI", "Punjab Wholesale"],
   },
 ];
@@ -114,7 +114,7 @@ const clientTeam = [
     linkedin: liSearch("Mansi Chauhan"),
     badge: "MBA Finance · NISM Certified",
     bio:
-      "Mansi anchors the client relations function — onboarding, servicing and end-to-end relationship management for treasury and investment clientele. An MBA in Finance with NISM certification, she ensures every Finofii client conversation moves something forward.",
+      "Mansi anchors the client relations function — onboarding, servicing and end-to-end relationship management for treasury and investment clientele. An MBA in Finance with NISM certification, she ensures every Finofiii client conversation moves something forward.",
     pills: ["MBA Finance", "NISM", "Client Success"],
   },
   {
@@ -124,7 +124,7 @@ const clientTeam = [
     linkedin: liSearch("Sonam Nikam"),
     badge: "B.Com · NISM Certified",
     bio:
-      "Sonam works inside the Founder's Office on strategic initiatives, partner alliances and cross-functional projects. A B.Com graduate with NISM certification, she runs the operational backbone that keeps Finofii's leadership focused on the work that matters.",
+      "Sonam works inside the Founder's Office on strategic initiatives, partner alliances and cross-functional projects. A B.Com graduate with NISM certification, she runs the operational backbone that keeps Finofiii's leadership focused on the work that matters.",
     pills: ["B.Com", "NISM", "Strategy & Ops"],
   },
 ];
@@ -140,14 +140,14 @@ export default function AboutPage() {
   const [open, setOpen] = useState(false);
 
   useSEO({
-    title: "About Finofii — India's Premier Asset Manager-Led Treasury & Wealth Platform",
+    title: "About Finofiii — India's Premier Asset Manager-Led Treasury & Wealth Platform",
     description:
-      "Finofii is India's premier AI-based Treasury Management, WealthTech and Multi-Family Offices platform — built by career asset managers, not bankers. ₹2,500 Cr+ transacted, 130+ years of combined asset management experience, SEBI & AMFI registered. Meet the team.",
+      "Finofiii is India's premier AI-based Treasury Management, WealthTech and Multi-Family Offices platform — built by career asset managers, not bankers. ₹2,500 Cr+ transacted, 130+ years of combined asset management experience, SEBI & AMFI registered. Meet the team.",
     canonical: "https://finofii.com/about",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Organization",
-      name: "Finofii Fintech Private Limited",
+      name: "Finofiii Fintech Private Limited",
       url: "https://finofii.com",
       logo: "https://finofii.com/logo.png",
       description:
@@ -182,7 +182,7 @@ export default function AboutPage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-sm border border-white/20 text-xs font-bold rounded-full uppercase tracking-wider mb-6" style={{ color: '#bfdbfe' }}>
-            About Finofii · Asset Manager Led
+            About Finofiii · Asset Manager Led
           </span>
 
           <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 72px)', color: '#ffffff' }} className="font-extrabold mb-6 leading-[0.95] tracking-tighter max-w-5xl mx-auto">
@@ -240,7 +240,7 @@ export default function AboutPage() {
             <Promise
               icon={<ShieldCheck size={22} />}
               title="Your money never touches our balance sheet"
-              body="Every rupee flows through SEBI/AMFI-regulated channels and BSE STAR MF — not through Finofii. We are the platform, never the custodian. It's how serious money has always been moved."
+              body="Every rupee flows through SEBI/AMFI-regulated channels and BSE STAR MF — not through Finofiii. We are the platform, never the custodian. It's how serious money has always been moved."
             />
             <Promise
               icon={<TrendingUp size={22} />}
@@ -283,14 +283,14 @@ export default function AboutPage() {
           <Quote size={36} className="text-amber-500 mx-auto" />
           <blockquote className="font-display italic text-2xl md:text-3xl mt-6 leading-relaxed text-[var(--fino-ink)]">
             "We spent careers helping the Maruti's and Reliance's of India optimise their idle
-            treasury. One day it hit us — every Indian SME deserves the same playbook. Finofii is
+            treasury. One day it hit us — every Indian SME deserves the same playbook. Finofiii is
             that playbook, productised."
           </blockquote>
           <div className="mt-7 flex items-center justify-center gap-3">
             <div className="w-1 h-12 bg-amber-500" />
             <div className="text-left">
               <div className="font-bold">Ganessh Jha</div>
-              <div className="text-sm text-[var(--fino-ink-soft)]">Founder &amp; CEO, Finofii</div>
+              <div className="text-sm text-[var(--fino-ink-soft)]">Founder &amp; CEO, Finofiii</div>
             </div>
           </div>
         </div>
@@ -326,14 +326,14 @@ export default function AboutPage() {
 
       <TeamGroup
         title="Client Relations & Founder's Office"
-        subtitle="The team that's on speed-dial for every Finofii client."
+        subtitle="The team that's on speed-dial for every Finofiii client."
         people={clientTeam}
       />
 
       {/* Blogs */}
       <BlogsSection
         eyebrow="Stories & Insights"
-        title={<>From the <span className="amber-italic">Finofii desk</span></>}
+        title={<>From the <span className="amber-italic">Finofiii desk</span></>}
         subtitle="Founder essays, field notes from our branches, and the thinking behind how we run capital and treasury."
         posts={blogs.about}
         accentDark
@@ -358,7 +358,7 @@ export default function AboutPage() {
               <div className="flex items-start gap-3">
                 <MapPin className="text-amber-600 mt-0.5" size={18} />
                 <div>
-                  <div className="font-semibold">Finofii HQ</div>
+                  <div className="font-semibold">Finofiii HQ</div>
                   <div className="text-[var(--fino-ink-soft)]">
                     Unit 806, Tower 1, Assotech Business Cresterra,
                     <br /> Sector 135, Noida 201301
@@ -396,7 +396,7 @@ export default function AboutPage() {
                 Talk to our team <ChevronRight size={16} />
               </button>
               <p className="text-[11px] text-white/55 mt-3">
-                By submitting, you agree to be contacted by Finofii. We never share your data.
+                By submitting, you agree to be contacted by Finofiii. We never share your data.
               </p>
             </div>
           </div>
@@ -409,7 +409,7 @@ export default function AboutPage() {
         productType="contact"
         productInterest="General enquiry"
         title="Let's talk"
-        subtitle="A Finofii expert will reach out within 24 hours."
+        subtitle="A Finofiii expert will reach out within 24 hours."
         showAmount={false}
         showTenure={false}
       />

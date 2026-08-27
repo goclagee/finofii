@@ -6,7 +6,7 @@ export const blogs = {
     {
       slug: "from-7-lakh-crore-to-finofii",
       category: "Founders' Note",
-      title: "From managing ₹7 Lakh Crore to building Finofii — our story",
+      title: "From managing ₹7 Lakh Crore to building Finofiii — our story",
       excerpt:
         "Why two career fund managers walked away from the institutional world to build India's first treasury, FD and capital platform for entrepreneurs.",
       date: "Jan 2026",
@@ -16,10 +16,10 @@ export const blogs = {
     },
     {
       slug: "why-asset-managers-design-better-sme-products",
-      category: "Inside Finofii",
+      category: "Inside Finofiii",
       title: "Why asset managers — not engineers — should design SME financial products",
       excerpt:
-        "130+ years of combined asset-management experience built Finofii. Here's why an asset manager's instinct is irreplaceable when underwriting Indian SMEs.",
+        "130+ years of combined asset-management experience built Finofiii. Here's why an asset manager's instinct is irreplaceable when underwriting Indian SMEs.",
       date: "Dec 2025",
       readTime: "5 min read",
       author: "Mayannkk Saxena",
@@ -33,7 +33,7 @@ export const blogs = {
         "Punjab's agri-MSME corridor is producing some of India's strongest businesses. Vipul Malik and Sukhwinder Singh on what they're seeing on the ground.",
       date: "Nov 2025",
       readTime: "7 min read",
-      author: "Finofii Editorial",
+      author: "Finofiii Editorial",
       tag: "Field Notes",
     },
   ],
@@ -46,7 +46,7 @@ export const blogs = {
         "Updated weekly: highest paying bank, SFB and corporate FDs in India this month. We compare 50+ issuers so you don't have to.",
       date: "Jan 2026",
       readTime: "8 min read",
-      author: "Finofii Research",
+      author: "Finofiii Research",
       tag: "Rates",
     },
     {
@@ -65,7 +65,7 @@ export const blogs = {
       category: "Compare",
       title: "FD vs Liquid Funds: which is better for your business in 2026?",
       excerpt:
-        "Both park your idle cash. One is taxed differently, the other has lock-ins. A side-by-side comparison from Finofii's treasury desk.",
+        "Both park your idle cash. One is taxed differently, the other has lock-ins. A side-by-side comparison from Finofiii's treasury desk.",
       date: "Dec 2025",
       readTime: "7 min read",
       author: "Mayannkk Saxena",
@@ -100,7 +100,7 @@ export const blogs = {
       category: "Capital Strategy",
       title: "Venture Debt vs Equity: when non-dilutive capital makes sense",
       excerpt:
-        "A 12-slide framework Finofii Capital uses with founders to decide between equity and venture debt at every stage of the cap table.",
+        "A 12-slide framework Finofiii Capital uses with founders to decide between equity and venture debt at every stage of the cap table.",
       date: "Dec 2025",
       readTime: "8 min read",
       author: "Vivek Vashistha",

@@ -15,7 +15,7 @@ const ReadingTime = ({ minutes = 4 }) => (
 
 const ComplianceFooter = () => (
   <div className="compliance">
-    <small><strong>⚖️ Compliance:</strong> Finofii is registered as an MFD (ARN-176236, AMFI) and BSE Star MF Partner. Returns based on historical data; past performance does not guarantee future results. Please consult with a SEBI-certified financial advisor before investing.</small>
+    <small><strong>⚖️ Compliance:</strong> Finofiii is registered as an MFD (ARN-176236, AMFI) and BSE Star MF Partner. Returns based on historical data; past performance does not guarantee future results. Please consult with a SEBI-certified financial advisor before investing.</small>
   </div>
 );
 

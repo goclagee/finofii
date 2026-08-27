@@ -29,7 +29,7 @@ export const WhatIsTreasury = () => (
     </div>
 
     <div className="compliance">
-      <small><strong>Disclaimer:</strong> Finofii is an AMFI-registered MFD (ARN-176236). Returns are indicative. Please consult a financial advisor before investing.</small>
+      <small><strong>Disclaimer:</strong> Finofiii is an AMFI-registered MFD (ARN-176236). Returns are indicative. Please consult a financial advisor before investing.</small>
     </div>
   </div>
 );
@@ -62,7 +62,7 @@ export const LiquidFunds101 = () => (
     </div>
 
     <div className="compliance">
-      <small><strong>Disclaimer:</strong> Finofii (ARN-176236) provides MFD services. Liquid fund investments carry market risk. Past performance ≠ future returns.</small>
+      <small><strong>Disclaimer:</strong> Finofiii (ARN-176236) provides MFD services. Liquid fund investments carry market risk. Past performance ≠ future returns.</small>
     </div>
   </div>
 );
@@ -93,7 +93,7 @@ export const CurrentAccountExplained = () => (
     </div>
 
     <div className="compliance">
-      <small><strong>Disclaimer:</strong> Finofii is an AMFI-registered MFD (ARN-176236). Treasury investments carry market risk. Consult a financial advisor before investing.</small>
+      <small><strong>Disclaimer:</strong> Finofiii is an AMFI-registered MFD (ARN-176236). Treasury investments carry market risk. Consult a financial advisor before investing.</small>
     </div>
   </div>
 );
@@ -122,7 +122,7 @@ export const NavExplained = () => (
     </div>
 
     <div className="compliance">
-      <small><strong>Disclaimer:</strong> Finofii (ARN-176236) provides MFD services. NAV fluctuates daily. Past performance is not indicative of future results.</small>
+      <small><strong>Disclaimer:</strong> Finofiii (ARN-176236) provides MFD services. NAV fluctuates daily. Past performance is not indicative of future results.</small>
     </div>
   </div>
 );
@@ -150,7 +150,7 @@ export const ExpenseRatio = () => (
     </div>
 
     <div className="compliance">
-      <small><strong>Disclaimer:</strong> Finofii (ARN-176236) provides MFD services. Expense ratios vary by fund and can change. Review fund documents for accuracy.</small>
+      <small><strong>Disclaimer:</strong> Finofiii (ARN-176236) provides MFD services. Expense ratios vary by fund and can change. Review fund documents for accuracy.</small>
     </div>
   </div>
 );
@@ -178,7 +178,7 @@ export const ExitLoadExplained = () => (
     </div>
 
     <div className="compliance">
-      <small><strong>Disclaimer:</strong> Finofii (ARN-176236) is an AMFI-registered MFD. Exit loads vary by fund. Review fund documents before investing.</small>
+      <small><strong>Disclaimer:</strong> Finofiii (ARN-176236) is an AMFI-registered MFD. Exit loads vary by fund. Review fund documents before investing.</small>
     </div>
   </div>
 );
@@ -209,7 +209,7 @@ export const CutoffTimeExplained = () => (
     </div>
 
     <div className="compliance">
-      <small><strong>Disclaimer:</strong> Finofii (ARN-176236) provides MFD services. Cut-off times vary by fund and fund house. Always verify before investing.</small>
+      <small><strong>Disclaimer:</strong> Finofiii (ARN-176236) provides MFD services. Cut-off times vary by fund and fund house. Always verify before investing.</small>
     </div>
   </div>
 );

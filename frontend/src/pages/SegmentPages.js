@@ -25,7 +25,7 @@ const ReadingTime = ({ minutes = 5 }) => (
 
 const ComplianceFooter = () => (
   <div className="compliance">
-    <small><strong>⚖️ Compliance & Disclaimer:</strong> Finofii is registered as an MFD (Mutual Fund Distributor) under ARN-176236 with AMFI and is a BSE Star MF Partner. Returns are based on historical data and market performance; past performance does not guarantee future results. Liquid funds invest in money market instruments and carry interest rate risk. Please consult with a SEBI-certified financial advisor before making investment decisions.</small>
+    <small><strong>⚖️ Compliance & Disclaimer:</strong> Finofiii is registered as an MFD (Mutual Fund Distributor) under ARN-176236 with AMFI and is a BSE Star MF Partner. Returns are based on historical data and market performance; past performance does not guarantee future results. Liquid funds invest in money market instruments and carry interest rate risk. Please consult with a SEBI-certified financial advisor before making investment decisions.</small>
   </div>
 );
 
@@ -153,7 +153,7 @@ export const CorporateTreasury = () => (
     <ReadingTime minutes={6} />
     
     <p className="context-paragraph">
-      Large corporates earn millions on idle cash through professional treasury management. Liquid funds, debt funds, and working capital optimization are standard practice. Finofii brings this institutional capability to mid-sized corporates.
+      Large corporates earn millions on idle cash through professional treasury management. Liquid funds, debt funds, and working capital optimization are standard practice. Finofiii brings this institutional capability to mid-sized corporates.
     </p>
 
     <div className="stat-card">
@@ -233,7 +233,7 @@ export const WealthFamilyOffice = () => (
     <ReadingTime minutes={6} />
     
     <p className="context-paragraph">
-      Family offices manage complex wealth across generations. Treasury is just one component of a comprehensive strategy that includes equities, real estate, and alternative investments. Finofii provides the treasury management backbone.
+      Family offices manage complex wealth across generations. Treasury is just one component of a comprehensive strategy that includes equities, real estate, and alternative investments. Finofiii provides the treasury management backbone.
     </p>
 
     <div className="stat-card">
@@ -255,7 +255,7 @@ export const WealthFamilyOffice = () => (
     <div className="section">
       <h2>Complete Wealth Ecosystem</h2>
       <ul>
-        <li><strong>🏦 Treasury:</strong> Liquid reserves earning 6-7% (Finofii handles)</li>
+        <li><strong>🏦 Treasury:</strong> Liquid reserves earning 6-7% (Finofiii handles)</li>
         <li><strong>📊 Equities:</strong> Long-term growth via SIP/funds</li>
         <li><strong>🏠 Real Estate:</strong> Property holdings and rental income</li>
         <li><strong>💼 Alternative:</strong> Private equity, structured products</li>

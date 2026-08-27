@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="inline-block mb-3">
-              <img src="/logo.png" alt="Finofii" className="h-10 w-auto" />
+              <img src="/logo.png" alt="Finofiii" className="h-10 w-auto" />
             </Link>
             <p className="text-xs text-gray-500 leading-relaxed mb-3">
               India's premier treasury management & financial solutions platform.
@@ -99,7 +99,7 @@ const Footer = () => {
             </p>
           </div>
           <p className="text-center text-xs text-gray-400 mt-4">
-            © 2025 Finofii Fintech Private Limited. All rights reserved.
+            © 2025 Finofiii Fintech Private Limited. All rights reserved.
           </p>
         </div>
       </div>

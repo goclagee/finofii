@@ -15,7 +15,7 @@ const ReadingTime = ({ minutes = 4 }) => (
 
 const ComplianceFooter = () => (
   <div className="compliance">
-    <small><strong>⚖️ Compliance:</strong> Finofii is registered as an MFD (ARN-176236, AMFI) and BSE Star MF Partner. Returns based on historical data; past performance does not guarantee future results. Please consult with a SEBI-certified financial advisor before investing.</small>
+    <small><strong>⚖️ Compliance:</strong> Finofiii is registered as an MFD (ARN-176236, AMFI) and BSE Star MF Partner. Returns based on historical data; past performance does not guarantee future results. Please consult with a SEBI-certified financial advisor before investing.</small>
   </div>
 );
 
@@ -49,7 +49,7 @@ export const TreasuryDelhi = () => (
     </div>
 
     <div className="card">
-      <h2>Why Delhi Businesses Choose Finofii</h2>
+      <h2>Why Delhi Businesses Choose Finofiii</h2>
       <ul>
         <li><strong>Local team:</strong> Noida-based, understand Delhi market cycles</li>
         <li><strong>24-hour setup:</strong> Video KYC, instant account opening</li>
@@ -87,7 +87,7 @@ export const TreasuryNoida = () => (
         <li><strong>Bulk orders:</strong> Manage pre-payment liquidity with treasury ladder</li>
         <li><strong>Seasonal exports:</strong> Park Q2-Q4 export revenues in short-term funds</li>
         <li><strong>GST deposits:</strong> Keep refund swaps in liquid funds until cleared</li>
-        <li><strong>Same-city support:</strong> Finofii HQ in Sector 3, Noida—walk-in visits available</li>
+        <li><strong>Same-city support:</strong> Finofiii HQ in Sector 3, Noida—walk-in visits available</li>
       </ul>
     </div>
 
@@ -111,7 +111,7 @@ export const TreasuryMumbai = () => (
     <ReadingTime minutes={5} />
     
     <p className="context-paragraph">
-      Mumbai's finance, trading, and services sectors operate at scale. Institutional-grade treasury management is table-stakes. Finofii brings that same rigor to mid-sized Mumbai businesses.
+      Mumbai's finance, trading, and services sectors operate at scale. Institutional-grade treasury management is table-stakes. Finofiii brings that same rigor to mid-sized Mumbai businesses.
     </p>
 
     <div className="stat-card">

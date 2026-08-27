@@ -25,7 +25,7 @@ const ReadingTime = ({ minutes = 5 }) => (
 
 const ComplianceFooter = () => (
   <div className="compliance">
-    <small><strong>⚖️ Compliance & Disclaimer:</strong> Finofii is registered as an MFD (Mutual Fund Distributor) under ARN-176236 with AMFI and is a BSE Star MF Partner. Returns are based on historical data and market performance; past performance does not guarantee future results. Liquid funds invest in money market instruments and carry interest rate risk. Please consult with a SEBI-certified financial advisor before making investment decisions.</small>
+    <small><strong>⚖️ Compliance & Disclaimer:</strong> Finofiii is registered as an MFD (Mutual Fund Distributor) under ARN-176236 with AMFI and is a BSE Star MF Partner. Returns are based on historical data and market performance; past performance does not guarantee future results. Liquid funds invest in money market instruments and carry interest rate risk. Please consult with a SEBI-certified financial advisor before making investment decisions.</small>
   </div>
 );
 
@@ -129,7 +129,7 @@ export const TreasuryVsFD = () => (
     </div>
 
     <div className="cta">
-      <p>💡 <strong>Stop leaving ₹2,500+ every 6 months on the table.</strong> Earn more on idle cash with Finofii.</p>
+      <p>💡 <strong>Stop leaving ₹2,500+ every 6 months on the table.</strong> Earn more on idle cash with Finofiii.</p>
       <a href="https://wa.me/919311361888" className="btn btn-whatsapp">
         👉 Schedule Your Free Demo
       </a>
@@ -225,7 +225,7 @@ export const TreasuryVsSIP = () => (
     </div>
 
     <div className="cta">
-      <p>Build a complete financial strategy. Finofii helps you optimize both treasury and investment goals.</p>
+      <p>Build a complete financial strategy. Finofiii helps you optimize both treasury and investment goals.</p>
       <a href="https://wa.me/919311361888" className="btn btn-whatsapp">
         Schedule Strategy Session
       </a>
@@ -614,11 +614,11 @@ export const MFDDifference = () => (
   <div className="page">
     <TrustBadges />
     
-    <h1>What is an MFD? Finofii's Role in Your Investments</h1>
+    <h1>What is an MFD? Finofiii's Role in Your Investments</h1>
     <ReadingTime minutes={3} />
     
     <p className="context-paragraph">
-      An MFD (Mutual Fund Distributor) is a SEBI-regulated intermediary that helps you invest in mutual funds. Finofii, registered as MFD (ARN-176236), provides treasury management and investment solutions.
+      An MFD (Mutual Fund Distributor) is a SEBI-regulated intermediary that helps you invest in mutual funds. Finofiii, registered as MFD (ARN-176236), provides treasury management and investment solutions.
     </p>
 
     <div className="card">
@@ -643,7 +643,7 @@ export const MFDDifference = () => (
             <td>Familiar, but limited choices</td>
           </tr>
           <tr>
-            <td><strong>MFD (Finofii) </strong></td>
+            <td><strong>MFD (Finofiii) </strong></td>
             <td><span className="check-mark">✓</span> Personalised guidance & setup</td>
             <td>Best funds + professional advice</td>
           </tr>
@@ -657,7 +657,7 @@ export const MFDDifference = () => (
     </div>
 
     <div className="cta">
-      <p>Let Finofii handle your treasury & investments. We're SEBI-regulated for your protection.</p>
+      <p>Let Finofiii handle your treasury & investments. We're SEBI-regulated for your protection.</p>
       <a href="https://wa.me/919311361888" className="btn btn-whatsapp">
         Get MFD Advantage Today
       </a>

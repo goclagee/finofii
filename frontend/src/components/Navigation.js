@@ -25,7 +25,7 @@ const Navigation = () => {
           <Link to="/" className="flex items-center py-2">
             <img 
               src="/logo.png" 
-              alt="Finofii MFO" 
+              alt="Finofiii MFO" 
               className="h-14 w-auto hover:opacity-90 transition-opacity duration-300"
             />
           </Link>
