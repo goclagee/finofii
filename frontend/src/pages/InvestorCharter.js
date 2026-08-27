@@ -99,7 +99,7 @@ const InvestorCharter = () => {
                 {/* Section A */}
                 <div className="mb-8">
                   <h4 className="text-lg font-bold mb-3" style={{ color: '#111827' }}>A. Vision and Mission Statements for investors</h4>
-                  <ul className="list-disc list-inside space-y-2 ml-4">
+                  <ul className="list-disc pl-5 space-y-2 ml-4">
                     <li><span className="font-semibold">Vision</span> – Invest with knowledge & safety.</li>
                     <li><span className="font-semibold">Mission</span> – Every investor should be able to invest in the right mutual fund schemes based on their needs, monitor them to meet their goals, access reports, and enjoy financial wellness.</li>
                   </ul>
@@ -108,7 +108,7 @@ const InvestorCharter = () => {
                 {/* Section B */}
                 <div className="mb-8">
                   <h4 className="text-lg font-bold mb-3" style={{ color: '#111827' }}>B. Details of business transacted by the Mutual Fund Distributor with respect to the investors</h4>
-                  <ul className="list-disc list-inside space-y-2 ml-4">
+                  <ul className="list-disc pl-5 space-y-2 ml-4">
                     <li>To assist investors in completing KYC / Central KYC (CKYC) formalities before facilitating any investment.</li>
                     <li>To provide full, accurate and truthful information on mutual fund schemes — objectives, risks, loads and expense ratio — before facilitating an investment.</li>
                     <li>To facilitate execution of subscription, redemption, switch, SIP / SWP / STP instructions strictly as per the investor's mandate, and route these to the concerned AMC / RTA (CAMS/KFintech).</li>
@@ -124,15 +124,15 @@ const InvestorCharter = () => {
                 {/* Section C */}
                 <div className="mb-8">
                   <h4 className="text-lg font-bold mb-3" style={{ color: '#111827' }}>C. Details of services provided to investors (No Indicative Timelines)</h4>
-                  <ul className="list-disc list-inside space-y-2 ml-4">
+                  <ul className="list-disc pl-5 space-y-2 ml-4">
                     <li><span className="font-semibold">Onboarding of Clients</span>
-                      <ul className="list-[circle] list-inside ml-6 mt-1 space-y-1">
+                      <ul className="list-disc pl-5 ml-6 mt-1 space-y-1">
                         <li>Sharing of scheme-related documents (SID/KIM)</li>
                         <li>Completing KYC / UCC set-up of clients</li>
                       </ul>
                     </li>
                     <li><span className="font-semibold">Disclosure to Clients</span>
-                      <ul className="list-[circle] list-inside ml-6 mt-1 space-y-1">
+                      <ul className="list-disc pl-5 ml-6 mt-1 space-y-1">
                         <li>To provide full disclosure of the distributor's business, affiliations and commission structure.</li>
                         <li>To not access a client's accounts or holdings for offering guidance beyond permissible scope.</li>
                         <li>To disclose the risk profile associated with a scheme to the client.</li>
@@ -145,7 +145,7 @@ const InvestorCharter = () => {
                 {/* Section D */}
                 <div className="mb-8">
                   <h4 className="text-lg font-bold mb-3" style={{ color: '#111827' }}>D. Details of grievance redressal mechanism and how to access it</h4>
-                  <ol className="list-decimal list-inside space-y-3 ml-4">
+                  <ol className="list-decimal pl-5 space-y-3 ml-4">
                     <li>In case of any grievance / complaint, an investor should approach Finofiii Fintech Private Limited (via the Grievance Redressal/Escalation Matrix above) and Finofiii shall ensure that the grievance is resolved within 30 days.</li>
                     <li>If the investor's complaint is not redressed satisfactorily, one may lodge a complaint with SEBI on SEBI's 'SCORES' portal (<a href="https://scores.sebi.gov.in" target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline" style={{ color: '#1d4ed8' }}>https://scores.sebi.gov.in</a>), a centralised web-based complaints redressal system. SEBI takes up complaints registered via SCORES with the concerned intermediary for timely redressal. SCORES facilitates tracking the status of the complaint.</li>
                     <li>With regard to physical complaints, investors may send their complaints to: Office of Investor Assistance and Education, Securities and Exchange Board of India, SEBI Bhavan, Plot No. C4-A, 'G' Block, Bandra-Kurla Complex, Bandra (E), Mumbai – 400051.</li>
@@ -157,7 +157,7 @@ const InvestorCharter = () => {
                   <h4 className="text-lg font-bold mb-3" style={{ color: '#111827' }}>E. Expectations from the investors (Responsibilities of investors)</h4>
                   
                   <h5 className="font-bold mt-4 mb-2" style={{ color: '#047857' }}>Do's</h5>
-                  <ol className="list-decimal list-inside space-y-2 ml-4">
+                  <ol className="list-decimal pl-5 space-y-2 ml-4">
                     <li>Always deal with AMFI-registered Mutual Fund Distributors.</li>
                     <li>Verify the distributor's ARN and EUIN validity on the AMFI website before transacting.</li>
                     <li>Insist that every investment payment/cheque is made only in favour of the mutual fund scheme — never in the distributor's personal or firm name.</li>
@@ -173,7 +173,7 @@ const InvestorCharter = () => {
                   </ol>
 
                   <h5 className="font-bold mt-6 mb-2" style={{ color: '#dc2626' }}>Don'ts</h5>
-                  <ul className="list-disc list-inside space-y-2 ml-4">
+                  <ul className="list-disc pl-5 space-y-2 ml-4">
                     <li>Don't fall for scheme 'tips' or personalised investment advice offered by a distributor beyond its permitted scope.</li>
                     <li>Do not hand over cash, or issue cheques in the distributor's personal name, for any mutual fund investment.</li>
                     <li>Don't fall for the promise of indicative, exorbitant or assured returns. Don't let greed override rational investment decisions.</li>
