@@ -14,6 +14,7 @@ import RiskDisclosure from "@/pages/RiskDisclosure";
 import DisclosurePage from "@/pages/DisclosurePage";
 import InvestorCharter from "@/pages/InvestorCharter";
 import GrievanceRedressal from "@/pages/GrievanceRedressal";
+import MutualFundDisclosure from "@/pages/MutualFundDisclosure";
 import RiskDisclosureGuide from "@/pages/RiskDisclosureGuide";
 import NavCalculator from "@/pages/NavCalculator";
 import Navigation from "@/components/Navigation";
@@ -114,6 +115,7 @@ function App() {
           <Route path="/disclosure" element={<DisclosurePage />} />
           <Route path="/investor-charter" element={<InvestorCharter />} />
           <Route path="/grievance-redressal" element={<GrievanceRedressal />} />
+          <Route path="/mutual-fund-disclosure" element={<MutualFundDisclosure />} />
           <Route path="/risk-disclosure" element={<RiskDisclosure />} />
           <Route path="/risk-disclosure-guide" element={<RiskDisclosureGuide />} />
           <Route path="/nav-calculator" element={<NavCalculator />} />

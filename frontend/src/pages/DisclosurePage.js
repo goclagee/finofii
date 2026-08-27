@@ -84,7 +84,7 @@ const DisclosurePage = () => {
                   Grievance Redressal
                 </Link>
                 <Link
-                  to="/disclosure"
+                  to="/mutual-fund-disclosure"
                   className="text-sm font-medium hover:underline"
                   style={{ color: '#1d4ed8' }}
                 >
