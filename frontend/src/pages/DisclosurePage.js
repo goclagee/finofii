@@ -60,32 +60,36 @@ const DisclosurePage = () => {
                 Registration No. NISM-201500002356 and Validity 20/AUG/2026
               </p>
 
-              {/* Buttons */}
-              <div className="flex flex-wrap gap-4 pt-8 border-t border-gray-200 mt-8">
+              {/* Links */}
+              <div className="flex flex-col gap-2 pt-8 border-t border-gray-200 mt-8">
                 <a
                   href="mailto:care@finofii.com"
-                  className="px-6 py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-lg font-semibold hover:from-amber-600 hover:to-amber-700 transition-all shadow-md"
+                  className="text-sm font-medium hover:underline"
+                  style={{ color: '#1d4ed8' }}
                 >
                   Feedback Form
                 </a>
                 <Link
                   to="/investor-charter"
-                  className="px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-lg font-semibold hover:from-blue-700 hover:to-indigo-800 transition-all shadow-md"
+                  className="text-sm font-medium hover:underline"
+                  style={{ color: '#1d4ed8' }}
                 >
                   Investor Charter & Complaint Status
                 </Link>
                 <Link
                   to="/grievance-redressal"
-                  className="px-6 py-3 bg-gradient-to-r from-red-600 to-red-700 text-white rounded-lg font-semibold hover:from-red-700 hover:to-red-800 transition-all shadow-md"
+                  className="text-sm font-medium hover:underline"
+                  style={{ color: '#1d4ed8' }}
                 >
                   Grievance Redressal
                 </Link>
-                <a
-                  href="/disclosure"
-                  className="px-6 py-3 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white rounded-lg font-semibold hover:from-emerald-700 hover:to-emerald-800 transition-all shadow-md"
+                <Link
+                  to="/disclosure"
+                  className="text-sm font-medium hover:underline"
+                  style={{ color: '#1d4ed8' }}
                 >
                   Mutual Fund Disclosure
-                </a>
+                </Link>
               </div>
             </div>
           </div>
