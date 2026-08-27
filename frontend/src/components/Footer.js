@@ -15,8 +15,7 @@ const Footer = () => {
               India's premier treasury management & financial solutions platform.
             </p>
             <div className="flex items-center gap-3 text-xs text-gray-400">
-              <span className="text-green-600 font-medium">● SEBI Registered</span>
-              <span>AMFI: ARN-176236</span>
+              <span className="text-green-600 font-medium">AMFI: ARN-176236</span>
             </div>
           </div>
 

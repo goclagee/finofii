@@ -57,7 +57,7 @@ const DisclosurePage = () => {
               </p>
 
               <p>
-                Registration No. NISM-201200002207 and Validity 20/AUG/2026
+                Registration No. NISM-201500002356 and Validity 20/AUG/2026
               </p>
 
               {/* Buttons */}
