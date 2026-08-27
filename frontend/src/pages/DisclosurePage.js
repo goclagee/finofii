@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const DisclosurePage = () => {
   return (
     <div className="min-h-screen bg-[#FDFBF7]">
@@ -66,9 +68,15 @@ const DisclosurePage = () => {
                 >
                   Feedback Form
                 </a>
+                <Link
+                  to="/investor-charter"
+                  className="px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-lg font-semibold hover:from-blue-700 hover:to-indigo-800 transition-all shadow-md"
+                >
+                  Investor Charter & Complaint Status
+                </Link>
                 <a
                   href="/disclosure"
-                  className="px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-lg font-semibold hover:from-blue-700 hover:to-indigo-800 transition-all shadow-md"
+                  className="px-6 py-3 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white rounded-lg font-semibold hover:from-emerald-700 hover:to-emerald-800 transition-all shadow-md"
                 >
                   Mutual Fund Disclosure
                 </a>

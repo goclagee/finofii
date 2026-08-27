@@ -12,6 +12,7 @@ import TermsConditions from "@/pages/TermsConditions";
 import Disclaimer from "@/pages/Disclaimer";
 import RiskDisclosure from "@/pages/RiskDisclosure";
 import DisclosurePage from "@/pages/DisclosurePage";
+import InvestorCharter from "@/pages/InvestorCharter";
 import RiskDisclosureGuide from "@/pages/RiskDisclosureGuide";
 import NavCalculator from "@/pages/NavCalculator";
 import Navigation from "@/components/Navigation";
@@ -124,6 +125,7 @@ function App() {
           <Route path="/terms-conditions" element={<TermsConditions />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/disclosure" element={<DisclosurePage />} />
+          <Route path="/investor-charter" element={<InvestorCharter />} />
           <Route path="/risk-disclosure" element={<RiskDisclosure />} />
           <Route path="/risk-disclosure-guide" element={<RiskDisclosureGuide />} />
           <Route path="/nav-calculator" element={<NavCalculator />} />
