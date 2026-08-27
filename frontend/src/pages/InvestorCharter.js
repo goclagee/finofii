@@ -99,57 +99,57 @@ const InvestorCharter = () => {
                 {/* Section A */}
                 <div className="mb-8">
                   <h4 className="text-lg font-bold mb-3" style={{ color: '#111827' }}>A. Vision and Mission Statements for investors</h4>
-                  <ul className="space-y-3 pl-6" style={{ listStyleType: "disc", listStylePosition: "outside" }}>
-                    <li><span className="font-semibold">Vision</span> – Invest with knowledge & safety.</li>
-                    <li><span className="font-semibold">Mission</span> – Every investor should be able to invest in the right mutual fund schemes based on their needs, monitor them to meet their goals, access reports, and enjoy financial wellness.</li>
-                  </ul>
+                  <div className="space-y-3 pl-4 border-l-2 border-amber-200">
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold"><span className="font-semibold">Vision</span> – Invest with knowledge & safety.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold"><span className="font-semibold">Mission</span> – Every investor should be able to invest in the right mutual fund schemes based on their needs, monitor them to meet their goals, access reports, and enjoy financial wellness.</p>
+                  </div>
                 </div>
 
                 {/* Section B */}
                 <div className="mb-8">
                   <h4 className="text-lg font-bold mb-3" style={{ color: '#111827' }}>B. Details of business transacted by the Mutual Fund Distributor with respect to the investors</h4>
-                  <ul className="space-y-3 pl-6" style={{ listStyleType: "disc", listStylePosition: "outside" }}>
-                    <li>To assist investors in completing KYC / Central KYC (CKYC) formalities before facilitating any investment.</li>
-                    <li>To provide full, accurate and truthful information on mutual fund schemes — objectives, risks, loads and expense ratio — before facilitating an investment.</li>
-                    <li>To facilitate execution of subscription, redemption, switch, SIP / SWP / STP instructions strictly as per the investor's mandate, and route these to the concerned AMC / RTA (CAMS/KFintech).</li>
-                    <li>To never accept cash, or any payment in the distributor's own name or account, for investment or redemption — all payments must be made directly to the scheme/AMC.</li>
-                    <li>To disclose commission/brokerage received from AMCs to investors, on request or as mandated.</li>
-                    <li>To maintain confidentiality of client information and not access a client's holdings or accounts without authorisation.</li>
-                    <li>To deal with clients only through official, registered contact channels.</li>
-                    <li>To hold a valid AMFI Registration Number (ARN) and ensure all client-facing personnel hold a valid EUIN.</li>
-                    <li>To maintain records of all interactions with clients, including prospective clients, where any conversation related to a scheme has taken place.</li>
-                  </ul>
+                  <div className="space-y-3 pl-4 border-l-2 border-amber-200">
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">To assist investors in completing KYC / Central KYC (CKYC) formalities before facilitating any investment.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">To provide full, accurate and truthful information on mutual fund schemes — objectives, risks, loads and expense ratio — before facilitating an investment.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">To facilitate execution of subscription, redemption, switch, SIP / SWP / STP instructions strictly as per the investor's mandate, and route these to the concerned AMC / RTA (CAMS/KFintech).</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">To never accept cash, or any payment in the distributor's own name or account, for investment or redemption — all payments must be made directly to the scheme/AMC.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">To disclose commission/brokerage received from AMCs to investors, on request or as mandated.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">To maintain confidentiality of client information and not access a client's holdings or accounts without authorisation.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">To deal with clients only through official, registered contact channels.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">To hold a valid AMFI Registration Number (ARN) and ensure all client-facing personnel hold a valid EUIN.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">To maintain records of all interactions with clients, including prospective clients, where any conversation related to a scheme has taken place.</p>
+                  </div>
                 </div>
 
                 {/* Section C */}
                 <div className="mb-8">
                   <h4 className="text-lg font-bold mb-3" style={{ color: '#111827' }}>C. Details of services provided to investors (No Indicative Timelines)</h4>
-                  <ul className="space-y-3 pl-6" style={{ listStyleType: "disc", listStylePosition: "outside" }}>
-                    <li><span className="font-semibold">Onboarding of Clients</span>
-                      <ul className="space-y-2 pl-6 ml-4" style={{ listStyleType: "disc", listStylePosition: "outside" }}>
-                        <li>Sharing of scheme-related documents (SID/KIM)</li>
-                        <li>Completing KYC / UCC set-up of clients</li>
-                      </ul>
-                    </li>
-                    <li><span className="font-semibold">Disclosure to Clients</span>
-                      <ul className="space-y-2 pl-6 ml-4" style={{ listStyleType: "disc", listStylePosition: "outside" }}>
-                        <li>To provide full disclosure of the distributor's business, affiliations and commission structure.</li>
-                        <li>To not access a client's accounts or holdings for offering guidance beyond permissible scope.</li>
-                        <li>To disclose the risk profile associated with a scheme to the client.</li>
-                      </ul>
-                    </li>
-                    <li>To facilitate transactions (SIP set-up/pause/cancellation, redemption, switch, portfolio valuation and capital gains statement requests) based on the client's instructions and risk suitability.</li>
-                  </ul>
+                  <div className="space-y-3 pl-4 border-l-2 border-amber-200">
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold"><span className="font-semibold">Onboarding of Clients</span>
+                      <div className="space-y-2 pl-4 ml-4 border-l-2 border-gray-200">
+                        <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Sharing of scheme-related documents (SID/KIM)</p>
+                        <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Completing KYC / UCC set-up of clients</p>
+                      </div>
+                    </p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold"><span className="font-semibold">Disclosure to Clients</span>
+                      <div className="space-y-2 pl-4 ml-4 border-l-2 border-gray-200">
+                        <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">To provide full disclosure of the distributor's business, affiliations and commission structure.</p>
+                        <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">To not access a client's accounts or holdings for offering guidance beyond permissible scope.</p>
+                        <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">To disclose the risk profile associated with a scheme to the client.</p>
+                      </div>
+                    </p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">To facilitate transactions (SIP set-up/pause/cancellation, redemption, switch, portfolio valuation and capital gains statement requests) based on the client's instructions and risk suitability.</p>
+                  </div>
                 </div>
 
                 {/* Section D */}
                 <div className="mb-8">
                   <h4 className="text-lg font-bold mb-3" style={{ color: '#111827' }}>D. Details of grievance redressal mechanism and how to access it</h4>
-                  <ol className="space-y-3 pl-6" style={{ listStyleType: "decimal", listStylePosition: "outside" }}>
-                    <li>In case of any grievance / complaint, an investor should approach Finofiii Fintech Private Limited (via the Grievance Redressal/Escalation Matrix above) and Finofiii shall ensure that the grievance is resolved within 30 days.</li>
-                    <li>If the investor's complaint is not redressed satisfactorily, one may lodge a complaint with SEBI on SEBI's 'SCORES' portal (<a href="https://scores.sebi.gov.in" target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline" style={{ color: '#1d4ed8' }}>https://scores.sebi.gov.in</a>), a centralised web-based complaints redressal system. SEBI takes up complaints registered via SCORES with the concerned intermediary for timely redressal. SCORES facilitates tracking the status of the complaint.</li>
-                    <li>With regard to physical complaints, investors may send their complaints to: Office of Investor Assistance and Education, Securities and Exchange Board of India, SEBI Bhavan, Plot No. C4-A, 'G' Block, Bandra-Kurla Complex, Bandra (E), Mumbai – 400051.</li>
-                  </ol>
+                  <div className="space-y-3 pl-4 border-l-2 border-amber-200">
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">In case of any grievance / complaint, an investor should approach Finofiii Fintech Private Limited (via the Grievance Redressal/Escalation Matrix above) and Finofiii shall ensure that the grievance is resolved within 30 days.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">If the investor's complaint is not redressed satisfactorily, one may lodge a complaint with SEBI on SEBI's 'SCORES' portal (<a href="https://scores.sebi.gov.in" target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline" style={{ color: '#1d4ed8' }}>https://scores.sebi.gov.in</a>), a centralised web-based complaints redressal system. SEBI takes up complaints registered via SCORES with the concerned intermediary for timely redressal. SCORES facilitates tracking the status of the complaint.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">With regard to physical complaints, investors may send their complaints to: Office of Investor Assistance and Education, Securities and Exchange Board of India, SEBI Bhavan, Plot No. C4-A, 'G' Block, Bandra-Kurla Complex, Bandra (E), Mumbai – 400051.</p>
+                  </div>
                 </div>
 
                 {/* Section E */}
@@ -157,33 +157,33 @@ const InvestorCharter = () => {
                   <h4 className="text-lg font-bold mb-3" style={{ color: '#111827' }}>E. Expectations from the investors (Responsibilities of investors)</h4>
                   
                   <h5 className="font-bold mt-4 mb-2" style={{ color: '#047857' }}>Do's</h5>
-                  <ol className="space-y-3 pl-6" style={{ listStyleType: "decimal", listStylePosition: "outside" }}>
-                    <li>Always deal with AMFI-registered Mutual Fund Distributors.</li>
-                    <li>Verify the distributor's ARN and EUIN validity on the AMFI website before transacting.</li>
-                    <li>Insist that every investment payment/cheque is made only in favour of the mutual fund scheme — never in the distributor's personal or firm name.</li>
-                    <li>Always read the Scheme Information Document (SID) / Key Information Memorandum (KIM) before investing.</li>
-                    <li>Assess your risk profile, investment goals and the liquidity/safety aspects of a scheme before investing.</li>
-                    <li>Ask all relevant questions and clear your doubts with your distributor before acting.</li>
-                    <li>Insist on written or email confirmation of every transaction instruction (SIP, redemption, switch) placed.</li>
-                    <li>Keep your KYC, email, mobile number and bank details updated with the AMC/RTA.</li>
-                    <li>Be vigilant — regularly check your account statements/CAS for discrepancies.</li>
-                    <li>Right to have digital accessibility.</li>
-                    <li>Approach the appropriate authorities for redressal of your doubts / grievances.</li>
-                    <li>Inform SEBI/AMFI about distributors offering assured or guaranteed returns.</li>
-                  </ol>
+                  <div className="space-y-3 pl-4 border-l-2 border-amber-200">
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Always deal with AMFI-registered Mutual Fund Distributors.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Verify the distributor's ARN and EUIN validity on the AMFI website before transacting.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Insist that every investment payment/cheque is made only in favour of the mutual fund scheme — never in the distributor's personal or firm name.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Always read the Scheme Information Document (SID) / Key Information Memorandum (KIM) before investing.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Assess your risk profile, investment goals and the liquidity/safety aspects of a scheme before investing.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Ask all relevant questions and clear your doubts with your distributor before acting.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Insist on written or email confirmation of every transaction instruction (SIP, redemption, switch) placed.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Keep your KYC, email, mobile number and bank details updated with the AMC/RTA.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Be vigilant — regularly check your account statements/CAS for discrepancies.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Right to have digital accessibility.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Approach the appropriate authorities for redressal of your doubts / grievances.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Inform SEBI/AMFI about distributors offering assured or guaranteed returns.</p>
+                  </div>
 
                   <h5 className="font-bold mt-6 mb-2" style={{ color: '#dc2626' }}>Don'ts</h5>
-                  <ul className="space-y-3 pl-6" style={{ listStyleType: "disc", listStylePosition: "outside" }}>
-                    <li>Don't fall for scheme 'tips' or personalised investment advice offered by a distributor beyond its permitted scope.</li>
-                    <li>Do not hand over cash, or issue cheques in the distributor's personal name, for any mutual fund investment.</li>
-                    <li>Don't fall for the promise of indicative, exorbitant or assured returns. Don't let greed override rational investment decisions.</li>
-                    <li>Don't fall prey to luring advertisements or market rumours.</li>
-                    <li>Avoid transacting only on the basis of phone calls or messages — insist on written confirmation.</li>
-                    <li>Don't take decisions just because of repeated messages and calls from the distributor.</li>
-                    <li>Do not fall prey to limited-period discounts or other incentives/gifts offered by distributors.</li>
-                    <li>Don't rush into investments that do not match your risk-taking appetite and investment goals.</li>
-                    <li>Do not share login credentials and passwords of your folio/CAS portal with the distributor.</li>
-                  </ul>
+                  <div className="space-y-3 pl-4 border-l-2 border-amber-200">
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Don't fall for scheme 'tips' or personalised investment advice offered by a distributor beyond its permitted scope.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Do not hand over cash, or issue cheques in the distributor's personal name, for any mutual fund investment.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Don't fall for the promise of indicative, exorbitant or assured returns. Don't let greed override rational investment decisions.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Don't fall prey to luring advertisements or market rumours.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Avoid transacting only on the basis of phone calls or messages — insist on written confirmation.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Don't take decisions just because of repeated messages and calls from the distributor.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Do not fall prey to limited-period discounts or other incentives/gifts offered by distributors.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Don't rush into investments that do not match your risk-taking appetite and investment goals.</p>
+                    <p className="pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-amber-500 before:font-bold">Do not share login credentials and passwords of your folio/CAS portal with the distributor.</p>
+                  </div>
                 </div>
               </div>
 
