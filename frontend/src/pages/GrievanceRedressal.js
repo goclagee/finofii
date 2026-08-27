@@ -32,7 +32,7 @@ const escalationMatrix = [
   {
     level: "3",
     title: "Third Escalation",
-    subtitle: "President\nFinofiii Treasury",
+    subtitle: "Nodal Officer (President\nFinofiii Treasury)",
     person: "Sidarth Raina",
     phone: "+91 98107 43977",
     email: "sidarth.raina@finofii.com",
