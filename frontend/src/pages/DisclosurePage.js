@@ -74,6 +74,12 @@ const DisclosurePage = () => {
                 >
                   Investor Charter & Complaint Status
                 </Link>
+                <Link
+                  to="/grievance-redressal"
+                  className="px-6 py-3 bg-gradient-to-r from-red-600 to-red-700 text-white rounded-lg font-semibold hover:from-red-700 hover:to-red-800 transition-all shadow-md"
+                >
+                  Grievance Redressal
+                </Link>
                 <a
                   href="/disclosure"
                   className="px-6 py-3 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white rounded-lg font-semibold hover:from-emerald-700 hover:to-emerald-800 transition-all shadow-md"
