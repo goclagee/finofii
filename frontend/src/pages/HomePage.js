@@ -17,10 +17,10 @@ import {
 import { useState, useEffect } from "react";
 
 const rotatingWords = [
-  "Treasury Management",
+  "Multi-Family Office Platform",
   "WealthTech",
-  "Multi-Family Offices",
   "Portfolio Intelligence",
+  "Treasury Management",
 ];
 
 const HomePage = () => {
@@ -88,7 +88,7 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h1 style={{fontSize: 'clamp(2.5rem, 5vw, 72px)'}} className="font-extrabold mb-8 leading-[0.95] tracking-tighter">
-              <span className="text-white">India's Premier AI-Based</span>
+              <span className="text-white">Global Treasury &</span>
               <br />
               <span
                 className={`inline-block bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent transition-all duration-500 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}

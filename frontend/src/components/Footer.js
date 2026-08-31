@@ -12,7 +12,7 @@ const Footer = () => {
               <img src="/logo.png" alt="Finofiii" className="h-10 w-auto" />
             </Link>
             <p className="text-xs text-gray-500 leading-relaxed mb-3">
-              India's premier treasury management & financial solutions platform.
+              Global treasury & multi-family office platform.
             </p>
             <div className="flex items-center gap-3 text-xs text-gray-400">
               <span className="text-green-600 font-medium">AMFI: ARN-176236</span>

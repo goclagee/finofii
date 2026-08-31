@@ -140,9 +140,9 @@ export default function AboutPage() {
   const [open, setOpen] = useState(false);
 
   useSEO({
-    title: "About Finofiii — India's Premier Asset Manager-Led Treasury & Wealth Platform",
+    title: "About Finofiii — Global Treasury & Multi-Family Office Platform",
     description:
-      "Finofiii is India's premier AI-based Treasury Management, WealthTech and Multi-Family Offices platform — built by career asset managers, not bankers. ₹2,500 Cr+ transacted, 130+ years of combined asset management experience, SEBI & AMFI registered. Meet the team.",
+      "Finofiii is a global treasury & multi-family office platform — built by career asset managers, not bankers. ₹2,500 Cr+ transacted, 130+ years of combined asset management experience, SEBI & AMFI registered. Meet the team.",
     canonical: "https://finofii.com/about",
     jsonLd: {
       "@context": "https://schema.org",
@@ -151,7 +151,7 @@ export default function AboutPage() {
       url: "https://finofii.com",
       logo: "https://finofii.com/logo.png",
       description:
-        "India's premier AI-led Treasury Management, WealthTech and Multi-Family Offices platform — built by career asset managers.",
+        "Global treasury & multi-family office platform — built by career asset managers.",
       foundingDate: "2021",
       founders: [
         { "@type": "Person", name: "Ganessh Jha", jobTitle: "Founder & CEO" },
@@ -186,9 +186,9 @@ export default function AboutPage() {
           </span>
 
           <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 72px)', color: '#ffffff' }} className="font-extrabold mb-6 leading-[0.95] tracking-tighter max-w-5xl mx-auto">
-            India's Premier<br />
-            <span className="bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent">Asset Manager-Led</span><br />
-            Treasury & Wealth Platform
+            Global Treasury &<br />
+            <span className="bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent">Multi-Family Office</span><br />
+            Platform
           </h1>
 
           <p className="text-2xl mb-4 max-w-3xl mx-auto font-semibold italic" style={{ color: '#fcd34d' }}>
