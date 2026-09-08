@@ -13,12 +13,12 @@ const WealthFamilyOffices = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       <div className="bg-gradient-to-r from-slate-900 to-blue-900 text-white py-20 px-4">
-        <h1 className="text-4xl font-bold text-center">Wealth Management for Family Offices</h1>
+        <h1 className="text-4xl font-bold text-center">Portfolio Management for Family Offices</h1>
         <p className="text-center text-slate-200 mt-2">Up to 7%* p.a. indicative</p>
       </div>
       <div className="max-w-4xl mx-auto px-4 py-16">
         <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mb-12">
-          <p className="text-slate-800"><strong>What is this?</strong> Wealth Management for Family Offices</p>
+          <p className="text-slate-800"><strong>What is this?</strong> Portfolio Management for Family Offices</p>
         </div>
         <div className="bg-white rounded-xl shadow-lg p-8 mb-12">
           <h2 className="text-2xl font-bold mb-6">Calculate Returns</h2>

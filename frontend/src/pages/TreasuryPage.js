@@ -141,7 +141,7 @@ const TreasuryPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-900 py-32 md:py-40 overflow-hidden" data-testid="treasury-hero">
+      <section className="relative bg-gradient-to-br from-emerald-950 via-teal-900 to-slate-900 py-32 md:py-40 overflow-hidden" data-testid="treasury-hero">
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-blue-500/10 rounded-full filter blur-[120px]"></div>
           <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-amber-500/10 rounded-full filter blur-[100px]"></div>

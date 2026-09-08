@@ -9,7 +9,7 @@ const Navigation = () => {
   const navLinks = [
     { path: "/", label: "Home" },
     { path: "/treasury", label: "Treasury Management" },
-    { path: "/founders", label: "Founders Wealth" },
+    { path: "/founders", label: "Founders" },
     { path: "/family-office", label: "Family Office" },
     { path: "/capital", label: "Capital" },
     { path: "/about", label: "About Us" },

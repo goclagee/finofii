@@ -229,11 +229,11 @@ export const WealthFamilyOffice = () => (
   <div className="page">
     <TrustBadges />
     
-    <h1>Family Office Wealth Management: Multi-Asset Treasury Strategy</h1>
+    <h1>Family Office Portfolio Management: Multi-Asset Treasury Strategy</h1>
     <ReadingTime minutes={6} />
     
     <p className="context-paragraph">
-      Family offices manage complex wealth across generations. Treasury is just one component of a comprehensive strategy that includes equities, real estate, and alternative investments. Finofiii provides the treasury management backbone.
+      Family offices manage complex portfolios across generations. Treasury is just one component of a comprehensive strategy that includes equities, real estate, and alternative investments. Finofiii provides the treasury management backbone.
     </p>
 
     <div className="stat-card">
@@ -253,7 +253,7 @@ export const WealthFamilyOffice = () => (
     </div>
 
     <div className="section">
-      <h2>Complete Wealth Ecosystem</h2>
+      <h2>Complete Portfolio Ecosystem</h2>
       <ul>
         <li><strong>🏦 Treasury:</strong> Liquid reserves earning 6-7% (Finofiii handles)</li>
         <li><strong>📊 Equities:</strong> Long-term growth via SIP/funds</li>
@@ -264,7 +264,7 @@ export const WealthFamilyOffice = () => (
     </div>
 
     <div className="cta">
-      <p>Treasury that integrates with your complete wealth strategy. Multi-generational wealth planning starts here.</p>
+      <p>Treasury that integrates with your complete portfolio strategy. Multi-generational estate planning starts here.</p>
       <a href="https://wa.me/919311361888" className="btn btn-whatsapp">
         Talk to Family Office Specialists
       </a>

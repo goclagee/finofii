@@ -43,10 +43,10 @@ const seniorTeam = [
     role: "Senior Vice President — Multi Family Offices",
     photo: li("Sidarth Raina"),
     linkedin: liSearch("Sidarth Raina"),
-    badge: "22 Yrs · Private Wealth",
+    badge: "22 Yrs · Private Banking",
     bio:
-      "With 22 years of private banking and wealth management experience servicing India's wealthiest families and largest corporates, Sidarth leads our Multi Family Office practice — from wealth structuring and treasury to private market access and succession planning. The trusted single point of contact for families with ₹100 Cr+ in investible assets.",
-    pills: ["Multi Family Office", "Private Wealth", "Corporate Banking"],
+      "With 22 years of private banking and portfolio management experience servicing India's most affluent families and largest corporates, Sidarth leads our Multi Family Office practice — from portfolio structuring and treasury to private market access and succession planning. The trusted single point of contact for families with ₹100 Cr+ in investible assets.",
+    pills: ["Multi Family Office", "Private Banking", "Corporate Banking"],
   },
   {
     name: "Ankush Saxena",
@@ -142,7 +142,7 @@ export default function AboutPage() {
   useSEO({
     title: "About Finofiii — Global Treasury & Multi-Family Office Platform",
     description:
-      "Finofiii is a global treasury & multi-family office platform — built by career asset managers, not bankers. ₹2,500 Cr+ transacted, 130+ years of combined asset management experience, SEBI & AMFI registered. Meet the team.",
+      "Finofiii is a global treasury & multi-family office platform — built by career asset managers, not bankers. ₹2,800 Cr+ transacted, 130+ years of combined asset management experience, SEBI & AMFI registered. Meet the team.",
     canonical: "https://finofii.com/about",
     jsonLd: {
       "@context": "https://schema.org",
@@ -173,30 +173,30 @@ export default function AboutPage() {
 
   return (
     <>
-      {/* HERO — matching homepage style */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-900 py-32 md:py-40 overflow-hidden" data-testid="about-hero">
+      {/* HERO */}
+      <section className="relative bg-gradient-to-br from-indigo-950 via-slate-900 to-cyan-950 py-40 md:py-52 overflow-hidden" data-testid="about-hero">
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-blue-500/10 rounded-full filter blur-[120px]"></div>
+          <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-cyan-500/10 rounded-full filter blur-[120px]"></div>
           <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-amber-500/10 rounded-full filter blur-[100px]"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-sm border border-white/20 text-xs font-bold rounded-full uppercase tracking-wider mb-6" style={{ color: '#bfdbfe' }}>
+          <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-sm border border-white/20 text-xs font-bold rounded-full uppercase tracking-wider mb-8" style={{ color: '#bfdbfe' }}>
             About Finofiii · Asset Manager Led
           </span>
 
-          <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 72px)', color: '#ffffff' }} className="font-extrabold mb-6 leading-[0.95] tracking-tighter max-w-5xl mx-auto">
+          <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 72px)', color: '#ffffff' }} className="font-extrabold mb-8 leading-[1.1] tracking-tighter max-w-5xl mx-auto">
             Global Treasury &<br />
             <span className="bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent">Multi-Family Office</span><br />
             Platform
           </h1>
 
-          <p className="text-2xl mb-4 max-w-3xl mx-auto font-semibold italic" style={{ color: '#fcd34d' }}>
+          <p className="text-2xl mb-6 max-w-3xl mx-auto font-semibold italic" style={{ color: '#fcd34d' }}>
             "Built by Asset Managers. Backed by ₹10 Lakh Crore of Experience."
           </p>
 
-          <p className="text-lg mb-10 max-w-3xl mx-auto" style={{ color: 'rgba(191, 219, 254, 0.7)' }}>
-            130+ years of combined asset management experience behind a single platform — ₹2,500 Crore+ already moved through it.
+          <p className="text-lg mb-12 max-w-3xl mx-auto leading-relaxed" style={{ color: 'rgba(191, 219, 254, 0.7)' }}>
+            130+ years of combined asset management experience behind a single platform — ₹2,800 Crore+ already moved through it.
           </p>
 
           <div className="flex flex-wrap justify-center gap-3">
@@ -212,17 +212,17 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-
-        {/* Stat strip below hero on white */}
-        <div className="relative bg-white text-slate-900">
-          <div className="max-w-7xl mx-auto px-5 lg:px-8 grid grid-cols-2 md:grid-cols-4 py-12 gap-8">
-            <Metric value="₹2,500+ Cr" label="Transacted via Platform" tone="blue" />
-            <Metric value="130+" label="Yrs Combined Experience" tone="violet" />
-            <Metric value="₹10 L Cr+" label="Cumulative Book Managed" tone="amber" />
-            <Metric value="1,000+" label="Businesses Served" tone="green" />
-          </div>
-        </div>
       </section>
+
+      {/* Stat strip below hero on white */}
+      <div className="relative bg-white text-slate-900 border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-5 lg:px-8 grid grid-cols-2 md:grid-cols-4 py-14 gap-8">
+          <Metric value="₹2,800+ Cr" label="Transacted via Platform" tone="blue" />
+          <Metric value="130+" label="Yrs Combined Experience" tone="violet" />
+          <Metric value="₹10 L Cr+" label="Cumulative Book Managed" tone="amber" />
+          <Metric value="1,000+" label="Businesses Served" tone="green" />
+        </div>
+      </div>
 
       {/* Our promise */}
       <section className="bg-[var(--fino-bg)] py-24" aria-label="Our promise to clients">

@@ -38,23 +38,23 @@ const FamilyOfficePage = () => {
       id: "1",
       name: "Tax Efficiency",
       description:
-        "Stay on top of latest tax changes and opportunities to enhance and preserve wealth. Ensure compliance, optimize tax burden, and handle international tax complexities.",
+        "Stay on top of latest tax changes and opportunities to enhance and preserve capital. Ensure compliance, optimize tax burden, and handle international tax complexities.",
       icon: <Calculator className="w-12 h-12 text-amber-600" />,
       keyPoints: [
         "Tax compliance and optimization",
-        "Wealth transition planning",
+        "Estate transition planning",
         "International tax advisory",
         "Worldwide tax compliance",
       ],
     },
     {
       id: "2",
-      name: "Wealth Strategy",
+      name: "Portfolio Strategy",
       description:
-        "Independent and objective wealth analysis with dedicated professionals and monitoring tools for investment performance based on fee-for-service.",
+        "Independent and objective portfolio analysis with dedicated professionals and monitoring tools for investment performance based on fee-for-service.",
       icon: <TrendingUp className="w-12 h-12 text-amber-600" />,
       keyPoints: [
-        "Independent wealth analysis",
+        "Independent portfolio analysis",
         "Buy-side strategy and implications",
         "Risk overview and asset protection",
         "Cash flow budgeting and projections",
@@ -62,7 +62,7 @@ const FamilyOfficePage = () => {
     },
     {
       id: "3",
-      name: "Wealth Reporting",
+      name: "Portfolio Reporting",
       description:
         "Accurate consolidated view of entire family fortune for strategic planning with real-time portfolio valuation and performance analysis.",
       icon: <FileText className="w-12 h-12 text-amber-600" />,
@@ -77,11 +77,11 @@ const FamilyOfficePage = () => {
       id: "4",
       name: "Family Governance",
       description:
-        "Foster trusting dialogue and guide intergenerational unity. Help families transfer wealth and plan continuation of family business.",
+        "Foster trusting dialogue and guide intergenerational unity. Help families transfer assets and plan continuation of family business.",
       icon: <Users className="w-12 h-12 text-amber-600" />,
       keyPoints: [
         "Family continuity and succession",
-        "Generational wealth planning",
+        "Generational estate planning",
         "Family business governance",
         "Trust planning and dispute resolution",
       ],
@@ -202,7 +202,7 @@ const FamilyOfficePage = () => {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section
-        className="relative bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-900 py-32 md:py-40 overflow-hidden"
+        className="relative bg-gradient-to-br from-amber-950 via-orange-900 to-slate-900 py-32 md:py-40 overflow-hidden"
         data-testid="mfo-hero"
       >
         <div className="absolute inset-0">
@@ -250,7 +250,7 @@ const FamilyOfficePage = () => {
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed mb-12">
             Our Multi-Family Office platform works as your Family CFO, helping
-            you consolidate your family's private wealth under a single window
+            you consolidate your family's private assets under a single window
             professional management umbrella. We provide family-centric holistic
             and non-conflicted advice, ongoing risk management, consolidated
             reporting, and administration of assets.
@@ -276,7 +276,7 @@ const FamilyOfficePage = () => {
       <section className="py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Preserving & Growing Generational Wealth</h2>
+            <h2 className="text-4xl font-bold mb-4">Preserving & Growing Capital Across Generations</h2>
             <p className="text-xl text-gray-300">Your legacy deserves exceptional stewardship</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -334,7 +334,7 @@ const FamilyOfficePage = () => {
               Our Comprehensive Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              End-to-end wealth management solutions designed for ultra-high-net-worth families
+              End-to-end family office solutions designed for ultra-high-net-worth families
             </p>
           </div>
 
@@ -397,8 +397,8 @@ const FamilyOfficePage = () => {
                   Consolidated View
                 </h3>
                 <p className="text-gray-600 text-lg">
-                  Single dashboard for all your family's assets, investments, and
-                  wealth across all asset classes with real-time tracking.
+                  Single dashboard for all your family's assets and investments
+                  across all asset classes with real-time tracking.
                 </p>
               </div>
             </div>
@@ -411,7 +411,7 @@ const FamilyOfficePage = () => {
                   Generational Planning
                 </h3>
                 <p className="text-gray-600 text-lg">
-                  Strategic wealth transfer planning to preserve and grow wealth
+                  Strategic estate transfer planning to preserve and grow capital
                   for future generations with proper governance structures.
                 </p>
               </div>
@@ -440,7 +440,7 @@ const FamilyOfficePage = () => {
                 </h3>
                 <p className="text-gray-600 text-lg">
                   Comprehensive risk assessment and mitigation strategies across
-                  all aspects of family wealth and business interests.
+                  all aspects of family assets and business interests.
                 </p>
               </div>
             </div>
@@ -473,7 +473,7 @@ const FamilyOfficePage = () => {
               Schedule a Confidential Consultation
             </h2>
             <p className="text-xl text-gray-600">
-              Let's discuss how we can serve your family's unique wealth management needs
+              Let's discuss how we can serve your family's unique family office needs
             </p>
           </div>
 
@@ -621,7 +621,7 @@ const FamilyOfficePage = () => {
                 }
                 rows="5"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent"
-                placeholder="Share your family's wealth management goals, challenges, and what you're looking for in a Family Office partner..."
+                placeholder="Share your family's financial goals, challenges, and what you're looking for in a Family Office partner..."
                 data-testid="message-input"
               ></textarea>
             </div>
@@ -670,7 +670,7 @@ const FamilyOfficePage = () => {
                 Can you work with our existing advisors?
               </h3>
               <p className="text-gray-600">
-                Absolutely. We complement your existing team of advisors and act as a coordinating Family CFO, ensuring all aspects of your wealth are managed cohesively while respecting existing relationships.
+                Absolutely. We complement your existing team of advisors and act as a coordinating Family CFO, ensuring all aspects of your assets are managed cohesively while respecting existing relationships.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6">

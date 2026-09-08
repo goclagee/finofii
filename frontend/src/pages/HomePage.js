@@ -18,7 +18,7 @@ import { useState, useEffect } from "react";
 
 const rotatingWords = [
   "Multi-Family Office Platform",
-  "WealthTech",
+  "FinTech",
   "Portfolio Intelligence",
   "Treasury Management",
 ];
@@ -129,7 +129,7 @@ const HomePage = () => {
                 Book Demo
               </a>
             </div>
-            <p className="text-xs text-blue-200/50">*Based on 6-month liquid fund average returns</p>
+            <p className="text-xs text-blue-200/50">*Based on 6 months debt mutual fund average YTMs</p>
           </div>
         </div>
       </section>
@@ -148,12 +148,12 @@ const HomePage = () => {
               <div className="text-sm text-gray-600 font-medium">Businesses Served</div>
             </div>
             <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-emerald-50 to-green-50 border border-emerald-100 hover:shadow-lg hover:scale-105 transition-all duration-300">
-              <div className="text-4xl md:text-5xl font-extrabold text-emerald-600 mb-1">7%*</div>
-              <div className="text-sm text-gray-600 font-medium">Avg Annual Returns</div>
+              <div className="text-4xl md:text-5xl font-extrabold text-emerald-600 mb-1">25 Yr+</div>
+              <div className="text-sm text-gray-600 font-medium">Industry Experience</div>
             </div>
             <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-violet-50 to-purple-50 border border-violet-100 hover:shadow-lg hover:scale-105 transition-all duration-300">
-              <div className="text-4xl md:text-5xl font-extrabold text-indigo-600 mb-1">T+1</div>
-              <div className="text-sm text-gray-600 font-medium">Fast Liquidity</div>
+              <div className="text-4xl md:text-5xl font-extrabold text-indigo-600 mb-1">₹10 L Cr+</div>
+              <div className="text-sm text-gray-600 font-medium">Book Managed</div>
             </div>
           </div>
         </div>
@@ -188,7 +188,7 @@ const HomePage = () => {
                   <span className="text-3xl font-bold text-emerald-600">₹1,850*</span>
                 </div>
               </div>
-              <p className="text-xs text-gray-500 mt-4">*Based on 6-month average liquid fund returns</p>
+              <p className="text-xs text-gray-500 mt-4">*Based on 6 months debt mutual fund average YTMs</p>
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
@@ -290,7 +290,7 @@ const HomePage = () => {
               <div className="bg-gradient-to-br from-indigo-500 to-indigo-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-indigo-500/20">
                 <Rocket size={32} className="text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Founders Wealth</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Founders</h3>
               <p className="text-gray-600 mb-6">Access private markets with Founder-Led Vehicles</p>
               <div className="space-y-3 mb-6">
                 <div className="flex items-center">
@@ -405,7 +405,7 @@ const HomePage = () => {
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-white/10 rounded-full"></div>
               <Building2 className="w-10 h-10 mb-4 opacity-90" />
               <h3 className="font-bold text-xl mb-1">Family Offices</h3>
-              <p className="text-white/80 text-sm">UHNW families preserving & growing generational wealth</p>
+              <p className="text-white/80 text-sm">UHNW families preserving & growing capital across generations</p>
               <div className="mt-4 text-xs bg-white/20 inline-block px-3 py-1 rounded-full">₹25 Cr+ NW</div>
             </div>
             <div className="group relative bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl p-6 text-white overflow-hidden hover:scale-[1.03] transition-all duration-300 shadow-lg shadow-emerald-500/20">
@@ -479,7 +479,7 @@ const HomePage = () => {
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 bg-violet-100 text-violet-700 text-xs font-bold rounded-full uppercase tracking-wider mb-4">Insights</span>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Market Intelligence</h2>
-            <p className="text-xl text-gray-500">Fresh perspectives on wealth, markets & treasury</p>
+            <p className="text-xl text-gray-500">Fresh perspectives on capital, markets & treasury</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
@@ -516,14 +516,14 @@ const HomePage = () => {
               <div className="h-2 bg-gradient-to-r from-emerald-400 to-teal-500"></div>
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-1 rounded">WEALTH</span>
+                  <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-1 rounded">CAPITAL</span>
                   <span className="text-xs text-gray-400">1 day ago</span>
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors">
                   Tax-Efficient Strategies for HNI Investors
                 </h3>
                 <p className="text-sm text-gray-500 leading-relaxed">
-                  From debt fund indexation benefits to international diversification — how India's wealthy are optimizing their tax burden...
+                  From debt fund indexation benefits to international diversification — how India's affluent are optimizing their tax burden...
                 </p>
               </div>
             </div>
@@ -542,7 +542,7 @@ const HomePage = () => {
             {[
               { q: "How does Finofiii work?", a: "Finofiii invests your idle current account balance in SEBI-regulated liquid and debt mutual funds via BSE StAR MF, generating up to 7%* annually while maintaining T+1 liquidity." },
               { q: "Is my money safe?", a: "Your money never touches Finofiii's account. All investments go directly to SEBI-regulated AMCs through BSE StAR MF execution channel with daily NAV declarations." },
-              { q: "What's the minimum investment?", a: "Treasury Management starts at ₹1 Crore. Founders Wealth from ₹100 (MFs) to ₹1 Cr (PMS/AIF). Family Office requires ₹25 Cr+ net worth." },
+              { q: "What's the minimum investment?", a: "Treasury Management starts at ₹1 Crore. Founders from ₹100 (MFs) to ₹1 Cr (PMS/AIF). Family Office requires ₹25 Cr+ net worth." },
               { q: "How quickly can I withdraw?", a: "Liquid funds offer T+1 liquidity — money back in 1-3 business days. Some schemes offer instant redemption up to ₹50,000." },
               { q: "What are your fees?", a: "No account opening or transaction fees. A small percentage (as low as 0.08%) on monthly treasury positions. Family Office uses a transparent fee-for-service model." },
             ].map((item, i) => (

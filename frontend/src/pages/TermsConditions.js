@@ -24,11 +24,11 @@ const TermsConditions = () => {
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">
                 2. Services Provided
               </h2>
-              <p>Finofiii provides the following wealth management services:</p>
+              <p>Finofiii provides the following financial services:</p>
               <ul className="list-disc list-inside space-y-2 ml-4 mt-3">
                 <li><strong>Treasury Management:</strong> Business idle cash management through mutual fund investments (minimum ₹1 Crore)</li>
-                <li><strong>Founders Wealth:</strong> Startup and pre-IPO investment opportunities (minimum ₹1 Crore)</li>
-                <li><strong>Multi-Family Office:</strong> Comprehensive wealth management for HNI families (minimum net worth ₹25 Crores)</li>
+                <li><strong>Founders:</strong> Startup and pre-IPO investment opportunities (minimum ₹1 Crore)</li>
+                <li><strong>Multi-Family Office:</strong> Comprehensive family office services for HNI families (minimum net worth ₹25 Crores)</li>
               </ul>
             </section>
 

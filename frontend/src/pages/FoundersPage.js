@@ -114,7 +114,7 @@ const FoundersPage = () => {
           name: formData.founder_name,
           email: formData.email || "",
           phone: formData.phone || "",
-          message: `Founders Wealth | Company: ${formData.company_name} | Interest: ${(formData.investment_interest || []).join(", ")} | ${formData.message || ""}`.trim(),
+          message: `Founders | Company: ${formData.company_name} | Interest: ${(formData.investment_interest || []).join(", ")} | ${formData.message || ""}`.trim(),
         }
       );
 
@@ -163,7 +163,7 @@ const FoundersPage = () => {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section
-        className="relative bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-900 py-32 md:py-40 overflow-hidden"
+        className="relative bg-gradient-to-br from-purple-950 via-violet-900 to-slate-900 py-32 md:py-40 overflow-hidden"
         data-testid="founders-hero"
       >
         <div className="absolute inset-0">
@@ -176,7 +176,7 @@ const FoundersPage = () => {
               Invitation-Only Investment Platform
             </span>
             <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 72px)', color: '#ffffff' }} className="font-extrabold mb-6 leading-[0.95] tracking-tighter">
-              Founders <span className="bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent">Wealth</span>
+              <span className="bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent">Founders</span>
             </h1>
             <p className="text-lg md:text-xl mb-5 max-w-4xl mx-auto font-light tracking-wide" style={{ color: 'rgba(191, 219, 254, 0.8)' }}>
               Access to Curated Equity Investment Opportunities Reserved for Select Investors
@@ -302,7 +302,7 @@ const FoundersPage = () => {
                 Dedicated Portfolio Managers
               </h3>
               <p className="text-gray-600">
-                Personal relationship manager for exclusive portfolio management and strategic wealth planning
+                Personal relationship manager for exclusive portfolio management and strategic financial planning
               </p>
             </div>
             <div className="text-center p-6">
@@ -356,7 +356,7 @@ const FoundersPage = () => {
             >
               <CheckCircle2 className="text-green-600 mr-3" />
               <span className="text-green-800">
-                Thank you! Our wealth management team will contact you within 24 hours.
+                Thank you! Our investment team will contact you within 24 hours.
               </span>
             </div>
           )}

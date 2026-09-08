@@ -25,7 +25,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li><Link to="/" className="text-gray-600 hover:text-amber-600 transition-colors">Home</Link></li>
               <li><Link to="/treasury" className="text-gray-600 hover:text-amber-600 transition-colors">Treasury</Link></li>
-              <li><Link to="/founders" className="text-gray-600 hover:text-amber-600 transition-colors">Founders Wealth</Link></li>
+              <li><Link to="/founders" className="text-gray-600 hover:text-amber-600 transition-colors">Founders</Link></li>
               <li><Link to="/family-office" className="text-gray-600 hover:text-amber-600 transition-colors">Family Office</Link></li>
               <li><Link to="/capital" className="text-gray-600 hover:text-amber-600 transition-colors">Capital</Link></li>
               <li><Link to="/about" className="text-gray-600 hover:text-amber-600 transition-colors">About</Link></li>
@@ -84,12 +84,14 @@ const Footer = () => {
               <span>GSTIN: 09AAECF4170H1ZM</span>
               <span>Startup India: DIPP80252</span>
             </div>
-            <div className="flex items-center gap-4 text-xs text-gray-500">
-              <span>₹2,800 Cr Investments</span>
+            <div className="flex flex-wrap items-center gap-4 text-xs text-gray-500">
+              <Link to="/disclosure" className="hover:text-amber-600 transition-colors">Disclaimer</Link>
               <span>•</span>
-              <span>1,000+ Businesses</span>
+              <Link to="/investor-charter" className="hover:text-amber-600 transition-colors">Investor Charter</Link>
               <span>•</span>
-              <span>BSE StAR MF Platform</span>
+              <Link to="/grievance-redressal" className="hover:text-amber-600 transition-colors">Grievance Redressal</Link>
+              <span>•</span>
+              <Link to="/mutual-fund-disclosure" className="hover:text-amber-600 transition-colors">MF Disclosure</Link>
             </div>
           </div>
           <div className="mt-4 p-3 bg-amber-50 border border-amber-100 rounded-lg">
@@ -98,7 +100,7 @@ const Footer = () => {
             </p>
           </div>
           <p className="text-center text-xs text-gray-400 mt-4">
-            © 2025 Finofiii Fintech Private Limited. All rights reserved.
+            © {new Date().getFullYear()} Finofiii Fintech Private Limited. All rights reserved. | AMFI Registered Mutual Fund Distributor · ARN-176236
           </p>
         </div>
       </div>

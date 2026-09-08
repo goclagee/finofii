@@ -149,7 +149,7 @@ export const TreasuryVsSIP = () => (
     <ReadingTime minutes={4} />
     
     <p className="context-paragraph">
-      Treasury management (via liquid funds) and SIP (Systematic Investment Plan) serve different financial goals. Treasury preserves capital and generates steady returns. SIP builds long-term wealth through equity exposure. The right choice depends on your investment horizon and financial objectives.
+      Treasury management (via liquid funds) and SIP (Systematic Investment Plan) serve different financial goals. Treasury preserves capital and generates steady returns. SIP builds long-term capital growth through equity exposure. The right choice depends on your investment horizon and financial objectives.
     </p>
 
     <div className="stat-card">
@@ -434,11 +434,11 @@ export const TreasuryVsEquity = () => (
   <div className="page">
     <TrustBadges />
     
-    <h1>Treasury vs Equity Funds: Which Grows Your Wealth Faster?</h1>
+    <h1>Treasury vs Equity Funds: Which Grows Your Capital Faster?</h1>
     <ReadingTime minutes={5} />
     
     <p className="context-paragraph">
-      Treasury management preserves capital with steady returns, while equity funds build long-term wealth. This guide helps you understand which suits your financial goals and time horizon.
+      Treasury management preserves capital with steady returns, while equity funds build long-term capital growth. This guide helps you understand which suits your financial goals and time horizon.
     </p>
 
     <div className="stat-card">
@@ -517,7 +517,7 @@ export const TreasuryVsRealEstate = () => (
     <ReadingTime minutes={4} />
     
     <p className="context-paragraph">
-      Real estate is a long-term wealth builder requiring capital, maintenance, and liquidity constraints. Treasury management offers liquid, low-effort returns. Both play different roles in financial planning.
+      Real estate is a long-term capital builder requiring capital, maintenance, and liquidity constraints. Treasury management offers liquid, low-effort returns. Both play different roles in financial planning.
     </p>
 
     <div className="stat-card">
@@ -560,7 +560,7 @@ export const TreasuryVsRealEstate = () => (
     </div>
 
     <div className="cta">
-      <p>Diversify: Use treasury for liquidity + real estate for long-term wealth creation.</p>
+      <p>Diversify: Use treasury for liquidity + real estate for long-term capital creation.</p>
       <a href="https://wa.me/919311361888" className="btn btn-whatsapp">
         Optimize Your Portfolio
       </a>
@@ -649,8 +649,8 @@ export const MFDDifference = () => (
           </tr>
           <tr>
             <td><strong>RIA</strong></td>
-            <td>Portfolio management for wealthy</td>
-            <td>Comprehensive wealth management</td>
+            <td>Portfolio management for HNIs</td>
+            <td>Comprehensive portfolio management</td>
           </tr>
         </tbody>
       </table>
