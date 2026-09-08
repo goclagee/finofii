@@ -14,7 +14,7 @@ const DisclosurePage = () => {
             AMFI Registered Distributor
           </span>
           <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 72px)', color: '#ffffff' }} className="font-extrabold mb-6 leading-[0.95] tracking-tighter">
-            <span className="bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent">Disclaimer</span>
+            <span className="bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent">Disclosure</span>
           </h1>
         </div>
       </section>

@@ -1,6 +1,78 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import axios from "axios";
+import { toast } from "sonner";
+import { Loader2, CheckCircle2 } from "lucide-react";
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 const InvestorCharter = () => {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    category: "",
+    subject: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+
+  const submitComplaint = async (e) => {
+    e.preventDefault();
+    if (!form.name.trim() || !form.email.trim() || !form.phone.trim() || !form.message.trim()) {
+      toast.error("Please fill in your name, email, phone and complaint details");
+      return;
+    }
+    if (!/^[6-9]\d{9}$/.test(form.phone.replace(/\s+/g, ""))) {
+      toast.error("Please enter a valid 10-digit Indian mobile number");
+      return;
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) {
+      toast.error("Please enter a valid email address");
+      return;
+    }
+    setLoading(true);
+    try {
+      const backendPromise = API
+        ? axios.post(`${API}/leads`, {
+            name: form.name.trim(),
+            email: form.email.trim(),
+            phone: form.phone.replace(/\s+/g, ""),
+            message: `COMPLAINT/GRIEVANCE | Category: ${form.category || "N/A"} | Subject: ${form.subject || "N/A"} | ${form.message}`,
+            product_type: "complaint",
+            product_interest: "Investor Grievance",
+          })
+        : Promise.resolve();
+
+      const investwellPromise = axios.post("/.netlify/functions/create-lead", {
+        name: form.name.trim(),
+        email: form.email.trim(),
+        phone: form.phone.replace(/\s+/g, ""),
+        message: [
+          "COMPLAINT / GRIEVANCE",
+          form.category ? `Category: ${form.category}` : "",
+          form.subject ? `Subject: ${form.subject}` : "",
+          form.message,
+        ].filter(Boolean).join(" | "),
+      });
+
+      await Promise.allSettled([backendPromise, investwellPromise]);
+
+      setSuccess(true);
+      toast.success("Your complaint has been registered. We'll respond within 30 days.");
+      setForm({ name: "", email: "", phone: "", category: "", subject: "", message: "" });
+    } catch (err) {
+      console.error(err);
+      toast.error("Something went wrong. Please try again or email care@finofii.com");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#FDFBF7]">
       {/* Hero Section */}
@@ -209,6 +281,125 @@ const InvestorCharter = () => {
                 <p className="font-semibold text-sm leading-relaxed" style={{ color: '#991b1b' }}>
                   DISCLAIMER: Investments in mutual funds are subject to market risks. Read all scheme-related documents carefully before investing. There is no assurance or guarantee that the objectives of any scheme will be achieved. Past performance of any AMC/scheme is not indicative of future performance. Registration granted by SEBI and membership of AMFI (ARN) in no way guarantee the performance of the distributor or provide any assurance of returns to investors.
                 </p>
+              </div>
+
+              {/* Complaint Registration Form */}
+              <div id="register-complaint" className="bg-white border-2 border-amber-200 rounded-2xl p-6 md:p-8 scroll-mt-24">
+                <h3 className="text-xl font-bold mb-2" style={{ color: '#111827' }}>Register a Complaint / Issue</h3>
+                <p className="text-sm mb-6" style={{ color: '#6b7280' }}>
+                  Use the form below to raise a grievance. We aim to resolve all complaints within 30 calendar days.
+                  You may also email us directly at{" "}
+                  <a href="mailto:care@finofii.com" className="font-semibold hover:underline" style={{ color: '#1d4ed8' }}>care@finofii.com</a>.
+                </p>
+
+                {success ? (
+                  <div className="text-center py-10">
+                    <CheckCircle2 size={56} className="mx-auto text-emerald-500" />
+                    <h4 className="text-xl font-bold mt-4" style={{ color: '#111827' }}>Complaint Registered</h4>
+                    <p className="text-sm mt-2" style={{ color: '#6b7280' }}>
+                      Thank you. Our team will review your complaint and respond within 30 calendar days.
+                    </p>
+                    <button
+                      onClick={() => setSuccess(false)}
+                      className="mt-6 px-6 py-2.5 bg-gray-100 text-gray-700 rounded-lg font-semibold hover:bg-gray-200 transition-all text-sm"
+                    >
+                      Register Another Complaint
+                    </button>
+                  </div>
+                ) : (
+                  <form onSubmit={submitComplaint} className="space-y-4">
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-sm font-medium mb-1" style={{ color: '#374151' }}>Full Name *</label>
+                        <input
+                          name="name"
+                          value={form.name}
+                          onChange={handleChange}
+                          placeholder="Your full name"
+                          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium mb-1" style={{ color: '#374151' }}>Mobile Number *</label>
+                        <input
+                          name="phone"
+                          value={form.phone}
+                          onChange={handleChange}
+                          placeholder="10-digit mobile number"
+                          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-sm font-medium mb-1" style={{ color: '#374151' }}>Email Address *</label>
+                        <input
+                          name="email"
+                          type="email"
+                          value={form.email}
+                          onChange={handleChange}
+                          placeholder="you@example.com"
+                          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium mb-1" style={{ color: '#374151' }}>Complaint Category</label>
+                        <select
+                          name="category"
+                          value={form.category}
+                          onChange={handleChange}
+                          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none bg-white"
+                        >
+                          <option value="">Select a category</option>
+                          <option value="Transaction Issue">Transaction Issue</option>
+                          <option value="KYC / Onboarding">KYC / Onboarding</option>
+                          <option value="Redemption / Withdrawal">Redemption / Withdrawal</option>
+                          <option value="Commission / Charges">Commission / Charges</option>
+                          <option value="Service Quality">Service Quality</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div>
+                      <label className="block text-sm font-medium mb-1" style={{ color: '#374151' }}>Subject</label>
+                      <input
+                        name="subject"
+                        value={form.subject}
+                        onChange={handleChange}
+                        placeholder="Brief subject of your complaint"
+                        className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block text-sm font-medium mb-1" style={{ color: '#374151' }}>Complaint Details *</label>
+                      <textarea
+                        name="message"
+                        rows={5}
+                        value={form.message}
+                        onChange={handleChange}
+                        placeholder="Please describe your complaint or issue in detail..."
+                        className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none"
+                      />
+                    </div>
+
+                    <p className="text-[11px] leading-relaxed" style={{ color: '#6b7280' }}>
+                      If your complaint is not resolved satisfactorily within 30 days, you may escalate to SEBI's SCORES portal at{" "}
+                      <a href="https://scores.sebi.gov.in" target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline" style={{ color: '#1d4ed8' }}>https://scores.sebi.gov.in</a>.
+                    </p>
+
+                    <button
+                      type="submit"
+                      disabled={loading}
+                      className="w-full md:w-auto px-8 py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-lg font-semibold hover:from-amber-600 hover:to-amber-700 transition-all shadow-md flex items-center justify-center gap-2 disabled:opacity-70"
+                    >
+                      {loading ? <Loader2 size={18} className="animate-spin" /> : null}
+                      {loading ? "Submitting..." : "Submit Complaint"}
+                    </button>
+                  </form>
+                )}
               </div>
 
               {/* Back to Disclosure */}
