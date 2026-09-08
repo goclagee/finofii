@@ -181,9 +181,6 @@ export default function AboutPage() {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-sm border border-white/20 text-xs font-bold rounded-full uppercase tracking-wider mb-8" style={{ color: '#bfdbfe' }}>
-            About Finofiii · Asset Manager Led
-          </span>
 
           <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 72px)', color: '#ffffff' }} className="font-extrabold mb-8 leading-[1.1] tracking-tighter max-w-5xl mx-auto">
             Global Treasury &<br />

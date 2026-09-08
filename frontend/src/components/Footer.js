@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="inline-block mb-3">
-              <img src="/logo.png" alt="Finofiii" className="h-10 w-auto" />
+              <img src="/logo.png" alt="Finofiii" className="h-20 w-auto" />
             </Link>
             <p className="text-xs text-gray-500 leading-relaxed mb-3">
               Global treasury & multi-family office platform.
@@ -94,9 +94,21 @@ const Footer = () => {
               <Link to="/mutual-fund-disclosure" className="hover:text-amber-600 transition-colors">MF Disclosure</Link>
             </div>
           </div>
-          <div className="mt-4 p-3 bg-amber-50 border border-amber-100 rounded-lg">
+          {/* Regulatory / Reference Links */}
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-[11px] text-gray-500">
+            <a href="https://www.sebi.gov.in/filings/mutual-funds.html" target="_blank" rel="noopener noreferrer" className="hover:text-amber-600 transition-colors">SID / SAI / KIM</a>
+            <span className="text-gray-300">|</span>
+            <a href="https://resources.investwellonline.com/due-diligence/AMFI_Code-of-Conduct.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-amber-600 transition-colors">Code of Conduct</a>
+            <span className="text-gray-300">|</span>
+            <a href="https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&ssid=7&smid=0" target="_blank" rel="noopener noreferrer" className="hover:text-amber-600 transition-colors">SEBI Circulars</a>
+            <span className="text-gray-300">|</span>
+            <a href="https://www.amfiindia.com/investor-corner/knowledge-center/risks-in-mutual-funds.html" target="_blank" rel="noopener noreferrer" className="hover:text-amber-600 transition-colors">Risks in Mutual Funds</a>
+          </div>
+
+          {/* Risk Factors */}
+          <div className="mt-4 p-4 bg-amber-50 border border-amber-100 rounded-lg">
             <p className="text-[11px] text-gray-600 text-center leading-relaxed">
-              <strong className="text-gray-700">Disclaimer:</strong> Mutual Fund investments are subject to market risks. Read all scheme-related documents carefully. Past performance is not indicative of future returns. All investments via SEBI-registered AMCs through BSE StAR MF.
+              <strong className="text-gray-700">Risk Factors</strong> – Investments in Mutual Funds are subject to Market Risks. Read all scheme related documents carefully before investing. Mutual Fund Schemes do not assure or guarantee any returns. Past performances of any Mutual Fund Scheme may or may not be sustained in future. There is no guarantee that the investment objective of any suggested scheme shall be achieved. All existing and prospective investors are advised to check and evaluate the Exit loads and other cost structure (TER) applicable at the time of making the investment before finalizing on any investment decision for Mutual Funds schemes. We deal in Regular Plans only for Mutual Fund Schemes and earn a Trailing Commission on client investments. Disclosure For Commission earnings is made to clients at the time of investments. Option of Direct Plan for every Mutual Fund Scheme is available to investors offering advantage of lower expense ratio. We are not entitled to earn any commission on Direct plans. Hence we do not deal in Direct Plans.
             </p>
           </div>
           <p className="text-center text-xs text-gray-400 mt-4">

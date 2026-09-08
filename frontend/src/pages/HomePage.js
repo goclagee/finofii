@@ -544,7 +544,7 @@ const HomePage = () => {
               { q: "Is my money safe?", a: "Your money never touches Finofiii's account. All investments go directly to SEBI-regulated AMCs through BSE StAR MF execution channel with daily NAV declarations." },
               { q: "What's the minimum investment?", a: "Treasury Management starts at ₹1 Crore. Founders from ₹100 (MFs) to ₹1 Cr (PMS/AIF). Family Office requires ₹25 Cr+ net worth." },
               { q: "How quickly can I withdraw?", a: "Liquid funds offer T+1 liquidity — money back in 1-3 business days. Some schemes offer instant redemption up to ₹50,000." },
-              { q: "What are your fees?", a: "No account opening or transaction fees. A small percentage (as low as 0.08%) on monthly treasury positions. Family Office uses a transparent fee-for-service model." },
+              { q: "What are your fees?", a: "We do not charge investors any fee for mutual fund transactions. As an AMFI-registered Mutual Fund Distributor (ARN-176236), we deal in Regular Plans only and earn a trail commission paid by the AMCs — not by you. Commission disclosure is made to clients at the time of investment. Family Office uses a transparent fee-for-service model." },
             ].map((item, i) => (
               <details key={i} className="group bg-gray-50 rounded-xl border border-gray-100 hover:border-amber-200 transition-colors">
                 <summary className="flex items-center justify-between p-5 cursor-pointer list-none">
