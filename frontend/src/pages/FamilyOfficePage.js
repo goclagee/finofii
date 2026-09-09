@@ -202,17 +202,13 @@ const FamilyOfficePage = () => {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section
-        className="relative bg-gradient-to-br from-amber-950 via-orange-900 to-slate-900 py-32 md:py-40 overflow-hidden"
+        className="relative bg-gradient-to-r from-amber-500 via-orange-600 to-orange-700 py-32 md:py-40 overflow-hidden"
         data-testid="mfo-hero"
       >
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-blue-500/10 rounded-full filter blur-[120px]"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-amber-500/10 rounded-full filter blur-[100px]"></div>
-        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 72px)', color: '#ffffff' }} className="font-extrabold mb-6 leading-[0.95] tracking-tighter">
-              Multi-Family <span className="bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent">Office</span>
+              Multi-Family Office
             </h1>
             <p className="text-lg md:text-xl mb-5 max-w-4xl mx-auto font-light tracking-wide" style={{ color: 'rgba(191, 219, 254, 0.8)' }}>
               Helping you and your family define and achieve your evolving objectives.
