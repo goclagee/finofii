@@ -565,7 +565,7 @@ const HomePage = () => {
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full filter blur-[100px]"></div>
         </div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-          <h2 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">Ready to Earn More?</h2>
+          <h2 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight" style={{ color: '#ffffff' }}>Ready to Earn More?</h2>
           <p className="text-xl md:text-2xl mb-10 text-blue-100/70 max-w-2xl mx-auto">
             Join 1,000+ businesses that stopped letting idle cash sit at 0% returns.
           </p>
