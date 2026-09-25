@@ -397,28 +397,28 @@ const HomePage = () => {
             <div className="group relative bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-6 text-white overflow-hidden hover:scale-[1.03] transition-all duration-300 shadow-lg shadow-amber-500/20">
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-white/10 rounded-full"></div>
               <Users className="w-10 h-10 mb-4 opacity-90" />
-              <h3 className="font-bold text-xl mb-1">Tech Founders</h3>
+              <h3 className="font-bold text-xl mb-1" style={{ color: '#ffffff' }}>Tech Founders</h3>
               <p className="text-white/80 text-sm">Startup & Unicorn CFOs managing runway capital</p>
               <div className="mt-4 text-xs bg-white/20 inline-block px-3 py-1 rounded-full">500+ founders</div>
             </div>
             <div className="group relative bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl p-6 text-white overflow-hidden hover:scale-[1.03] transition-all duration-300 shadow-lg shadow-indigo-500/20">
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-white/10 rounded-full"></div>
               <Building2 className="w-10 h-10 mb-4 opacity-90" />
-              <h3 className="font-bold text-xl mb-1">Family Offices</h3>
+              <h3 className="font-bold text-xl mb-1" style={{ color: '#ffffff' }}>Family Offices</h3>
               <p className="text-white/80 text-sm">UHNW families preserving & growing capital across generations</p>
               <div className="mt-4 text-xs bg-white/20 inline-block px-3 py-1 rounded-full">₹25 Cr+ NW</div>
             </div>
             <div className="group relative bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl p-6 text-white overflow-hidden hover:scale-[1.03] transition-all duration-300 shadow-lg shadow-emerald-500/20">
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-white/10 rounded-full"></div>
               <TrendingUp className="w-10 h-10 mb-4 opacity-90" />
-              <h3 className="font-bold text-xl mb-1">HNI Investors</h3>
+              <h3 className="font-bold text-xl mb-1" style={{ color: '#ffffff' }}>HNI Investors</h3>
               <p className="text-white/80 text-sm">Angels, VCs & serial investors maximizing idle capital</p>
               <div className="mt-4 text-xs bg-white/20 inline-block px-3 py-1 rounded-full">₹1 Cr+ tickets</div>
             </div>
             <div className="group relative bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl p-6 text-white overflow-hidden hover:scale-[1.03] transition-all duration-300 shadow-lg shadow-blue-500/20">
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-white/10 rounded-full"></div>
               <Briefcase className="w-10 h-10 mb-4 opacity-90" />
-              <h3 className="font-bold text-xl mb-1">Corporates</h3>
+              <h3 className="font-bold text-xl mb-1" style={{ color: '#ffffff' }}>Corporates</h3>
               <p className="text-white/80 text-sm">MSMEs & enterprises optimizing treasury operations</p>
               <div className="mt-4 text-xs bg-white/20 inline-block px-3 py-1 rounded-full">1,000+ companies</div>
             </div>
