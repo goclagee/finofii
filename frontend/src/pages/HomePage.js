@@ -160,7 +160,7 @@ const HomePage = () => {
       </section>
 
       {/* Current Account Monetisation */}
-      <section className="py-20 bg-[#FAF8F5]" data-testid="monetisation-section">
+      <section className="py-20 bg-[rgb(202,251,229)]" data-testid="monetisation-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -427,7 +427,7 @@ const HomePage = () => {
       </section>
 
       {/* How It Works — Interactive Timeline */}
-      <section className="py-24 bg-[#FAF8F5] relative overflow-hidden">
+      <section className="py-24 bg-[rgb(202,251,229)] relative overflow-hidden">
         <div className="absolute top-0 left-1/2 w-px h-full bg-gradient-to-b from-transparent via-gray-200 to-transparent hidden md:block"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
