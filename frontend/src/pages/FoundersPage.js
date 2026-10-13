@@ -169,14 +169,14 @@ const FoundersPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 72px)', color: '#ffffff' }} className="font-extrabold mb-6 leading-[0.95] tracking-tighter">
-              <span className="bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent">Founders</span>
+              Founders
             </h1>
-            <p className="text-lg md:text-xl mb-5 max-w-4xl mx-auto font-light tracking-wide" style={{ color: 'rgba(191, 219, 254, 0.8)' }}>
+            <p className="text-lg md:text-xl mb-6 max-w-4xl mx-auto font-light tracking-wide" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
               Access to Curated Equity Investment Opportunities Reserved for Select Investors
             </p>
-            <p className="text-2xl mb-10 max-w-3xl mx-auto font-semibold italic" style={{ color: '#fcd34d' }}>
+            <span className="inline-block mb-10 px-6 py-2.5 bg-white/15 backdrop-blur-sm border border-white/30 rounded-full text-base font-semibold" style={{ color: '#ffffff' }}>
               Starts from ₹1 Crore
-            </p>
+            </span>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="https://platform.finofii.com/app/#/login"
