@@ -47,13 +47,13 @@ export const TreasuryVsFD = () => (
       <div className="stat-example">
         <div className="stat-item winner">
           <div className="stat-label">Treasury / Liquid Fund</div>
-          <div className="stat-amount">₹30,000</div>
-          <div className="stat-label">@ 6% p.a.</div>
+          <div className="stat-amount">Market-linked</div>
+          <div className="stat-label">Indicative</div>
         </div>
         <div className="stat-item">
           <div className="stat-label">Fixed Deposit</div>
-          <div className="stat-amount">₹27,500</div>
-          <div className="stat-label">@ 5.5% p.a.</div>
+          <div className="stat-amount">Bank-fixed</div>
+          <div className="stat-label">Indicative</div>
         </div>
       </div>
       <div className="stat-comparison">
@@ -80,8 +80,8 @@ export const TreasuryVsFD = () => (
           </tr>
           <tr>
             <td><strong><span className="table-icon">💰</span>Returns</strong></td>
-            <td><span className="check-mark">✓</span> 6-7% per annum</td>
-            <td><span className="check-mark">✓</span> 5-6% per annum</td>
+            <td><span className="check-mark">✓</span> Market-linked</td>
+            <td><span className="check-mark">✓</span> Market-linked</td>
           </tr>
           <tr>
             <td><strong><span className="table-icon">📊</span>Tax Efficiency</strong></td>
@@ -157,12 +157,12 @@ export const TreasuryVsSIP = () => (
       <div className="stat-example">
         <div className="stat-item winner">
           <div className="stat-label">Treasury</div>
-          <div className="stat-amount">6-7%</div>
+          <div className="stat-amount">Market-linked</div>
           <div className="stat-label">Short-term (0-2 years)</div>
         </div>
         <div className="stat-item">
           <div className="stat-label">SIP in Equity</div>
-          <div className="stat-amount">12-15%</div>
+          <div className="stat-amount">Market-linked</div>
           <div className="stat-label">Long-term (5-10 years)</div>
         </div>
       </div>
@@ -195,8 +195,8 @@ export const TreasuryVsSIP = () => (
           </tr>
           <tr>
             <td><strong>Expected Returns</strong></td>
-            <td>6-7% (stable)</td>
-            <td>12-15% (variable)</td>
+            <td>Market-linked</td>
+            <td>Market-linked</td>
           </tr>
           <tr>
             <td><strong>Liquidity</strong></td>
@@ -245,21 +245,21 @@ export const TreasuryVsSavings = () => (
     <ReadingTime minutes={3} />
     
     <p className="context-paragraph">
-      Keeping idle cash in a savings account might feel safe, but you're leaving significant returns on the table. Treasury management via liquid funds offers 6-7% returns vs a savings account's 4%, while maintaining full liquidity.
+      Keeping idle cash in a savings account might feel safe, but you may be leaving potential returns on the table. Treasury management via liquid funds aims to put idle cash to work while maintaining full liquidity. Returns are market-linked and not guaranteed.
     </p>
 
     <div className="stat-card">
       <h3>💸 Real Impact: ₹10 Lakh for 1 Year</h3>
       <div className="stat-example">
         <div className="stat-item">
-          <div className="stat-label">Savings Account (4%)</div>
-          <div className="stat-amount">₹40,000</div>
-          <div className="stat-label">Annual earnings</div>
+          <div className="stat-label">Savings Account</div>
+          <div className="stat-amount">Lower</div>
+          <div className="stat-label">Potential earnings</div>
         </div>
         <div className="stat-item winner">
-          <div className="stat-label">Treasury Fund (6%)</div>
-          <div className="stat-amount">₹60,000</div>
-          <div className="stat-label">Annual earnings</div>
+          <div className="stat-label">Treasury Fund</div>
+          <div className="stat-amount">Market-linked</div>
+          <div className="stat-label">Potential earnings</div>
         </div>
       </div>
       <div className="stat-comparison">
@@ -281,8 +281,8 @@ export const TreasuryVsSavings = () => (
         <tbody>
           <tr>
             <td><strong>Interest Rate</strong></td>
-            <td>2.7-4% per annum</td>
-            <td><span className="check-mark">✓</span> 6-7% per annum</td>
+            <td>Fixed by bank</td>
+            <td><span className="check-mark">✓</span> Market-linked</td>
           </tr>
           <tr>
             <td><strong>Liquidity</strong></td>
@@ -321,7 +321,7 @@ export const TreasuryVsSavings = () => (
       <div className="choose-option">
         <h4><span className="table-icon">✓</span> Better: Treasury Fund</h4>
         <ul>
-          <li>50% higher returns (6% vs 4%)</li>
+          <li>Potentially higher tax-adjusted returns</li>
           <li>Still fully liquid (1-2 days)</li>
           <li>Tax-efficient (indexation)</li>
           <li>SEBI-regulated, professional management</li>
@@ -330,7 +330,7 @@ export const TreasuryVsSavings = () => (
     </div>
 
     <div className="cta">
-      <p>Stop earning 4% when you could earn 6%. Move your idle cash to treasury management today.</p>
+      <p>Put your idle cash to work. Explore treasury management today.</p>
       <a href="https://wa.me/919311361888" className="btn btn-whatsapp">
         Move ₹ to Treasury (Free Setup)
       </a>
@@ -350,7 +350,7 @@ export const TreasuryVsDebt = () => (
     <ReadingTime minutes={4} />
     
     <p className="context-paragraph">
-      Both treasury management and debt funds are low-risk options, but they differ in duration, interest rate risk, and return potential. Treasury focuses on capital preservation with steady 6-7% returns, while debt funds may offer higher returns with slightly more volatility.
+      Both treasury management and debt funds are relatively lower-risk options, but they differ in duration, interest rate risk, and return potential. Treasury focuses on capital preservation with market-linked returns, while debt funds may carry different risk-return characteristics.
     </p>
 
     <div className="stat-card">
@@ -358,12 +358,12 @@ export const TreasuryVsDebt = () => (
       <div className="stat-example">
         <div className="stat-item winner">
           <div className="stat-label">Treasury (Ultra-Safe)</div>
-          <div className="stat-amount">6-7%</div>
+          <div className="stat-amount">Market-linked</div>
           <div className="stat-label">Minimal volatility</div>
         </div>
         <div className="stat-item">
           <div className="stat-label">Debt Funds</div>
-          <div className="stat-amount">7-9%</div>
+          <div className="stat-amount">Market-linked</div>
           <div className="stat-label">Low volatility</div>
         </div>
       </div>
@@ -382,8 +382,8 @@ export const TreasuryVsDebt = () => (
         <tbody>
           <tr>
             <td><strong>Returns</strong></td>
-            <td><span className="check-mark">✓</span> 6-7% (stable)</td>
-            <td>7-9% (variable)</td>
+            <td><span className="check-mark">✓</span> Market-linked</td>
+            <td>Market-linked</td>
           </tr>
           <tr>
             <td><strong>Duration Risk</strong></td>
@@ -446,13 +446,13 @@ export const TreasuryVsEquity = () => (
       <div className="stat-example">
         <div className="stat-item winner">
           <div className="stat-label">Treasury (0-2 yrs)</div>
-          <div className="stat-amount">₹1,06,000</div>
-          <div className="stat-label">₹1L @ 6% for 1 year</div>
+          <div className="stat-amount">Short-term</div>
+          <div className="stat-label">Capital preservation focus</div>
         </div>
         <div className="stat-item">
           <div className="stat-label">Equity SIP (10 yrs)</div>
-          <div className="stat-amount">₹2,77,000</div>
-          <div className="stat-label">₹10k/mo SIP @ 12%</div>
+          <div className="stat-amount">Long-term</div>
+          <div className="stat-label">Growth focus</div>
         </div>
       </div>
     </div>
@@ -470,8 +470,8 @@ export const TreasuryVsEquity = () => (
         <tbody>
           <tr>
             <td><strong>Expected Returns</strong></td>
-            <td><span className="check-mark">✓</span> 6-7% (guaranteed)</td>
-            <td>12-15% (long-term average)</td>
+            <td><span className="check-mark">✓</span> Market-linked</td>
+            <td>Market-linked</td>
           </tr>
           <tr>
             <td><strong>Best Time Horizon</strong></td>
@@ -587,12 +587,12 @@ export const LiquidFundsVsFD = () => (
       <div className="stat-example">
         <div className="stat-item winner">
           <div className="stat-label">Liquid Fund</div>
-          <div className="stat-amount">6-7%</div>
+          <div className="stat-amount">Market-linked</div>
           <div className="stat-label">Withdraw anytime, no penalty</div>
         </div>
         <div className="stat-item">
           <div className="stat-label">Fixed Deposit</div>
-          <div className="stat-amount">5-6%</div>
+          <div className="stat-amount">Market-linked</div>
           <div className="stat-label">Locked, early withdrawal penalty</div>
         </div>
       </div>

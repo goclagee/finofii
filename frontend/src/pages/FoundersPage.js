@@ -42,7 +42,7 @@ const FoundersPage = () => {
       title: "Equity Mutual Funds",
       description: "Investment in equity instruments managed by leading mutual fund houses",
       examples: "HDFC, Axis, ICICI, SBI",
-      returns: "11.00% - 15.00%",
+      returns: "Market-Linked",
       minInvestment: "₹100",
       icon: <BarChart3 className="w-12 h-12 text-purple-600" />,
       features: [
@@ -57,7 +57,7 @@ const FoundersPage = () => {
       title: "Portfolio Management Services (PMS)",
       description: "Discretionary portfolio management services for high-net-worth individuals",
       examples: "Abakkus, Buoyant, White Oak",
-      returns: "14.00% - 15.00%",
+      returns: "Market-Linked",
       minInvestment: "₹50 Lakhs",
       icon: <TrendingUp className="w-12 h-12 text-purple-600" />,
       features: [
@@ -72,7 +72,7 @@ const FoundersPage = () => {
       title: "Equity AIF (Alternative Investment Fund)",
       description: "Alternative investment funds focused on equity with potential for higher returns",
       examples: "ASK Golden Decade Fund, Quest Smart Alpha",
-      returns: "14.00% - 16.00%",
+      returns: "Market-Linked",
       minInvestment: "₹1 Crore",
       icon: <Award className="w-12 h-12 text-purple-600" />,
       features: [
@@ -87,7 +87,7 @@ const FoundersPage = () => {
       title: "Unlisted Equity",
       description: "Investments in pre-IPO and high-growth unlisted companies",
       examples: "NSE, Care Health Insurance, Bira 91",
-      returns: "15.00% - 20.00%",
+      returns: "Market-Linked",
       minInvestment: "₹1 Crore",
       icon: <DollarSign className="w-12 h-12 text-purple-600" />,
       features: [
@@ -208,8 +208,8 @@ const FoundersPage = () => {
               <div className="text-xl text-gray-700">Total Investments Managed</div>
             </div>
             <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl">
-              <div className="text-5xl font-bold text-purple-600 mb-2">11-20%</div>
-              <div className="text-xl text-gray-700">Expected Returns Range</div>
+              <div className="text-5xl font-bold text-purple-600 mb-2">4</div>
+              <div className="text-xl text-gray-700">Curated Product Classes</div>
             </div>
             <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl">
               <div className="text-5xl font-bold text-purple-600 mb-2">1:1</div>
@@ -254,7 +254,7 @@ const FoundersPage = () => {
 
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="bg-gray-50 rounded-lg p-3">
-                    <div className="text-xs text-gray-600 mb-1">Expected Returns</div>
+                    <div className="text-xs text-gray-600 mb-1">Return Profile</div>
                     <div className="text-lg font-bold text-green-600">{product.returns}</div>
                   </div>
                   <div className="bg-gray-50 rounded-lg p-3">

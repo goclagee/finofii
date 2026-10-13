@@ -37,13 +37,13 @@ export const TreasuryVsInsurance = () => (
       <div className="stat-example">
         <div className="stat-item">
           <div className="stat-label">ULIP / Insurance Bond (10yr)</div>
-          <div className="stat-amount">₹15-18L</div>
-          <div className="stat-label">Maturity value (4-5% return) + life cover</div>
+          <div className="stat-amount">Bundled</div>
+          <div className="stat-label">Returns + life cover combined</div>
         </div>
         <div className="stat-item">
           <div className="stat-label">Treasury Ladder (10yr mixed)</div>
-          <div className="stat-amount">₹17-20L</div>
-          <div className="stat-label">Higher return, full liquidity, no insurance</div>
+          <div className="stat-amount">Flexible</div>
+          <div className="stat-label">Market-linked, full liquidity, no insurance</div>
         </div>
       </div>
     </div>
@@ -61,8 +61,8 @@ export const TreasuryVsInsurance = () => (
         <tbody>
           <tr>
             <td><strong>Returns</strong></td>
-            <td><span className="check-mark">✓</span> 6-8%</td>
-            <td>3-5% + cover</td>
+            <td><span className="check-mark">✓</span> Market-linked</td>
+            <td>Lower + cover</td>
           </tr>
           <tr>
             <td><strong>Liquidity</strong></td>
@@ -117,7 +117,7 @@ export const CollegeFundPlanning = () => (
     <ReadingTime minutes={5} />
     
     <p className="context-paragraph">
-      College costs double every 7-10 years. If your child is 8 now, they'll need ₹40-50L for a good college in 10 years. Treasury provides the foundation—liquid reserves that earn 6% while you're still planning.
+      College costs rise steadily over time. If your child is 8 now, they'll need a substantial corpus for a good college in 10 years. Treasury provides the foundation—liquid reserves that stay productive while you're still planning.
     </p>
 
     <div className="stat-card">
@@ -139,9 +139,9 @@ export const CollegeFundPlanning = () => (
     <div className="card">
       <h2>College Savings Ladder</h2>
       <ul>
-        <li><strong>Years 1-5 (Still in school):</strong> SIP into equity funds (10%+ growth), treasury for emergency backup</li>
-        <li><strong>Years 6-8 (Pre-college):</strong> Gradually shift SIP to balanced funds (7-8%), keep treasury stable</li>
-        <li><strong>Years 9-10 (Final approach):</strong> Move to debt funds (6-7%), lock in gains, build liquid reserves</li>
+        <li><strong>Years 1-5 (Still in school):</strong> SIP into equity funds for growth, treasury for emergency backup</li>
+        <li><strong>Years 6-8 (Pre-college):</strong> Gradually shift SIP to balanced funds, keep treasury stable</li>
+        <li><strong>Years 9-10 (Final approach):</strong> Move to debt funds, lock in gains, build liquid reserves</li>
         <li><strong>Year 11 (College year):</strong> All in treasury + liquid funds, draw down for fees/hostel</li>
       </ul>
     </div>
@@ -178,9 +178,9 @@ export const RetirementPlanning = () => (
           <div className="stat-label">In retirement years</div>
         </div>
         <div className="stat-item winner">
-          <div className="stat-label">Treasury + Liquid Returns @ 6%</div>
-          <div className="stat-amount">₹60 Lakhs/Year</div>
-          <div className="stat-label">Far exceeds living costs</div>
+          <div className="stat-label">Treasury + Liquid Returns</div>
+          <div className="stat-amount">Market-linked</div>
+          <div className="stat-label">Supports living costs</div>
         </div>
       </div>
     </div>
@@ -200,25 +200,25 @@ export const RetirementPlanning = () => (
           <tr>
             <td><strong>Age 35-45</strong></td>
             <td>80% Equity, 20% Treasury</td>
-            <td><span className="check-mark">✓</span> 10%+ growth</td>
+            <td><span className="check-mark">✓</span> Growth-focused</td>
             <td>Accumulate corpus</td>
           </tr>
           <tr>
             <td><strong>Age 45-55</strong></td>
             <td>50% Equity, 50% Debt</td>
-            <td><span className="check-mark">✓</span> 7-8%</td>
+            <td><span className="check-mark">✓</span> Market-linked</td>
             <td>Stabilize, add safety</td>
           </tr>
           <tr>
             <td><strong>Age 55-60</strong></td>
             <td>30% Equity, 70% Treasury</td>
-            <td><span className="check-mark">✓</span> 6-7%</td>
+            <td><span className="check-mark">✓</span> Market-linked</td>
             <td>Lock gains, reduce risk</td>
           </tr>
           <tr>
             <td><strong>Age 60+</strong></td>
             <td>100% Treasury + Dividends</td>
-            <td><span className="check-mark">✓</span> 5-6% + safety</td>
+            <td><span className="check-mark">✓</span> Market-linked + safety</td>
             <td>Live on income</td>
           </tr>
         </tbody>
@@ -257,8 +257,8 @@ export const InternationalTreasury = () => (
           <div className="stat-label">USD 100K = ₹83L (typical)</div>
         </div>
         <div className="stat-item winner">
-          <div className="stat-label">Treasury Returns (6-7%/year)</div>
-          <div className="stat-amount">+₹50-58K/Year</div>
+          <div className="stat-label">Treasury Returns (market-linked)</div>
+          <div className="stat-amount">Potential upside</div>
           <div className="stat-label">While waiting for forex opportunities</div>
         </div>
       </div>
@@ -270,7 +270,7 @@ export const InternationalTreasury = () => (
         <li><strong>Step 1:</strong> USD salary hits NRE account → Don't convert immediately</li>
         <li><strong>Step 2:</strong> Track forex rates (historical highs/lows)</li>
         <li><strong>Step 3:</strong> When rupee dips vs. your historical range → Convert 20-30% to INR</li>
-        <li><strong>Step 4:</strong> Park INR in treasury funds earning 6%</li>
+        <li><strong>Step 4:</strong> Park INR in treasury funds (market-linked)</li>
         <li><strong>Step 5:</strong> Live on treasury returns + monthly conversions as needed</li>
       </ul>
     </div>
@@ -280,7 +280,7 @@ export const InternationalTreasury = () => (
       <p>Instead of converting USD to INR at market rate (often 78-85 range), this strategy lets you:</p>
       <ul>
         <li>Wait for better forex windows (81-83 range)</li>
-        <li>Earn 6% on rupees you've parked</li>
+        <li>Earn market-linked returns on rupees you've parked</li>
         <li>Keep USD earning international rates (1-2%) in your US bank</li>
         <li>No FEMA violations—all above-board NRE/NRO</li>
       </ul>

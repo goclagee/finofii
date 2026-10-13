@@ -52,8 +52,8 @@ export const IdleCashStartups = () => (
         </div>
         <div className="stat-item winner">
           <div className="stat-label">Treasury Fund</div>
-          <div className="stat-amount">₹25,000</div>
-          <div className="stat-label">Monthly return on ₹50L @ 6%</div>
+          <div className="stat-amount">Market-linked</div>
+          <div className="stat-label">Monthly potential on ₹50L</div>
         </div>
       </div>
       <div className="stat-comparison">
@@ -76,7 +76,7 @@ export const IdleCashStartups = () => (
       <h2>Startup Treasury Strategy</h2>
       <ul>
         <li><strong>Months 1-3 expenses:</strong> Emergency fund in current account (no return, pure safety)</li>
-        <li><strong>Months 4+ cash:</strong> Park in liquid funds (6-7% return, 1-2 day access)</li>
+        <li><strong>Months 4+ cash:</strong> Park in liquid funds (market-linked returns, 1-2 day access)</li>
         <li><strong>Quarterly surplus:</strong> Invest in 3-6 month liquid funds (slightly higher return)</li>
         <li><strong>Next funding round prep:</strong> Keep 30 days expenses liquid, park rest</li>
       </ul>
@@ -111,8 +111,8 @@ export const IdleCashMSME = () => (
       <div className="stat-example">
         <div className="stat-item">
           <div className="stat-label">Busy Months (₹30L)</div>
-          <div className="stat-amount">₹1,50,000</div>
-          <div className="stat-label">Parked @ 6% return (6 months)</div>
+          <div className="stat-amount">Market-linked</div>
+          <div className="stat-label">Potential over 6 months</div>
         </div>
         <div className="stat-item winner">
           <div className="stat-label">Lean Months (Use for ops)</div>
@@ -166,8 +166,8 @@ export const CorporateTreasury = () => (
         </div>
         <div className="stat-item winner">
           <div className="stat-label">Treasury Strategy</div>
-          <div className="stat-amount">₹60-70 Lakhs</div>
-          <div className="stat-label">Annual return @ 6-7%</div>
+          <div className="stat-amount">Market-linked</div>
+          <div className="stat-label">Annual potential</div>
         </div>
       </div>
     </div>
@@ -193,19 +193,19 @@ export const CorporateTreasury = () => (
           <tr>
             <td><strong>30-90 days</strong></td>
             <td>40% Liquid Funds</td>
-            <td><span className="check-mark">✓</span> 6-7%</td>
+            <td><span className="check-mark">✓</span> Market-linked</td>
             <td>Operations buffer</td>
           </tr>
           <tr>
             <td><strong>3-6 months</strong></td>
             <td>30% Short-term Debt</td>
-            <td><span className="check-mark">✓</span> 7-8%</td>
+            <td><span className="check-mark">✓</span> Market-linked</td>
             <td>Seasonal needs</td>
           </tr>
           <tr>
             <td><strong>6+ months</strong></td>
             <td>10% Medium-term</td>
-            <td><span className="check-mark">✓</span> 8-9%</td>
+            <td><span className="check-mark">✓</span> Market-linked</td>
             <td>Growth reserves</td>
           </tr>
         </tbody>
@@ -255,7 +255,7 @@ export const WealthFamilyOffice = () => (
     <div className="section">
       <h2>Complete Portfolio Ecosystem</h2>
       <ul>
-        <li><strong>🏦 Treasury:</strong> Liquid reserves earning 6-7% (Finofiii handles)</li>
+        <li><strong>🏦 Treasury:</strong> Liquid reserves put to work (Finofiii handles)</li>
         <li><strong>📊 Equities:</strong> Long-term growth via SIP/funds</li>
         <li><strong>🏠 Real Estate:</strong> Property holdings and rental income</li>
         <li><strong>💼 Alternative:</strong> Private equity, structured products</li>
@@ -284,7 +284,7 @@ export const NRIDollarParking = () => (
     <ReadingTime minutes={4} />
     
     <p className="context-paragraph">
-      NRIs often have rupee surpluses from Indian business, property income, or family remittances. These rupees need liquidity, but sitting in a savings account wastes 2-3% per year. Treasury management turns rupees into growth.
+      NRIs often have rupee surpluses from Indian business, property income, or family remittances. These rupees need liquidity, but sitting in a savings account leaves them underutilised. Treasury management helps put rupees to work.
     </p>
 
     <div className="stat-card">
@@ -292,13 +292,13 @@ export const NRIDollarParking = () => (
       <div className="stat-example">
         <div className="stat-item">
           <div className="stat-label">Savings Account</div>
-          <div className="stat-amount">₹40,000</div>
-          <div className="stat-label">Annual on ₹10L @ 4%</div>
+          <div className="stat-amount">Lower</div>
+          <div className="stat-label">Potential on ₹10L</div>
         </div>
         <div className="stat-item winner">
           <div className="stat-label">Liquid Fund</div>
-          <div className="stat-amount">₹60,000</div>
-          <div className="stat-label">Annual on ₹10L @ 6%</div>
+          <div className="stat-amount">Market-linked</div>
+          <div className="stat-label">Potential on ₹10L</div>
         </div>
       </div>
       <div className="stat-comparison">
@@ -310,7 +310,7 @@ export const NRIDollarParking = () => (
     <div className="card">
       <h2>NRI Treasury Benefits</h2>
       <ul>
-        <li><strong>💱 Rupee parking:</strong> Hold rupees earning 6-7%, convert to forex when rates are favorable</li>
+        <li><strong>💱 Rupee parking:</strong> Hold rupees in market-linked funds, convert to forex when rates are favorable</li>
         <li><strong>⚡ Full access:</strong> Withdraw in 1-2 days if rate opportunity emerges</li>
         <li><strong>🛡️ SEBI-safe:</strong> No forex risk, only interest earnings</li>
         <li><strong>📋 NRO/NRE:</strong> Works seamlessly with your NRI account</li>

@@ -12,9 +12,6 @@ const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
 const TreasuryPage = () => {
-  const [investedAmount, setInvestedAmount] = useState(10000000);
-  const [days, setDays] = useState(7);
-  const [calculation, setCalculation] = useState(null);
   const [funds, setFunds] = useState([]);
   const [partners, setPartners] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -35,12 +32,6 @@ const TreasuryPage = () => {
     fetchPartners();
   }, []);
 
-  useEffect(() => {
-    const result = calculateReturns();
-    setCalculation(result);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [investedAmount, days]);
-
   const fetchFunds = async () => {
     try {
       const response = await axios.get(`${API}/treasury/funds`);
@@ -57,39 +48,6 @@ const TreasuryPage = () => {
     } catch (error) {
       console.error("Error fetching partners:", error);
     }
-  };
-
-  const calculateReturns = () => {
-    // Dynamic YTM based on investment period (in days)
-    let ytm = 0;
-    
-    if (days <= 7) {
-      // Overnight/Liquid funds (1-7 days)
-      ytm = 0.052; // 5.2%
-    } else if (days <= 30) {
-      // Liquid funds (8-30 days)
-      ytm = 0.055; // 5.5%
-    } else if (days <= 90) {
-      // Ultra Short Duration (31-90 days)
-      ytm = 0.062; // 6.2%
-    } else if (days <= 180) {
-      // Short Duration (91-180 days)
-      ytm = 0.070; // 7.0%
-    } else {
-      // Low Duration (180+ days)
-      ytm = 0.072; // 7.2%
-    }
-    
-    const profit = (investedAmount * ytm * days) / 365;
-    const totalValue = investedAmount + profit;
-    
-    return {
-      invested_amount: investedAmount,
-      days: days,
-      ytm: ytm,
-      profit: profit,
-      total_value: totalValue
-    };
   };
 
   const handleFormSubmit = async (e) => {
@@ -151,10 +109,10 @@ const TreasuryPage = () => {
               </span>
             </h1>
             <p className="text-2xl mb-4 max-w-3xl mx-auto font-semibold italic" style={{ color: '#fcd34d' }}>
-              "Higher Interest is in Your Best Interest"
+              "Put Your Idle Cash to Work"
             </p>
             <p className="text-lg mb-10 max-w-3xl mx-auto" style={{ color: 'rgba(191, 219, 254, 0.7)' }}>
-              Get up to 7%* annually on idle cash | T+1 Liquidity | ₹2,800 Cr Investments | 1,000+ Businesses Trust Us
+              Deploy idle cash into mutual funds | T+1 Liquidity | ₹2,800 Cr Investments | 1,000+ Businesses Trust Us
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -167,128 +125,51 @@ const TreasuryPage = () => {
                 Min Investment: ₹1 Crore
               </div>
             </div>
-            <p className="text-xs mt-6" style={{ color: 'rgba(191, 219, 254, 0.5)' }}>*Based on 6-month liquid fund average returns</p>
+            <p className="text-xs mt-6" style={{ color: 'rgba(191, 219, 254, 0.5)' }}>Mutual Fund investments are subject to market risks. Read all scheme-related documents carefully.</p>
           </div>
         </div>
       </section>
 
-      {/* Investment Calculator */}
+      {/* How Treasury Management Works */}
       <section className="py-16 bg-white" data-testid="calculator-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <Calculator className="w-16 h-16 text-blue-600 mx-auto mb-4" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Investment Returns Calculator
+              How Treasury Management Works
             </h2>
-            <p className="text-xl text-gray-600">
-              See how much your idle cash can earn
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              A simple, transparent way to deploy your business's idle cash into professionally managed mutual funds.
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
-            <div className="grid md:grid-cols-2 gap-8">
-              {/* Calculator Inputs */}
-              <div>
-                <div className="mb-6">
-                  <label className="block text-gray-700 font-semibold mb-2">
-                    Invested Amount (₹)
-                  </label>
-                  <input
-                    type="number"
-                    value={investedAmount}
-                    onChange={(e) => setInvestedAmount(Number(e.target.value))}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
-                    min="10000000"
-                    step="1000000"
-                    data-testid="amount-input"
-                  />
-                  <input
-                    type="range"
-                    value={investedAmount}
-                    onChange={(e) => setInvestedAmount(Number(e.target.value))}
-                    min="10000000"
-                    max="1000000000"
-                    step="10000000"
-                    className="w-full mt-2"
-                    data-testid="amount-slider"
-                  />
-                </div>
-
-                <div className="mb-6">
-                  <label className="block text-gray-700 font-semibold mb-2">
-                    Investment Period (Days)
-                  </label>
-                  <input
-                    type="number"
-                    value={days}
-                    onChange={(e) => setDays(Number(e.target.value))}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
-                    min="1"
-                    max="365"
-                    data-testid="days-input"
-                  />
-                  <input
-                    type="range"
-                    value={days}
-                    onChange={(e) => setDays(Number(e.target.value))}
-                    min="1"
-                    max="365"
-                    className="w-full mt-2"
-                    data-testid="days-slider"
-                  />
-                </div>
-
-                <div className="bg-blue-100 rounded-lg p-4">
-                  <div className="text-sm text-blue-700 mb-1">
-                    Current YTM (Yield to Maturity)
-                  </div>
-                  <div className="text-2xl font-bold text-blue-900">
-                    {calculation ? (calculation.ytm * 100).toFixed(2) : '5.20'}%
-                  </div>
-                  <div className="text-xs text-blue-600 mt-1">
-                    {days <= 7 && "Overnight/Liquid Fund"}
-                    {days > 7 && days <= 30 && "Liquid Fund"}
-                    {days > 30 && days <= 90 && "Ultra Short Duration"}
-                    {days > 90 && days <= 180 && "Short Duration"}
-                    {days > 180 && "Low Duration"}
-                  </div>
-                </div>
-              </div>
-
-              {/* Calculator Results */}
-              <div className="bg-white rounded-xl p-6 shadow-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-6">
-                  Expected Returns
-                </h3>
-                {calculation && (
-                  <div className="space-y-4">
-                    <div>
-                      <div className="text-sm text-gray-600 mb-1">
-                        Invested Amount
-                      </div>
-                      <div className="text-2xl font-bold text-gray-900" data-testid="invested-amount-display">
-                        {formatCurrency(calculation.invested_amount)}
-                      </div>
-                    </div>
-                    <div>
-                      <div className="text-sm text-gray-600 mb-1">Profit</div>
-                      <div className="text-3xl font-bold text-green-600" data-testid="profit-display">
-                        {formatCurrency(calculation.profit)}
-                      </div>
-                    </div>
-                    <div className="border-t pt-4">
-                      <div className="text-sm text-gray-600 mb-1">
-                        Total Value
-                      </div>
-                      <div className="text-4xl font-bold text-blue-600" data-testid="total-value-display">
-                        {formatCurrency(calculation.total_value)}
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
+          <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100">
+              <div className="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-lg mb-4">1</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Choose Your Horizon</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Pick a fund category suited to your timeline — from overnight and liquid funds for the short term to ultra-short and low-duration funds for longer surpluses.
+              </p>
+            </div>
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100">
+              <div className="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-lg mb-4">2</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Invest via BSE StAR MF</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Your investment is executed directly with SEBI-registered AMCs through the BSE StAR MF platform. Your money never sits with us.
+              </p>
+            </div>
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100">
+              <div className="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-lg mb-4">3</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Access with T+1</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Redeem when you need to — liquid and debt funds typically credit your account within one business day.
+              </p>
             </div>
           </div>
+
+          <p className="text-xs text-gray-500 text-center mt-8 max-w-3xl mx-auto">
+            Mutual Fund investments are subject to market risks. Read all scheme-related documents carefully. There is no assurance or guarantee of returns. Past performance is not indicative of future performance.
+          </p>
         </div>
       </section>
 
@@ -302,10 +183,10 @@ const TreasuryPage = () => {
             <div className="bg-white rounded-xl p-6 shadow-md">
               <TrendingUp className="w-12 h-12 text-blue-600 mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Better Returns
+                Put Idle Cash to Work
               </h3>
               <p className="text-gray-600">
-                Average 5%+ annual returns on liquid funds vs 0% in bank accounts
+                Deploy surplus current account balances into professionally managed mutual funds instead of leaving them idle.
               </p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md">
@@ -314,7 +195,7 @@ const TreasuryPage = () => {
                 High Liquidity
               </h3>
               <p className="text-gray-600">
-                Instant redemption available. Get your money back in 1-3 days
+                Quick redemption available. Get your money back typically within 1-3 business days.
               </p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md">
@@ -396,10 +277,6 @@ const TreasuryPage = () => {
                     <div className="bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full">{fund.category}</div>
                   </div>
                   <p className="text-gray-600 text-sm mb-4">{fund.description}</p>
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="text-gray-600 text-sm">Return Rate</span>
-                    <span className="text-green-600 font-bold">{fund.return_rate}%</span>
-                  </div>
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-gray-600 text-sm">Min Investment</span>
                     <span className="font-semibold">{formatCurrency(fund.min_investment)}</span>

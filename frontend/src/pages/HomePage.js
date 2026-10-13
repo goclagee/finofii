@@ -26,8 +26,6 @@ const rotatingWords = [
 const HomePage = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
-  const [calculatorAmount, setCalculatorAmount] = useState(10000000);
-  const [calculatorDays, setCalculatorDays] = useState(180);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -39,41 +37,6 @@ const HomePage = () => {
     }, 3000);
     return () => clearInterval(interval);
   }, []);
-
-  const calculateReturns = () => {
-    // Dynamic YTM based on investment period (in days)
-    let ytm = 0;
-    
-    if (calculatorDays <= 7) {
-      // Overnight/Liquid funds (1-7 days)
-      ytm = 0.052; // 5.2%
-    } else if (calculatorDays <= 30) {
-      // Liquid funds (8-30 days)
-      ytm = 0.055; // 5.5%
-    } else if (calculatorDays <= 90) {
-      // Ultra Short Duration (31-90 days)
-      ytm = 0.062; // 6.2%
-    } else if (calculatorDays <= 180) {
-      // Short Duration (91-180 days)
-      ytm = 0.070; // 7.0%
-    } else {
-      // Low Duration (180+ days)
-      ytm = 0.072; // 7.2%
-    }
-    
-    const profit = (calculatorAmount * ytm * calculatorDays) / 365;
-    return { profit, ytm };
-  };
-
-  const returns = calculateReturns();
-
-  const formatCurrency = (value) => {
-    return new Intl.NumberFormat("en-IN", {
-      style: "currency",
-      currency: "INR",
-      maximumFractionDigits: 0,
-    }).format(value);
-  };
 
   return (
     <div className="min-h-screen">
@@ -103,7 +66,7 @@ const HomePage = () => {
               "Higher Interest is in Your Best Interest"
             </p>
             <p className="text-lg mb-10 text-blue-100/70 max-w-3xl mx-auto">
-              Get up to 7%* annually on idle cash | ₹2,800 Cr Investments | 1,000+ Businesses Trust Us
+              Put your idle cash to work | ₹2,800 Cr Investments | 1,000+ Businesses Trust Us
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <a
@@ -129,7 +92,7 @@ const HomePage = () => {
                 Book Demo
               </a>
             </div>
-            <p className="text-xs text-blue-200/50">*Based on 6 months debt mutual fund average YTMs</p>
+            <p className="text-xs text-blue-200/50">Mutual Fund investments are subject to market risks. Read all scheme-related documents carefully.</p>
           </div>
         </div>
       </section>
@@ -166,78 +129,51 @@ const HomePage = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Monetise Your Current Account
             </h2>
-            <p className="text-xl text-gray-600">
-              Get up to 7%* annually vs 0% in savings account
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Idle current account balances earn nothing. Deploy that surplus into SEBI-regulated liquid and debt mutual funds — with the flexibility of T+1 access.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Per Day Returns on ₹1 Crore</h3>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center p-4 bg-red-50 rounded-lg border border-red-100">
-                  <span className="font-semibold text-gray-700">Current Account</span>
-                  <span className="text-2xl font-bold text-red-500">₹0</span>
-                </div>
-                <div className="flex justify-between items-center p-4 bg-yellow-50 rounded-lg border border-yellow-100">
-                  <span className="font-semibold text-gray-700">Fixed Deposit</span>
-                  <span className="text-2xl font-bold text-yellow-600">₹1,164</span>
-                </div>
-                <div className="flex justify-between items-center p-4 bg-emerald-50 rounded-lg border-2 border-emerald-400">
-                  <span className="font-semibold text-gray-700">Finofiii Liquid</span>
-                  <span className="text-3xl font-bold text-emerald-600">₹1,850*</span>
-                </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+              <div className="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center mb-5">
+                <TrendingUp className="w-6 h-6 text-emerald-600" />
               </div>
-              <p className="text-xs text-gray-500 mt-4">*Based on 6 months debt mutual fund average YTMs</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Put Idle Cash to Work</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Current accounts sit idle. Deploying surplus into professionally managed mutual funds helps your treasury stay productive.
+              </p>
             </div>
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+              <div className="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mb-5">
+                <Clock className="w-6 h-6 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">T+1 Liquidity</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Liquid and debt funds offer quick access to your money, typically within one business day of redemption.
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+              <div className="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center mb-5">
+                <Shield className="w-6 h-6 text-amber-600" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">SEBI-Regulated</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                All investments are executed through SEBI-registered AMCs via the BSE StAR MF platform.
+              </p>
+            </div>
+          </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Calculate Your Earnings</h3>
-              <div className="space-y-4">
-                <div>
-                  <label className="block text-gray-700 font-semibold mb-2">Amount (₹)</label>
-                  <input
-                    type="number"
-                    value={calculatorAmount}
-                    onChange={(e) => setCalculatorAmount(Number(e.target.value))}
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 text-gray-900"
-                    min="10000000"
-                  />
-                </div>
-                <div>
-                  <label className="block text-gray-700 font-semibold mb-2">Investment Period (Days)</label>
-                  <input
-                    type="number"
-                    value={calculatorDays}
-                    onChange={(e) => setCalculatorDays(Number(e.target.value))}
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 text-gray-900"
-                    min="1"
-                    max="365"
-                  />
-                  <p className="text-xs text-gray-500 mt-1">
-                    YTM: {(returns.ytm * 100).toFixed(2)}% p.a. 
-                    {calculatorDays <= 7 && " (Overnight/Liquid)"}
-                    {calculatorDays > 7 && calculatorDays <= 30 && " (Liquid)"}
-                    {calculatorDays > 30 && calculatorDays <= 90 && " (Ultra Short)"}
-                    {calculatorDays > 90 && calculatorDays <= 180 && " (Short Duration)"}
-                    {calculatorDays > 180 && " (Low Duration)"}
-                  </p>
-                </div>
-                <div className="bg-emerald-50 rounded-lg p-6 border-2 border-emerald-400">
-                  <div className="text-sm text-gray-600 mb-2">Expected Profit</div>
-                  <div className="text-4xl font-bold text-emerald-600">{formatCurrency(returns.profit)}</div>
-                  <div className="text-xs text-gray-500 mt-2">
-                    Based on current {calculatorDays <= 7 ? "Liquid" : calculatorDays <= 90 ? "Ultra Short Duration" : "Short Duration"} fund YTM
-                  </div>
-                </div>
-              </div>
-              <Link
-                to="/treasury"
-                className="mt-6 block w-full text-center px-6 py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-lg font-bold hover:from-amber-600 hover:to-amber-700 transition-colors shadow-md"
-              >
-                Start Treasury Management →
-              </Link>
-            </div>
+          <div className="text-center mt-10">
+            <Link
+              to="/treasury"
+              className="inline-block px-8 py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-lg font-bold hover:from-amber-600 hover:to-amber-700 transition-colors shadow-md"
+            >
+              Explore Treasury Management →
+            </Link>
+            <p className="text-xs text-gray-500 mt-5 max-w-2xl mx-auto">
+              Mutual Fund investments are subject to market risks. Read all scheme-related documents carefully. There is no assurance or guarantee of returns.
+            </p>
           </div>
         </div>
       </section>
@@ -265,7 +201,7 @@ const HomePage = () => {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center">
                   <CheckCircle size={20} className="text-emerald-500 mr-2" />
-                  <span className="text-sm text-gray-700">5.5-7% Annual Returns*</span>
+                  <span className="text-sm text-gray-700">Market-Linked Returns</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle size={20} className="text-emerald-500 mr-2" />
@@ -454,7 +390,7 @@ const HomePage = () => {
               <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-md group-hover:shadow-xl group-hover:-translate-y-1 transition-all duration-300">
                 <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Automate & Invest</h3>
                 <p className="text-gray-600 text-center">
-                  Set auto-sweep rules. Idle cash moves to high-yield instruments automatically — zero manual intervention.
+                  Set auto-sweep rules. Idle cash moves into mutual fund instruments automatically — zero manual intervention.
                 </p>
               </div>
             </div>
@@ -508,7 +444,7 @@ const HomePage = () => {
                   Why Liquid Funds Beat Bank FDs in 2025
                 </h3>
                 <p className="text-sm text-gray-500 leading-relaxed">
-                  Higher post-tax returns, better liquidity, and no penalty on early withdrawal — the case for liquid funds has never been stronger...
+                  Tax treatment, liquidity, and flexibility on withdrawal — understanding the fundamentals of liquid funds...
                 </p>
               </div>
             </div>
@@ -540,7 +476,7 @@ const HomePage = () => {
           </div>
           <div className="space-y-4">
             {[
-              { q: "How does Finofiii work?", a: "Finofiii invests your idle current account balance in SEBI-regulated liquid and debt mutual funds via BSE StAR MF, generating up to 7%* annually while maintaining T+1 liquidity." },
+              { q: "How does Finofiii work?", a: "Finofiii helps you deploy your idle current account balance into SEBI-regulated liquid and debt mutual funds via BSE StAR MF, while maintaining T+1 liquidity. Returns are market-linked and not guaranteed." },
               { q: "Is my money safe?", a: "Your money never touches Finofiii's account. All investments go directly to SEBI-regulated AMCs through BSE StAR MF execution channel with daily NAV declarations." },
               { q: "What's the minimum investment?", a: "Treasury Management starts at ₹1 Crore. Founders from ₹100 (MFs) to ₹1 Cr (PMS/AIF). Family Office requires ₹25 Cr+ net worth." },
               { q: "How quickly can I withdraw?", a: "Liquid funds offer T+1 liquidity — money back in 1-3 business days. Some schemes offer instant redemption up to ₹50,000." },
@@ -567,7 +503,7 @@ const HomePage = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <h2 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight" style={{ color: '#ffffff' }}>Ready to Earn More?</h2>
           <p className="text-xl md:text-2xl mb-10 text-blue-100/70 max-w-2xl mx-auto">
-            Join 1,000+ businesses that stopped letting idle cash sit at 0% returns.
+            Join 1,000+ businesses that stopped letting idle cash sit unproductive.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

@@ -29,7 +29,7 @@ export const TreasuryDelhi = () => (
     <ReadingTime minutes={4} />
     
     <p className="context-paragraph">
-      Delhi's business ecosystem is diverse: startups in Gurugram, corporate HQs in Connaught Place, manufacturing in Okhla. Treasury needs vary by sector, but the opportunity is consistent: turn idle cash into 6-7% returns in liquid funds.
+      Delhi's business ecosystem is diverse: startups in Gurugram, corporate HQs in Connaught Place, manufacturing in Okhla. Treasury needs vary by sector, but the opportunity is consistent: put idle cash to work in liquid funds.
     </p>
 
     <div className="stat-card">
@@ -42,8 +42,8 @@ export const TreasuryDelhi = () => (
         </div>
         <div className="stat-item winner">
           <div className="stat-label">Treasury Return (6 months)</div>
-          <div className="stat-amount">₹1,50,000</div>
-          <div className="stat-label">Extra return @ 6%</div>
+          <div className="stat-amount">Market-linked</div>
+          <div className="stat-label">Potential extra return</div>
         </div>
       </div>
     </div>
@@ -118,12 +118,12 @@ export const TreasuryMumbai = () => (
       <h3>📈 Mumbai Opportunity (₹5 Crore Idle)</h3>
       <div className="stat-example">
         <div className="stat-item">
-          <div className="stat-label">Savings A/c @ 4%</div>
-          <div className="stat-amount">₹20 Lakhs/Yr</div>
+          <div className="stat-label">Savings A/c</div>
+          <div className="stat-amount">Lower</div>
           <div className="stat-label">Low return</div>
         </div>
         <div className="stat-item winner">
-          <div className="stat-label">Treasury Ladder @ 6-7%</div>
+          <div className="stat-label">Treasury Ladder</div>
           <div className="stat-amount">₹30-35 Lakhs/Yr</div>
           <div className="stat-label">+ tax indexation benefit</div>
         </div>
@@ -269,7 +269,7 @@ export const TreasuryGurgaon = () => (
         <div className="stat-item winner">
           <div className="stat-label">Treasury Optimization</div>
           <div className="stat-amount">₹3+ Crores</div>
-          <div className="stat-label">Annual upside @ 6-7%</div>
+          <div className="stat-label">Annual upside</div>
         </div>
       </div>
     </div>

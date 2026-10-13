@@ -54,7 +54,7 @@ export const blogs = {
       category: "Safety & Risk",
       title: "Are Corporate FDs safe? A AAA-rated investor's checklist",
       excerpt:
-        "Corporate FDs can earn 1.5–2% more than bank FDs — but they're not DICGC insured. Use this 7-point checklist before you commit.",
+        "Corporate FDs can offer higher rates than bank FDs — but they're not DICGC insured. Use this 7-point checklist before you commit.",
       date: "Jan 2026",
       readTime: "6 min read",
       author: "Sandeep Rishi",
@@ -76,7 +76,7 @@ export const blogs = {
       category: "Wealth",
       title: "Senior Citizen FD strategies that maximise post-tax returns",
       excerpt:
-        "From the ₹50,000 80TTB exemption to laddering across 4 issuers — five proven strategies retired clients use to push their effective yield above 9%.",
+        "From the ₹50,000 80TTB exemption to laddering across 4 issuers — five strategies retired clients use to improve their post-tax outcomes.",
       date: "Dec 2025",
       readTime: "5 min read",
       author: "Sidarth Raina",

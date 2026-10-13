@@ -264,7 +264,7 @@ export default function AboutPage() {
           <Pillar
             icon={<Briefcase size={20} />}
             title="Reliable Forecasting"
-            body="Forecast cashflows 90 days ahead with 92% accuracy. Make treasury &amp; credit decisions before the market does."
+            body="Forecast cashflows up to 90 days ahead. Make treasury &amp; credit decisions before the market does."
           />
           <Pillar
             icon={<GraduationCap size={20} />}

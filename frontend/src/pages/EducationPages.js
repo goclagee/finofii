@@ -11,9 +11,9 @@ export const WhatIsTreasury = () => (
       <p>Treasury management is <strong>optimizing idle cash to earn maximum returns while maintaining liquidity</strong>. For startups, it means:</p>
       <ul>
         <li>Keep cash accessible (1-2 days to withdraw)</li>
-        <li>Earn 5-7% returns via liquid funds</li>
+        <li>Earn market-linked returns via liquid funds</li>
         <li>SEBI-regulated & tax-efficient</li>
-        <li>Better than savings accounts (4%)</li>
+        <li>SEBI-regulated and transparent</li>
       </ul>
     </div>
 
@@ -43,8 +43,8 @@ export const LiquidFunds101 = () => (
       <h2>What Are Liquid Funds?</h2>
       <p>Mutual funds that invest in short-term debt securities (3 months or less). Key features:</p>
       <ul>
-        <li><strong>Low risk</strong> (backed by government securities)</li>
-        <li><strong>5-7% returns</strong></li>
+        <li><strong>Relatively low risk</strong> (invests in high-quality money market instruments)</li>
+        <li><strong>Market-linked returns</strong></li>
         <li><strong>1-2 day withdrawal</strong></li>
         <li><strong>Tax-efficient</strong> (indexation benefit)</li>
       </ul>
@@ -83,7 +83,7 @@ export const CurrentAccountExplained = () => (
       <ul>
         <li>Use current account for operations & daily payments</li>
         <li>Move excess cash to treasury/liquid funds</li>
-        <li>Earn 5-7% while funds remain accessible</li>
+        <li>Earn market-linked returns while funds remain accessible</li>
       </ul>
     </div>
 

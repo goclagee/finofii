@@ -29,21 +29,21 @@ export const EmergencyFund = () => (
     <ReadingTime minutes={5} />
     
     <p className="context-paragraph">
-      Financial advisors recommend 6 months of expenses in an emergency fund. But where should you keep it? Savings account (4% return) wastes opportunity. Liquid funds (6% return) provide better value—and you can withdraw in 1-2 days.
+      Financial advisors recommend 6 months of expenses in an emergency fund. But where should you keep it? A savings account leaves money underutilised. Liquid funds offer market-linked returns—and you can withdraw in 1-2 days.
     </p>
 
     <div className="stat-card">
       <h3>🆘 Emergency Fund Comparison (₹6 Lakhs)</h3>
       <div className="stat-example">
         <div className="stat-item">
-          <div className="stat-label">Savings Account (4%)</div>
-          <div className="stat-amount">₹24,000</div>
-          <div className="stat-label">Annual return</div>
+          <div className="stat-label">Savings Account</div>
+          <div className="stat-amount">Lower</div>
+          <div className="stat-label">Potential annual return</div>
         </div>
         <div className="stat-item winner">
-          <div className="stat-label">Liquid Fund (6%)</div>
-          <div className="stat-amount">₹36,000</div>
-          <div className="stat-label">Annual return + liquidity</div>
+          <div className="stat-label">Liquid Fund</div>
+          <div className="stat-amount">Market-linked</div>
+          <div className="stat-label">Potential return + liquidity</div>
         </div>
       </div>
       <div className="stat-comparison">
@@ -56,8 +56,8 @@ export const EmergencyFund = () => (
       <h2>Emergency Fund + Treasury Strategy</h2>
       <ul>
         <li><strong>Tier 1 (30 days):</strong> Keep in savings account for absolute instant access</li>
-        <li><strong>Tier 2 (3-6 months):</strong> Liquid funds earning 6%—withdraw in 1-2 days</li>
-        <li><strong>Tier 3 (6+ months):</strong> Short-term debt funds earning 7%—for very rare use</li>
+        <li><strong>Tier 2 (3-6 months):</strong> Liquid funds (market-linked)—withdraw in 1-2 days</li>
+        <li><strong>Tier 3 (6+ months):</strong> Short-term debt funds (market-linked)—for very rare use</li>
       </ul>
     </div>
 
@@ -105,13 +105,13 @@ export const QuarterlyPlanning = () => (
           <tr>
             <td><strong>Month 2 (Execution)</strong></td>
             <td>Lock quarterly surplus in liquid funds</td>
-            <td><span className="check-mark">✓</span> 6-7%</td>
+            <td><span className="check-mark">✓</span> Market-linked</td>
             <td>2 days</td>
           </tr>
           <tr>
             <td><strong>Month 3 (Review)</strong></td>
             <td>Rebalance for next quarter</td>
-            <td><span className="check-mark">✓</span> 6-7%</td>
+            <td><span className="check-mark">✓</span> Market-linked</td>
             <td>2 days</td>
           </tr>
         </tbody>
@@ -197,10 +197,10 @@ export const LiquidityPlanning = () => (
     <div className="card">
       <h2>Liquidity Ladder Strategy</h2>
       <ul>
-        <li><strong>0-30 days:</strong> Current account (0% return, 100% liquidity)</li>
-        <li><strong>30-90 days:</strong> Liquid funds (6% return, 1-2 day liquidity)</li>
-        <li><strong>3-6 months:</strong> Liquid funds + short-term debt (6.5-7% return, 2-3 day liquidity)</li>
-        <li><strong>6+ months:</strong> Short-term debt funds (7-8% return, 3-5 day liquidity)</li>
+        <li><strong>0-30 days:</strong> Current account (no return, 100% liquidity)</li>
+        <li><strong>30-90 days:</strong> Liquid funds (market-linked return, 1-2 day liquidity)</li>
+        <li><strong>3-6 months:</strong> Liquid funds + short-term debt (market-linked return, 2-3 day liquidity)</li>
+        <li><strong>6+ months:</strong> Short-term debt funds (market-linked return, 3-5 day liquidity)</li>
       </ul>
       <p><strong>Result:</strong> You're never sitting idle in a savings account, and you always have the cash you need when you need it.</p>
     </div>
@@ -280,10 +280,10 @@ export const ProjectBasedBusiness = () => (
     <div className="card">
       <h2>Project Treasury Lifecycle</h2>
       <ul>
-        <li><strong>Pre-project:</strong> Advance/deposit received → Park in liquid fund @ 6% (high liquidity for project spend)</li>
+        <li><strong>Pre-project:</strong> Advance/deposit received → Park in liquid fund (high liquidity for project spend)</li>
         <li><strong>Mid-project:</strong> Milestone payments come in → Reinvest earned returns into next milestone buffer</li>
         <li><strong>Post-project:</strong> Final settlement → Park in 3-6 month funds for next project prep (slightly higher return)</li>
-        <li><strong>Off-season:</strong> Between projects → Move to short-term debt funds earning 7-8% (longer hold)</li>
+        <li><strong>Off-season:</strong> Between projects → Move to short-term debt funds (longer hold)</li>
       </ul>
     </div>
 
@@ -298,7 +298,7 @@ export const ProjectBasedBusiness = () => (
         <div className="stat-item winner">
           <div className="stat-label">With Treasury</div>
           <div className="stat-amount">₹50-60 Lakhs</div>
-          <div className="stat-label">Earned on staged cash flows @ 6-7%</div>
+          <div className="stat-label">Earned on staged cash flows (market-linked)</div>
         </div>
       </div>
     </div>
