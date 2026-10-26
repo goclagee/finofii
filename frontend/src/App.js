@@ -15,6 +15,8 @@ import DisclosurePage from "@/pages/DisclosurePage";
 import InvestorCharter from "@/pages/InvestorCharter";
 import GrievanceRedressal from "@/pages/GrievanceRedressal";
 import MutualFundDisclosure from "@/pages/MutualFundDisclosure";
+import BlogListPage from "@/pages/BlogListPage";
+import BlogDetailPage from "@/pages/BlogDetailPage";
 import RiskDisclosureGuide from "@/pages/RiskDisclosureGuide";
 import NavCalculator from "@/pages/NavCalculator";
 import Navigation from "@/components/Navigation";
@@ -126,6 +128,8 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-conditions" element={<TermsConditions />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
+          <Route path="/blog" element={<BlogListPage />} />
+          <Route path="/blog/:slug" element={<BlogDetailPage />} />
           <Route path="/disclosure" element={<DisclosurePage />} />
           <Route path="/investor-charter" element={<InvestorCharter />} />
           <Route path="/grievance-redressal" element={<GrievanceRedressal />} />
