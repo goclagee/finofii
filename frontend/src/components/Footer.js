@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -74,6 +74,18 @@ const Footer = () => {
               </li>
             </ul>
 
+            {/* Social */}
+            <div className="flex items-center gap-3 mt-4">
+              <a href="https://www.instagram.com/thefinofiii/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-amber-500 hover:text-white transition-colors">
+                <Instagram size={16} />
+              </a>
+              <a href="https://www.facebook.com/finofiii/?locale=ta_IN" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-amber-500 hover:text-white transition-colors">
+                <Facebook size={16} />
+              </a>
+              <a href="https://www.linkedin.com/company/finofii-fintech-private-limited/home/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-amber-500 hover:text-white transition-colors">
+                <Linkedin size={16} />
+              </a>
+            </div>
           </div>
         </div>
 
