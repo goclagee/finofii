@@ -5,7 +5,7 @@
 export const blogPosts = [
   {
     slug: "fd-vs-liquid-vs-overnight-funds",
-    title: "FD vs Liquid vs Overnight Funds: Kya Better Hai?",
+    title: "FD vs Liquid vs Overnight Funds: What is Better?",
     excerpt:
       "None of them is \"better\" — each one wins for a different kind of money. A practical, no-jargon guide to matching your cash to the right instrument based on when you'll need it.",
     category: "Treasury",
