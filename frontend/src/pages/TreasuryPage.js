@@ -7,11 +7,56 @@ import {
   Clock,
   CheckCircle2,
 } from "lucide-react";
+import useSEO from "@/hooks/useSEO";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
 const TreasuryPage = () => {
+  useSEO({
+    title: "Treasury Management for Businesses — Monetise Idle Cash | Finofiii",
+    description:
+      "Deploy idle current-account cash into SEBI-regulated liquid and debt mutual funds via BSE StAR MF, with T+1 liquidity. Treasury management for Indian businesses from ₹1 Crore. AMFI ARN-176236.",
+    canonical: "https://finofiii.com/treasury",
+    ogImage: "https://finofiii.com/logo.png",
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Service",
+          "@id": "https://finofiii.com/treasury#service",
+          name: "Treasury Management",
+          serviceType: "Corporate Treasury & Idle Cash Management",
+          provider: {
+            "@type": "Organization",
+            name: "Finofiii Fintech Private Limited",
+            url: "https://finofiii.com",
+          },
+          areaServed: "IN",
+          description:
+            "Deploy surplus business cash into SEBI-regulated liquid and debt mutual funds with T+1 liquidity, executed through the BSE StAR MF platform.",
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://finofiii.com/treasury#webpage",
+          url: "https://finofiii.com/treasury",
+          name: "Treasury Management for Businesses | Finofiii",
+          datePublished: "2024-01-01",
+          dateModified: new Date().toISOString().split("T")[0],
+          inLanguage: "en-IN",
+          speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", "h2"] },
+        },
+        {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://finofiii.com/" },
+            { "@type": "ListItem", position: 2, name: "Treasury Management", item: "https://finofiii.com/treasury" },
+          ],
+        },
+      ],
+    },
+  });
+
   const [funds, setFunds] = useState([]);
   const [partners, setPartners] = useState([]);
   const [loading, setLoading] = useState(false);

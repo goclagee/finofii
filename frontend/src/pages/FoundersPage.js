@@ -8,11 +8,56 @@ import {
   BarChart3,
   Users,
 } from "lucide-react";
+import useSEO from "@/hooks/useSEO";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
 const FoundersPage = () => {
+  useSEO({
+    title: "Founders — Curated Equity, PMS, AIF & Pre-IPO Access | Finofiii",
+    description:
+      "Access curated equity mutual funds, Portfolio Management Services, AIFs and pre-IPO opportunities reserved for select investors. Built by career asset managers. From ₹1 Crore.",
+    canonical: "https://finofiii.com/founders",
+    ogImage: "https://finofiii.com/logo.png",
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Service",
+          "@id": "https://finofiii.com/founders#service",
+          name: "Founders — Private Market & Equity Access",
+          serviceType: "Equity Mutual Funds, PMS, AIF & Pre-IPO",
+          provider: {
+            "@type": "Organization",
+            name: "Finofiii Fintech Private Limited",
+            url: "https://finofiii.com",
+          },
+          areaServed: "IN",
+          description:
+            "Curated equity investment opportunities — mutual funds, Portfolio Management Services, Alternative Investment Funds and pre-IPO access for select investors.",
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://finofiii.com/founders#webpage",
+          url: "https://finofiii.com/founders",
+          name: "Founders | Finofiii",
+          datePublished: "2024-01-01",
+          dateModified: new Date().toISOString().split("T")[0],
+          inLanguage: "en-IN",
+          speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", "h2"] },
+        },
+        {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://finofiii.com/" },
+            { "@type": "ListItem", position: 2, name: "Founders", item: "https://finofiii.com/founders" },
+          ],
+        },
+      ],
+    },
+  });
+
   const [loading, setLoading] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
 

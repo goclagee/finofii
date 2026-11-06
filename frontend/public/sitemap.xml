@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main pages -->
+  <url><loc>https://finofiii.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://finofiii.com/treasury</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://finofiii.com/founders</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://finofiii.com/family-office</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://finofiii.com/capital</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://finofiii.com/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://finofiii.com/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+  <!-- Blog posts -->
+  <url><loc>https://finofiii.com/blog/fd-vs-liquid-vs-overnight-funds</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://finofiii.com/blog/current-account-monetisation-complete-guide</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://finofiii.com/blog/liquid-funds-explained</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://finofiii.com/blog/overnight-funds-explained</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://finofiii.com/blog/what-to-do-with-idle-current-account-balance</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Legal & compliance -->
+  <url><loc>https://finofiii.com/privacy-policy</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://finofiii.com/terms-conditions</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://finofiii.com/disclaimer</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://finofiii.com/disclosure</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://finofiii.com/investor-charter</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://finofiii.com/grievance-redressal</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://finofiii.com/mutual-fund-disclosure</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://finofiii.com/risk-disclosure</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+
+  <!-- Comparison -->
+  <url><loc>https://finofiii.com/treasuryvsfd</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://finofiii.com/treasuryvssip</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://finofiii.com/treasuryvssavings</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://finofiii.com/treasuryvsdebt</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://finofiii.com/treasuryvsequity</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://finofiii.com/treasuryvsrealstate</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://finofiii.com/liquidfundsvsfd</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://finofiii.com/mfddifference</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://finofiii.com/treasuryvsinsurance</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Education -->
+  <url><loc>https://finofiii.com/whatstreasury</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://finofiii.com/liquidfunds101</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://finofiii.com/currentaccount</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://finofiii.com/nav</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://finofiii.com/expenseratio</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://finofiii.com/exitload</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://finofiii.com/cutofftime</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://finofiii.com/nav-calculator</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Segments -->
+  <url><loc>https://finofiii.com/idlecashstartups</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://finofiii.com/idlecashmsme</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://finofiii.com/corporatetreasury</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://finofiii.com/wealthfamilyoffice</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://finofiii.com/nridollarparking</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Cities -->
+  <url><loc>https://finofiii.com/treasurydelhi</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://finofiii.com/treasurynoida</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://finofiii.com/treasurymumbai</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://finofiii.com/treasurypune</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://finofiii.com/treasurybangalore</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://finofiii.com/treasuryhyderabad</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://finofiii.com/treasurygurgaon</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <!-- Use-cases -->
+  <url><loc>https://finofiii.com/emergencyfund</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://finofiii.com/quarterlyplanning</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://finofiii.com/taxoptimization</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://finofiii.com/liquidityplanning</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://finofiii.com/freelancerbusiness</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://finofiii.com/projectbased</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://finofiii.com/collegefund</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://finofiii.com/retirementplanning</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://finofiii.com/internationaltreasury</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+</urlset>

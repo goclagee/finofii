@@ -14,11 +14,56 @@ import {
   TrendingUp,
   Users,
 } from "lucide-react";
+import useSEO from "@/hooks/useSEO";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
 const FamilyOfficePage = () => {
+  useSEO({
+    title: "Multi-Family Office — Your Family CFO | Finofiii",
+    description:
+      "A Multi-Family Office platform acting as your Family CFO: tax efficiency, portfolio strategy, consolidated reporting, governance and succession for UHNW families. Minimum net worth ₹25 Crores.",
+    canonical: "https://finofiii.com/family-office",
+    ogImage: "https://finofiii.com/logo.png",
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Service",
+          "@id": "https://finofiii.com/family-office#service",
+          name: "Multi-Family Office",
+          serviceType: "Family Office, Wealth Structuring & Succession",
+          provider: {
+            "@type": "Organization",
+            name: "Finofiii Fintech Private Limited",
+            url: "https://finofiii.com",
+          },
+          areaServed: "IN",
+          description:
+            "A Family CFO across tax efficiency, portfolio strategy, consolidated reporting, family governance and succession planning for ultra-high-net-worth families.",
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://finofiii.com/family-office#webpage",
+          url: "https://finofiii.com/family-office",
+          name: "Multi-Family Office | Finofiii",
+          datePublished: "2024-01-01",
+          dateModified: new Date().toISOString().split("T")[0],
+          inLanguage: "en-IN",
+          speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", "h2"] },
+        },
+        {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://finofiii.com/" },
+            { "@type": "ListItem", position: 2, name: "Family Office", item: "https://finofiii.com/family-office" },
+          ],
+        },
+      ],
+    },
+  });
+
   const [loading, setLoading] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
 

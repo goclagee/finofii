@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Preview / internal routes not for indexing
+Disallow: /preview/
+
+Sitemap: https://finofiii.com/sitemap.xml
