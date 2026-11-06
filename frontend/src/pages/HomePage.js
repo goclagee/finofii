@@ -15,6 +15,7 @@ import {
   Briefcase,
 } from "lucide-react";
 import { useState, useEffect } from "react";
+import useSEO from "@/hooks/useSEO";
 
 const rotatingWords = [
   "Multi-Family Office Platform",
@@ -23,9 +24,99 @@ const rotatingWords = [
   "Treasury Management",
 ];
 
+const faqs = [
+  { q: "How does Finofiii work?", a: "Finofiii helps you deploy your idle current account balance into SEBI-regulated liquid and debt mutual funds via BSE StAR MF, while maintaining T+1 liquidity. Returns are market-linked and not guaranteed." },
+  { q: "Is my money safe?", a: "Your money never touches Finofiii's account. All investments go directly to SEBI-regulated AMCs through the BSE StAR MF execution channel with daily NAV declarations." },
+  { q: "What's the minimum investment?", a: "Treasury Management starts at ₹1 Crore. Founders from ₹100 (MFs) to ₹1 Cr (PMS/AIF). Family Office requires ₹25 Cr+ net worth." },
+  { q: "How quickly can I withdraw?", a: "Liquid funds offer T+1 liquidity — money back in 1-3 business days. Some schemes offer instant redemption up to ₹50,000." },
+  { q: "What are your fees?", a: "We do not charge investors any fee for mutual fund transactions. As an AMFI-registered Mutual Fund Distributor (ARN-176236), we deal in Regular Plans only and earn a trail commission paid by the AMCs — not by you. Commission disclosure is made to clients at the time of investment. Family Office uses a transparent fee-for-service model." },
+];
+
+const PAGE_PUBLISHED = "2024-01-01";
+const PAGE_MODIFIED = new Date().toISOString().split("T")[0];
+
 const HomePage = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
+
+  useSEO({
+    title: "Finofiii | Global Treasury & Multi-Family Office Platform",
+    description:
+      "Finofiii is a global treasury & multi-family office platform for Indian businesses and founders. Put idle current-account cash to work through SEBI-regulated mutual funds with T+1 liquidity. AMFI registered, ARN-176236.",
+    canonical: "https://finofiii.com/",
+    ogImage: "https://finofiii.com/logo.png",
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://finofiii.com/#organization",
+          name: "Finofiii Fintech Private Limited",
+          alternateName: "Finofiii",
+          url: "https://finofiii.com",
+          logo: "https://finofiii.com/logo.png",
+          description:
+            "Global treasury & multi-family office platform — built by career asset managers.",
+          foundingDate: "2021",
+          email: "care@finofii.com",
+          telephone: "+91-9311361888",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Unit No-806, Tower 1, Assotech Business Cresterra, Sector 135",
+            addressLocality: "Noida",
+            addressRegion: "Uttar Pradesh",
+            postalCode: "201301",
+            addressCountry: "IN",
+          },
+          contactPoint: {
+            "@type": "ContactPoint",
+            telephone: "+91-9311361888",
+            contactType: "customer service",
+            email: "care@finofii.com",
+            areaServed: "IN",
+            availableLanguage: ["en", "hi"],
+          },
+          sameAs: [
+            "https://www.linkedin.com/company/finofii-fintech-private-limited/home/",
+            "https://www.instagram.com/thefinofiii/",
+            "https://www.facebook.com/finofiii/",
+          ],
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://finofiii.com/#website",
+          url: "https://finofiii.com",
+          name: "Finofiii",
+          publisher: { "@id": "https://finofiii.com/#organization" },
+          inLanguage: "en-IN",
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://finofiii.com/#webpage",
+          url: "https://finofiii.com/",
+          name: "Finofiii | Global Treasury & Multi-Family Office Platform",
+          isPartOf: { "@id": "https://finofiii.com/#website" },
+          about: { "@id": "https://finofiii.com/#organization" },
+          datePublished: PAGE_PUBLISHED,
+          dateModified: PAGE_MODIFIED,
+          inLanguage: "en-IN",
+          speakable: {
+            "@type": "SpeakableSpecification",
+            cssSelector: ["h1", "h2", ".speakable-intro"],
+          },
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://finofiii.com/#faq",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        },
+      ],
+    },
+  });
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -59,8 +150,8 @@ const HomePage = () => {
                 {rotatingWords[currentWordIndex]}
               </span>
             </h1>
-            <p className="text-lg md:text-xl mb-5 text-blue-100/80 max-w-4xl mx-auto font-light tracking-wide">
-              Super Exclusive Platform for Elite Investors • AI-Driven Insights • Institutional-Grade Solutions
+            <p className="speakable-intro text-lg md:text-xl mb-5 text-blue-100/80 max-w-4xl mx-auto font-light tracking-wide">
+              Finofiii is a global treasury and multi-family office platform that helps Indian businesses put idle current-account cash to work through SEBI-regulated mutual funds, with T+1 liquidity.
             </p>
             <p className="text-2xl mb-3 max-w-3xl mx-auto font-semibold italic text-amber-300">
               "Higher Interest is in Your Best Interest"
@@ -475,13 +566,7 @@ const HomePage = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Common Questions</h2>
           </div>
           <div className="space-y-4">
-            {[
-              { q: "How does Finofiii work?", a: "Finofiii helps you deploy your idle current account balance into SEBI-regulated liquid and debt mutual funds via BSE StAR MF, while maintaining T+1 liquidity. Returns are market-linked and not guaranteed." },
-              { q: "Is my money safe?", a: "Your money never touches Finofiii's account. All investments go directly to SEBI-regulated AMCs through BSE StAR MF execution channel with daily NAV declarations." },
-              { q: "What's the minimum investment?", a: "Treasury Management starts at ₹1 Crore. Founders from ₹100 (MFs) to ₹1 Cr (PMS/AIF). Family Office requires ₹25 Cr+ net worth." },
-              { q: "How quickly can I withdraw?", a: "Liquid funds offer T+1 liquidity — money back in 1-3 business days. Some schemes offer instant redemption up to ₹50,000." },
-              { q: "What are your fees?", a: "We do not charge investors any fee for mutual fund transactions. As an AMFI-registered Mutual Fund Distributor (ARN-176236), we deal in Regular Plans only and earn a trail commission paid by the AMCs — not by you. Commission disclosure is made to clients at the time of investment. Family Office uses a transparent fee-for-service model." },
-            ].map((item, i) => (
+            {faqs.map((item, i) => (
               <details key={i} className="group bg-gray-50 rounded-xl border border-gray-100 hover:border-amber-200 transition-colors">
                 <summary className="flex items-center justify-between p-5 cursor-pointer list-none">
                   <h3 className="text-lg font-semibold text-gray-900 group-hover:text-amber-700 transition-colors">{item.q}</h3>
@@ -521,6 +606,30 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      {/* Semantic footer strip — internal links, contact & freshness signal */}
+      <aside className="bg-[#FDFBF7] border-t border-gray-100 py-10" aria-label="Quick links and company information">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav aria-label="Explore Finofiii" className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm font-medium text-gray-600 mb-6">
+            <Link to="/treasury" className="hover:text-amber-600 transition-colors">Treasury Management</Link>
+            <Link to="/founders" className="hover:text-amber-600 transition-colors">Founders</Link>
+            <Link to="/family-office" className="hover:text-amber-600 transition-colors">Family Office</Link>
+            <Link to="/capital" className="hover:text-amber-600 transition-colors">Capital</Link>
+            <Link to="/blog" className="hover:text-amber-600 transition-colors">Blog</Link>
+            <Link to="/about" className="hover:text-amber-600 transition-colors">About Us</Link>
+            <a href="#contact" className="hover:text-amber-600 transition-colors">Contact</a>
+          </nav>
+          <address className="not-italic text-center text-xs text-gray-500 leading-relaxed">
+            <strong className="text-gray-700">Finofiii Fintech Private Limited</strong> · AMFI Registered Mutual Fund Distributor · ARN-176236<br />
+            Unit No-806, Tower 1, Assotech Business Cresterra, Sector 135, Noida, Uttar Pradesh 201301, India ·{" "}
+            <a href="mailto:care@finofii.com" className="hover:text-amber-600">care@finofii.com</a> ·{" "}
+            <a href="tel:+919311361888" className="hover:text-amber-600">+91 93113 61888</a>
+          </address>
+          <p className="text-center text-[11px] text-gray-400 mt-4">
+            Last updated <time dateTime={PAGE_MODIFIED}>{new Date(PAGE_MODIFIED).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" })}</time>
+          </p>
+        </div>
+      </aside>
     </div>
   );
 };
