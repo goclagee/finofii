@@ -19,6 +19,8 @@ import BlogListPage from "@/pages/BlogListPage";
 import BlogDetailPage from "@/pages/BlogDetailPage";
 import RiskDisclosureGuide from "@/pages/RiskDisclosureGuide";
 import NavCalculator from "@/pages/NavCalculator";
+import useSEO from "@/hooks/useSEO";
+import { SEO_CONFIG } from "@/data/seoConfig";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -111,11 +113,28 @@ function ScrollToTop() {
   return null;
 }
 
+// Applies centralised SEO (title, meta, canonical, OG, JSON-LD) for landing
+// pages based on the current path. Pages that set their own SEO (Home, Treasury,
+// Founders, Family Office, Capital, About, Blog) are excluded so we don't double up.
+function RouteSEO() {
+  const { pathname } = useLocation();
+  const SELF_MANAGED = [
+    "/", "/treasury", "/founders", "/family-office", "/capital", "/about",
+    "/blog", "/disclosure", "/investor-charter", "/grievance-redressal",
+    "/mutual-fund-disclosure",
+  ];
+  const skip = SELF_MANAGED.includes(pathname) || pathname.startsWith("/blog/") || pathname.startsWith("/preview/");
+  const cfg = !skip ? SEO_CONFIG[pathname] : null;
+  useSEO(cfg || {});
+  return null;
+}
+
 function App() {
   return (
     <div className="App min-h-screen bg-white">
       <BrowserRouter>
         <ScrollToTop />
+        <RouteSEO />
         <Navigation />
         <Routes>
           {/* Main Pages */}
