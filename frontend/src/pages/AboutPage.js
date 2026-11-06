@@ -143,13 +143,13 @@ export default function AboutPage() {
     title: "About Finofiii — Global Treasury & Multi-Family Office Platform",
     description:
       "Finofiii is a global treasury & multi-family office platform — built by career asset managers, not bankers. ₹2,800 Cr+ transacted, 130+ years of combined asset management experience, SEBI & AMFI registered. Meet the team.",
-    canonical: "https://finofii.com/about",
+    canonical: "https://finofiii.com/about",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Organization",
       name: "Finofiii Fintech Private Limited",
-      url: "https://finofii.com",
-      logo: "https://finofii.com/logo.png",
+      url: "https://finofiii.com",
+      logo: "https://finofiii.com/logo.png",
       description:
         "Global treasury & multi-family office platform — built by career asset managers.",
       foundingDate: "2021",

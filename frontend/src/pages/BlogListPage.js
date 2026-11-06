@@ -8,7 +8,7 @@ const BlogListPage = () => {
     title: "Blog & Insights — Treasury, Cash Management | Finofiii",
     description:
       "Practical guides on treasury management, idle cash, liquid funds and current account monetisation for Indian businesses and founders.",
-    canonical: "https://finofii.com/blog",
+    canonical: "https://finofiii.com/blog",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Blog",
@@ -20,7 +20,7 @@ const BlogListPage = () => {
         headline: p.title,
         datePublished: p.date,
         author: { "@type": "Organization", name: "Finofiii" },
-        url: `https://finofii.com/blog/${p.slug}`,
+        url: `https://finofiii.com/blog/${p.slug}`,
       })),
     },
   });

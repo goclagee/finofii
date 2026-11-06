@@ -112,7 +112,7 @@ const BlogDetailPage = () => {
   useSEO({
     title: post ? `${post.title} | Finofiii Blog` : "Blog | Finofiii",
     description: post ? post.metaDescription : "Finofiii blog.",
-    canonical: post ? `https://finofii.com/blog/${post.slug}` : "https://finofii.com/blog",
+    canonical: post ? `https://finofiii.com/blog/${post.slug}` : "https://finofiii.com/blog",
     jsonLd: post
       ? {
           "@context": "https://schema.org",
@@ -125,9 +125,9 @@ const BlogDetailPage = () => {
           publisher: {
             "@type": "Organization",
             name: "Finofiii Fintech Private Limited",
-            logo: { "@type": "ImageObject", url: "https://finofii.com/logo.png" },
+            logo: { "@type": "ImageObject", url: "https://finofiii.com/logo.png" },
           },
-          mainEntityOfPage: `https://finofii.com/blog/${post.slug}`,
+          mainEntityOfPage: `https://finofiii.com/blog/${post.slug}`,
           keywords: post.keywords,
         }
       : null,

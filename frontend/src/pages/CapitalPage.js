@@ -24,7 +24,7 @@ export default function CapitalPage() {
     title: "Finofiii Capital — Personal, Business, SME Loans & Venture Capital | Finofiii",
     description:
       "Apply for Personal, Business, Home, LAP, LAS, WCDL, SME loans, Venture Debt and Private Equity through Finofiii Capital. 50+ lenders, starting rates from 8.35% p.a., 24-hour disbursal. A global treasury & multi-family office platform's capital marketplace — ₹2,500 Cr+ transacted.",
-    canonical: "https://finofii.com/finofii-capital",
+    canonical: "https://finofiii.com/finofii-capital",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "FinancialService",
