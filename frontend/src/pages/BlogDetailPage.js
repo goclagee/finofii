@@ -7,13 +7,13 @@ const Block = ({ block }) => {
   switch (block.type) {
     case "lead":
       return (
-        <p className="text-xl leading-relaxed mb-6 font-medium" style={{ color: "#1f2937" }}>
+        <p className="text-xl leading-relaxed mb-6 font-medium text-justify" style={{ color: "#1f2937", hyphens: "auto" }}>
           {block.text}
         </p>
       );
     case "paragraph":
       return (
-        <p className="text-base leading-relaxed mb-5" style={{ color: "#374151" }}>
+        <p className="text-base leading-relaxed mb-5 text-justify" style={{ color: "#374151", hyphens: "auto" }}>
           {block.text}
         </p>
       );
@@ -27,7 +27,7 @@ const Block = ({ block }) => {
       return (
         <ul className="mb-6 space-y-2.5 pl-1">
           {block.items.map((item, i) => (
-            <li key={i} className="flex gap-3 text-base leading-relaxed" style={{ color: "#374151" }}>
+            <li key={i} className="flex gap-3 text-base leading-relaxed text-justify" style={{ color: "#374151", hyphens: "auto" }}>
               <span className="mt-2 w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0" />
               <span>{item}</span>
             </li>
@@ -38,7 +38,7 @@ const Block = ({ block }) => {
       return (
         <ol className="mb-6 space-y-3 pl-1">
           {block.items.map((item, i) => (
-            <li key={i} className="flex gap-3 text-base leading-relaxed" style={{ color: "#374151" }}>
+            <li key={i} className="flex gap-3 text-base leading-relaxed text-justify" style={{ color: "#374151", hyphens: "auto" }}>
               <span className="flex-shrink-0 w-6 h-6 rounded-full bg-amber-100 text-amber-700 text-xs font-bold flex items-center justify-center mt-0.5">
                 {i + 1}
               </span>
@@ -86,7 +86,7 @@ const Block = ({ block }) => {
       return (
         <div className="my-8 p-6 rounded-xl bg-amber-50 border border-amber-200 flex gap-3">
           <Info size={20} className="flex-shrink-0 mt-0.5" style={{ color: "#b45309" }} />
-          <p className="text-base leading-relaxed font-medium" style={{ color: "#78350f" }}>
+          <p className="text-base leading-relaxed font-medium text-justify" style={{ color: "#78350f", hyphens: "auto" }}>
             {block.text}
           </p>
         </div>
