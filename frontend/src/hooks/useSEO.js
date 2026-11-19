@@ -1,43 +1,29 @@
 import { useEffect } from "react";
-
-// Lightweight SEO hook — sets <title>, meta description, og tags, canonical, and
-// optional JSON-LD structured data. Cleans up on unmount.
-export default function useSEO({ title, description, canonical, ogImage, jsonLd }) {
+// Lightweight SEO hook: sets <title>, meta description, og/twitter tags, canonical,
+// optional robots noindex and JSON-LD. Prerendered JSON-LD (data-prerender) is
+// replaced when a page supplies its own.
+export default function useSEO({ title, description, canonical, ogImage, jsonLd, noindex } = {}) {
   useEffect(() => {
     if (title) document.title = title;
-
-    const set = (selector, attrs) => {
-      let el = document.head.querySelector(selector);
+    const setMeta = (attr, key, value) => {
+      if (!value) return;
+      let el = document.head.querySelector(`meta[${attr}="${key}"]`);
       if (!el) {
-        el = document.head.querySelector(`meta[property="${attrs.property}"]`) || document.createElement(attrs.tag || "meta");
-        if (!el.parentNode) document.head.appendChild(el);
+        el = document.createElement("meta");
+        el.setAttribute(attr, key);
+        document.head.appendChild(el);
       }
-      Object.entries(attrs).forEach(([k, v]) => {
-        if (k === "tag" || v == null) return;
-        el.setAttribute(k, v);
-      });
-      return el;
+      el.setAttribute("content", value);
     };
-
-    const created = [];
-
-    if (description) {
-      const el = set('meta[name="description"]', { name: "description", content: description });
-      created.push(el);
-    }
-
-    // Open Graph
-    set('meta[property="og:title"]', { property: "og:title", content: title });
-    set('meta[property="og:description"]', { property: "og:description", content: description });
-    set('meta[property="og:type"]', { property: "og:type", content: "website" });
-    if (ogImage) set('meta[property="og:image"]', { property: "og:image", content: ogImage });
-
-    // Twitter
-    set('meta[name="twitter:card"]', { name: "twitter:card", content: "summary_large_image" });
-    set('meta[name="twitter:title"]', { name: "twitter:title", content: title });
-    set('meta[name="twitter:description"]', { name: "twitter:description", content: description });
-
-    // Canonical
+    setMeta("name", "description", description);
+    setMeta("property", "og:title", title);
+    setMeta("property", "og:description", description);
+    setMeta("property", "og:type", "website");
+    setMeta("property", "og:url", canonical);
+    setMeta("property", "og:image", ogImage);
+    setMeta("name", "twitter:card", title ? "summary_large_image" : null);
+    setMeta("name", "twitter:title", title);
+    setMeta("name", "twitter:description", description);
     if (canonical) {
       let link = document.head.querySelector('link[rel="canonical"]');
       if (!link) {
@@ -47,19 +33,25 @@ export default function useSEO({ title, description, canonical, ogImage, jsonLd 
       }
       link.setAttribute("href", canonical);
     }
-
-    // Structured data
+    let robots;
+    if (noindex) {
+      robots = document.createElement("meta");
+      robots.setAttribute("name", "robots");
+      robots.setAttribute("content", "noindex, follow");
+      document.head.appendChild(robots);
+    }
     let script;
     if (jsonLd) {
+      document.head.querySelectorAll('script[data-prerender="true"]').forEach((n) => n.remove());
       script = document.createElement("script");
       script.type = "application/ld+json";
       script.text = JSON.stringify(jsonLd);
       script.dataset.seo = "true";
       document.head.appendChild(script);
     }
-
     return () => {
       if (script) script.remove();
+      if (robots) robots.remove();
     };
-  }, [title, description, canonical, ogImage, JSON.stringify(jsonLd)]); // eslint-disable-line
+  }, [title, description, canonical, ogImage, noindex, JSON.stringify(jsonLd)]); // eslint-disable-line
 }

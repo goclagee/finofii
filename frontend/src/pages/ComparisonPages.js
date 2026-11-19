@@ -35,7 +35,7 @@ export const TreasuryVsFD = () => (
   <div className="page">
     <TrustBadges />
     
-    <h1>Treasury Management vs Fixed Deposits: Which Earns You More?</h1>
+    <h1>Treasury Management vs Fixed Deposits: Which Suits Your Business Cash?</h1>
     <ReadingTime minutes={5} />
     
     <p className="context-paragraph">
@@ -57,8 +57,8 @@ export const TreasuryVsFD = () => (
         </div>
       </div>
       <div className="stat-comparison">
-        <div className="stat-diff">Treasury Advantage: ₹2,500 Extra</div>
-        <div className="stat-diff-label">+ Full Liquidity (withdraw anytime vs locked)</div>
+        <div className="stat-diff">Key difference</div>
+        <div className="stat-diff-label">Liquid funds: access in 1-2 working days. FD: locked until maturity</div>
       </div>
     </div>
     
@@ -80,13 +80,13 @@ export const TreasuryVsFD = () => (
           </tr>
           <tr>
             <td><strong><span className="table-icon">💰</span>Returns</strong></td>
-            <td><span className="check-mark">✓</span> Market-linked</td>
-            <td><span className="check-mark">✓</span> Market-linked</td>
+            <td><span className="check-mark">✓</span> Market-linked, not guaranteed</td>
+            <td><span className="check-mark">✓</span> Fixed at booking</td>
           </tr>
           <tr>
             <td><strong><span className="table-icon">📊</span>Tax Efficiency</strong></td>
-            <td><span className="check-mark">✓</span> Better (indexation)</td>
-            <td><span className="cross-mark">✗</span> Taxed as income (TDS @ ₹50k+)</td>
+            <td>Gains taxed as per applicable rate</td>
+            <td>Interest taxed as income; TDS may apply</td>
           </tr>
           <tr>
             <td><strong><span className="table-icon">🔄</span>Flexibility</strong></td>
@@ -95,8 +95,8 @@ export const TreasuryVsFD = () => (
           </tr>
           <tr>
             <td><strong><span className="table-icon">🛡️</span>Safety</strong></td>
-            <td><span className="check-mark">✓</span> SEBI-regulated, debt-backed</td>
-            <td><span className="check-mark">✓</span> Bank-backed, CDIC insured</td>
+            <td>SEBI-regulated; market and credit risk apply</td>
+            <td><span className="check-mark">✓</span> Bank deposit; DICGC cover up to ₹5 lakh per depositor per bank</td>
           </tr>
         </tbody>
       </table>
@@ -110,7 +110,7 @@ export const TreasuryVsFD = () => (
           <ul>
             <li>You need access to cash regularly</li>
             <li>Your business has variable cash flow</li>
-            <li>You want higher tax-adjusted returns</li>
+            <li>You want to put idle cash to work with flexibility</li>
             <li>You need funds for emergencies</li>
             <li>You manage quarterly or monthly expenses</li>
           </ul>
@@ -119,7 +119,7 @@ export const TreasuryVsFD = () => (
           <h4><span className="table-icon">✓</span> Choose FD If:</h4>
           <ul>
             <li>You can lock capital for 1+ years</li>
-            <li>You prefer guaranteed interest rates</li>
+            <li>You prefer a fixed interest rate known upfront</li>
             <li>You want simplicity</li>
             <li>You're building long-term reserves</li>
             <li>You prefer working with your bank</li>
@@ -129,7 +129,7 @@ export const TreasuryVsFD = () => (
     </div>
 
     <div className="cta">
-      <p>💡 <strong>Stop leaving ₹2,500+ every 6 months on the table.</strong> Earn more on idle cash with Finofiii.</p>
+      <p><strong>Put idle cash to work.</strong> Talk to Finofiii about treasury management for your business.</p>
       <a href="https://wa.me/919311361888" className="btn btn-whatsapp">
         👉 Schedule Your Free Demo
       </a>
@@ -245,7 +245,7 @@ export const TreasuryVsSavings = () => (
     <ReadingTime minutes={3} />
     
     <p className="context-paragraph">
-      Keeping idle cash in a savings account might feel safe, but you may be leaving potential returns on the table. Treasury management via liquid funds aims to put idle cash to work while maintaining full liquidity. Returns are market-linked and not guaranteed.
+      Keeping idle cash in a savings account might feel safe, but your cash may be underutilised. Treasury management via liquid funds aims to put idle cash to work while maintaining full liquidity. Returns are market-linked and not guaranteed.
     </p>
 
     <div className="stat-card">
@@ -263,8 +263,8 @@ export const TreasuryVsSavings = () => (
         </div>
       </div>
       <div className="stat-comparison">
-        <div className="stat-diff">Treasury Advantage: ₹20,000/Year</div>
-        <div className="stat-diff-label">On just ₹10 lakh! Scale to ₹1 crore = ₹2 lakh extra</div>
+        <div className="stat-diff">Key difference</div>
+        <div className="stat-diff-label">Savings account: bank-set interest. Liquid fund: market-linked returns with 1-2 day access</div>
       </div>
     </div>
 
@@ -291,13 +291,13 @@ export const TreasuryVsSavings = () => (
           </tr>
           <tr>
             <td><strong>Tax Treatment</strong></td>
-            <td>Taxed as income (50k+ TDS)</td>
-            <td><span className="check-mark">✓</span> Indexation benefit</td>
+            <td>Interest taxed as income; TDS may apply</td>
+            <td>Gains taxed as per applicable rate</td>
           </tr>
           <tr>
             <td><strong>Risk</strong></td>
-            <td>Bank-backed</td>
-            <td><span className="check-mark">✓</span> SEBI-regulated, safer</td>
+            <td>Bank deposit (DICGC cover up to ₹5 lakh)</td>
+            <td>SEBI-regulated; market and credit risk apply</td>
           </tr>
           <tr>
             <td><strong>Minimum Amount</strong></td>
@@ -323,7 +323,7 @@ export const TreasuryVsSavings = () => (
         <ul>
           <li>Potentially higher tax-adjusted returns</li>
           <li>Still fully liquid (1-2 days)</li>
-          <li>Tax-efficient (indexation)</li>
+          <li>Gains taxed as per applicable rate</li>
           <li>SEBI-regulated, professional management</li>
         </ul>
       </div>
@@ -346,7 +346,7 @@ export const TreasuryVsDebt = () => (
   <div className="page">
     <TrustBadges />
     
-    <h1>Treasury vs Debt Funds: Capital Preservation with Better Returns</h1>
+    <h1>Treasury vs Debt Funds: Capital Preservation Compared</h1>
     <ReadingTime minutes={4} />
     
     <p className="context-paragraph">
@@ -414,7 +414,7 @@ export const TreasuryVsDebt = () => (
       <ul>
         <li><strong>💧 Emergency Reserves (3-6 months):</strong> Treasury (instant access)</li>
         <li><strong>🎯 Quarterly Targets:</strong> Treasury (no volatility)</li>
-        <li><strong>⏰ 1-2 Year Goals:</strong> Debt Funds (higher returns acceptable)</li>
+        <li><strong>⏰ 1-2 Year Goals:</strong> Debt Funds (suited to slightly longer horizons)</li>
       </ul>
     </div>
 
@@ -434,7 +434,7 @@ export const TreasuryVsEquity = () => (
   <div className="page">
     <TrustBadges />
     
-    <h1>Treasury vs Equity Funds: Which Grows Your Capital Faster?</h1>
+    <h1>Treasury vs Equity Funds: Which Fits Your Time Horizon?</h1>
     <ReadingTime minutes={5} />
     
     <p className="context-paragraph">
@@ -579,7 +579,7 @@ export const LiquidFundsVsFD = () => (
     <ReadingTime minutes={4} />
     
     <p className="context-paragraph">
-      Liquid funds and fixed deposits are both low-risk options, but liquid funds offer superior flexibility and returns. Banks use fixed deposits for long-term lending; liquid funds invest in 91-day instruments.
+      Liquid funds and fixed deposits are both low-risk options, but liquid funds offer greater flexibility. Returns are market-linked and not guaranteed. Banks use fixed deposits for long-term lending; liquid funds invest in 91-day instruments.
     </p>
 
     <div className="stat-card">
@@ -599,7 +599,7 @@ export const LiquidFundsVsFD = () => (
     </div>
 
     <div className="cta">
-      <p>Higher returns + full liquidity = Better choice for idle business cash.</p>
+      <p>Flexible access and market-linked returns make liquid funds worth considering for idle business cash.</p>
       <a href="https://wa.me/919311361888" className="btn btn-whatsapp">
         Switch to Liquid Funds Today
       </a>

@@ -76,7 +76,7 @@ export const TreasuryVsInsurance = () => (
           </tr>
           <tr>
             <td><strong>Tax Efficiency</strong></td>
-            <td><span className="check-mark">✓</span> Indexation</td>
+            <td>Taxed as per applicable rate</td>
             <td>Section 80C benefit</td>
           </tr>
           <tr>
@@ -125,12 +125,12 @@ export const CollegeFundPlanning = () => (
       <div className="stat-example">
         <div className="stat-item">
           <div className="stat-label">Treasury + SIP Strategy</div>
-          <div className="stat-amount">₹45-50L</div>
-          <div className="stat-label">From ₹500/mo SIP + ₹2L lump sum</div>
+          <div className="stat-amount">Illustrative</div>
+          <div className="stat-label">Staged SIP + lump-sum approach</div>
         </div>
         <div className="stat-item winner">
           <div className="stat-label">Built-in buffer</div>
-          <div className="stat-amount">+₹8-10L</div>
+          <div className="stat-amount">Buffer</div>
           <div className="stat-label">For inflation, currency changes, overruns</div>
         </div>
       </div>

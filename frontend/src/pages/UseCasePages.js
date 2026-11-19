@@ -47,7 +47,7 @@ export const EmergencyFund = () => (
         </div>
       </div>
       <div className="stat-comparison">
-        <div className="stat-diff">₹12,000/Year Extra</div>
+        <div className="stat-diff">Idle cash, put to work</div>
         <div className="stat-diff-label">In case of emergency, withdraw in 1-2 days</div>
       </div>
     </div>
@@ -134,40 +134,19 @@ export const TaxOptimization = () => (
   <div className="page">
     <TrustBadges />
     
-    <h1>Tax-Optimized Treasury: Maximizing After-Tax Returns</h1>
-    <ReadingTime minutes={6} />
-    
+    <h1>Tax Treatment of Treasury Investments for Businesses</h1>
+    <ReadingTime minutes={4} />
     <p className="context-paragraph">
-      Returns aren't just about gross gains—they're about what you keep after tax. Liquid funds offer unique tax advantages: indexation benefit reduces taxable gains on long-term holdings.
+      Returns are best judged after tax. For companies, LLPs and firms, gains from debt mutual funds are generally taxed as business income at the applicable rate, and FD interest is taxable with TDS possibly deducted by the bank. This page covers the basics; confirm the treatment for your entity with your CA.
     </p>
-
-    <div className="stat-card">
-      <h3>📊 Tax-Optimized Returns (30-month hold on ₹10L)</h3>
-      <div className="stat-example">
-        <div className="stat-item">
-          <div className="stat-label">FD Interest (30%+ tax)</div>
-          <div className="stat-amount">₹1,50,000 gross</div>
-          <div className="stat-label">→ ₹1,05,000 after-tax</div>
-        </div>
-        <div className="stat-item winner">
-          <div className="stat-label">Liquid Fund + Indexation</div>
-          <div className="stat-amount">₹1,80,000 gross</div>
-          <div className="stat-label">→ ₹1,44,000 after-tax</div>
-        </div>
-      </div>
-      <div className="stat-comparison">
-        <div className="stat-diff">₹39,000 Extra After-Tax</div>
-        <div className="stat-diff-label">Plus 2-day liquidity, no lock-in risk</div>
-      </div>
-    </div>
-
     <div className="card">
-      <h2>Indexation Benefit Explained</h2>
+      <h2>Key Points to Check with Your CA</h2>
       <ul>
-        <li><strong>How it works:</strong> Your cost base is indexed by inflation (CII), reducing taxable gains</li>
-        <li><strong>3-year rule:</strong> Indexation only applies to assets held 3+ years</li>
-        <li><strong>Tax rate:</strong> 20% on indexed gain (vs. 30%+ on FD interest)</li>
-        <li><strong>Liquid funds qualify:</strong> Yes, when held 3+ years</li>
+        <li><strong>Debt mutual fund gains:</strong> Generally treated as business income for companies, LLPs and firms, taxed at the applicable rate</li>
+        <li><strong>Fixed deposit interest:</strong> Taxable as income; the bank may deduct TDS, which can be adjusted in your return</li>
+        <li><strong>No special benefit to count on:</strong> Do not assume indexation or a lower rate for debt fund gains</li>
+        <li><strong>Compare after tax:</strong> Evaluate options on post-tax outcomes, not headline figures</li>
+        <li><strong>Records:</strong> Keep transaction statements for filing</li>
       </ul>
     </div>
 
@@ -233,12 +212,12 @@ export const FreelancerBusiness = () => (
       <div className="stat-example">
         <div className="stat-item">
           <div className="stat-label">Peak Months (₹35L+)</div>
-          <div className="stat-amount">₹70,000</div>
-          <div className="stat-label">Treasury returns on surplus (6 months)</div>
+          <div className="stat-amount">Market-linked</div>
+          <div className="stat-label">Surplus put to work (illustrative)</div>
         </div>
         <div className="stat-item winner">
           <div className="stat-label">Lean Months</div>
-          <div className="stat-amount">+₹70,000</div>
+          <div className="stat-amount">Cushion</div>
           <div className="stat-label">Used for growth, learning, equipment</div>
         </div>
       </div>
@@ -249,7 +228,7 @@ export const FreelancerBusiness = () => (
       <ul>
         <li><strong>Monthly:</strong> Separate operating account + treasury account</li>
         <li><strong>Strategy:</strong> Keep 3 months expenses in current account, park surplus in liquid funds</li>
-        <li><strong>Tax benefit:</strong> Indexation helps offset high GST compliance costs</li>
+        <li><strong>Tax planning:</strong> Gains are taxed as per applicable rates; consult your CA</li>
         <li><strong>Scaling prep:</strong> Treasury gives you the runway to turn contracts into team hires</li>
       </ul>
     </div>
@@ -282,25 +261,14 @@ export const ProjectBasedBusiness = () => (
       <ul>
         <li><strong>Pre-project:</strong> Advance/deposit received → Park in liquid fund (high liquidity for project spend)</li>
         <li><strong>Mid-project:</strong> Milestone payments come in → Reinvest earned returns into next milestone buffer</li>
-        <li><strong>Post-project:</strong> Final settlement → Park in 3-6 month funds for next project prep (slightly higher return)</li>
+        <li><strong>Post-project:</strong> Final settlement → Park in 3-6 month funds for next project prep (slightly longer horizon)</li>
         <li><strong>Off-season:</strong> Between projects → Move to short-term debt funds (longer hold)</li>
       </ul>
     </div>
 
     <div className="stat-card">
-      <h3>🏗️ Project Business Example (₹1 Crore Project, 12 months)</h3>
-      <div className="stat-example">
-        <div className="stat-item">
-          <div className="stat-label">Without Treasury</div>
-          <div className="stat-amount">₹0</div>
-          <div className="stat-label">Return during project cycle</div>
-        </div>
-        <div className="stat-item winner">
-          <div className="stat-label">With Treasury</div>
-          <div className="stat-amount">₹50-60 Lakhs</div>
-          <div className="stat-label">Earned on staged cash flows (market-linked)</div>
-        </div>
-      </div>
+      <h3>Project Business: How Staging Works</h3>
+      <p>Advances and milestone receipts that are not needed immediately can be held in suitable debt mutual fund schemes while keeping access to funds when project spend is due. Returns are market-linked and not guaranteed.</p>
     </div>
 
     <div className="cta">

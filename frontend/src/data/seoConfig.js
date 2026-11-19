@@ -144,12 +144,6 @@ const RAW = {
       "Cut-off times decide which day's NAV applies to your transaction. A quick guide to cut-off timings for liquid and debt funds.",
     breadcrumb: "Cut-off Time Explained",
   },
-  "/nav-calculator": {
-    title: "NAV Calculator — Mutual Fund Value Tool | Finofiii",
-    description:
-      "Understand how NAV and units translate to the value of your mutual fund holdings. Educational tool from Finofiii.",
-    breadcrumb: "NAV Calculator",
-  },
   "/idlecashstartups": {
     title: "Idle Cash Management for Startups | Finofiii",
     description:
@@ -275,41 +269,6 @@ const RAW = {
     description:
       "Park rupee surpluses in market-linked instruments while waiting for favourable forex windows. A guide to international treasury for NRIs.",
     breadcrumb: "International Treasury",
-  },
-  "/risk-disclosure-guide": {
-    title: "Risk Disclosure Guide — Mutual Fund Risks Explained | Finofiii",
-    description:
-      "Understand the risks of mutual fund investing: market risk, credit risk and interest-rate risk. Read before you invest.",
-    breadcrumb: "Risk Disclosure Guide",
-  },
-  "/treasuryvsca": {
-    title: "Treasury vs Current Account | Finofiii",
-    description:
-      "A current account earns nothing; treasury management puts idle cash to work with liquidity. A clear comparison for businesses.",
-    breadcrumb: "Treasury vs Current Account",
-  },
-  "/understandingnav": {
-    title: "Understanding NAV in Mutual Funds | Finofiii",
-    description:
-      "A guide to Net Asset Value (NAV): how it is calculated, why it moves daily, and what it means for your mutual fund holdings.",
-    breadcrumb: "Understanding NAV",
-  },
-  "/understandingliquidfunds": {
-    title: "Understanding Liquid Funds | Finofiii",
-    description:
-      "How liquid funds work, their risk profile and when they suit business cash. A plain-language guide from Finofiii.",
-    breadcrumb: "Understanding Liquid Funds",
-  },
-  "/comparisoncurrentaccount": {
-    title: "Current Account vs Treasury — The Real Cost of Idle Cash | Finofiii",
-    description:
-      "See the opportunity cost of leaving surplus in a current account versus deploying it through treasury management.",
-    breadcrumb: "Current Account Comparison",
-  },
-  "/termsandconditions": {
-    title: "Terms & Conditions | Finofiii",
-    description: "Terms and conditions governing use of the Finofiii platform and services.",
-    breadcrumb: "Terms & Conditions",
   },
 };
 

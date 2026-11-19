@@ -43,7 +43,7 @@ export const TreasuryDelhi = () => (
         <div className="stat-item winner">
           <div className="stat-label">Treasury Return (6 months)</div>
           <div className="stat-amount">Market-linked</div>
-          <div className="stat-label">Potential extra return</div>
+          <div className="stat-label">Market-linked, not guaranteed</div>
         </div>
       </div>
     </div>
@@ -54,7 +54,7 @@ export const TreasuryDelhi = () => (
         <li><strong>Local team:</strong> Noida-based, understand Delhi market cycles</li>
         <li><strong>24-hour setup:</strong> Video KYC, instant account opening</li>
         <li><strong>WhatsApp support:</strong> Fluent in Hindi & English</li>
-        <li><strong>Tax-optimized:</strong> Indexation benefit on long-term gains</li>
+        <li><strong>Tax planning:</strong> Gains taxed as per your entity's applicable rate</li>
       </ul>
     </div>
 
@@ -82,7 +82,7 @@ export const TreasuryNoida = () => (
     </p>
 
     <div className="card">
-      <h2>Noida-Specific Treasury Wins</h2>
+      <h2>Noida-Specific Treasury Considerations</h2>
       <ul>
         <li><strong>Bulk orders:</strong> Manage pre-payment liquidity with treasury ladder</li>
         <li><strong>Seasonal exports:</strong> Park Q2-Q4 export revenues in short-term funds</li>
@@ -124,8 +124,8 @@ export const TreasuryMumbai = () => (
         </div>
         <div className="stat-item winner">
           <div className="stat-label">Treasury Ladder</div>
-          <div className="stat-amount">₹30-35 Lakhs/Yr</div>
-          <div className="stat-label">+ tax indexation benefit</div>
+          <div className="stat-amount">Market-linked</div>
+          <div className="stat-label">Tax as applicable</div>
         </div>
       </div>
     </div>
@@ -195,9 +195,9 @@ export const TreasuryBangalore = () => (
           <div className="stat-label">Typical burn rate</div>
         </div>
         <div className="stat-item winner">
-          <div className="stat-label">+ Treasury Returns</div>
-          <div className="stat-amount">₹15-18 Lakhs</div>
-          <div className="stat-label">Extends runway by 1-2 months</div>
+          <div className="stat-label">+ Treasury allocation</div>
+          <div className="stat-amount">Market-linked</div>
+          <div className="stat-label">Supports runway planning</div>
         </div>
       </div>
     </div>
@@ -268,8 +268,8 @@ export const TreasuryGurgaon = () => (
         </div>
         <div className="stat-item winner">
           <div className="stat-label">Treasury Optimization</div>
-          <div className="stat-amount">₹3+ Crores</div>
-          <div className="stat-label">Annual upside</div>
+          <div className="stat-amount">Market-linked</div>
+          <div className="stat-label">Potential upside</div>
         </div>
       </div>
     </div>

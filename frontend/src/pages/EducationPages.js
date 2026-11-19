@@ -19,8 +19,8 @@ export const WhatIsTreasury = () => (
 
     <div className="card">
       <h2>Why Startups Need This</h2>
-      <p>Monthly revenue ≠ predictable spending. You accumulate cash in good months. That idle cash can earn <strong>₹20,000/year per ₹10 lakhs</strong> vs ₹0 in a current account.</p>
-      <p>This is free money you're leaving on the table.</p>
+      <p>Monthly revenue ≠ predictable spending. You accumulate cash in good months. That idle cash can be put to work in market-linked funds instead of earning ₹0 in a current account.</p>
+      <p>A current account pays no interest on idle balances.</p>
     </div>
 
     <div className="cta">
@@ -46,14 +46,14 @@ export const LiquidFunds101 = () => (
         <li><strong>Relatively low risk</strong> (invests in high-quality money market instruments)</li>
         <li><strong>Market-linked returns</strong></li>
         <li><strong>1-2 day withdrawal</strong></li>
-        <li><strong>Tax-efficient</strong> (indexation benefit)</li>
+        <li><strong>Tax</strong> as per the applicable rate for your entity</li>
       </ul>
     </div>
 
     <div className="card">
       <h2>How They Work</h2>
       <p>You invest → Fund manager invests in short-term debt → Interest accrues daily → You can withdraw anytime with 1-2 day settlement.</p>
-      <p>It's like a hybrid: the safety of a bank deposit with better returns and flexibility.</p>
+      <p>It sits between a current account and a fixed deposit on access: you can redeem in 1-2 working days. Returns are market-linked and not guaranteed, and unlike a bank deposit it carries market and credit risk.</p>
     </div>
 
     <div className="cta">
@@ -145,7 +145,7 @@ export const ExpenseRatio = () => (
     </div>
 
     <div className="cta">
-      <p>Lower expenses = Higher returns for you. Compare funds wisely.</p>
+      <p>Lower expenses reduce the cost of holding a fund. Compare funds wisely.</p>
       <a href="https://wa.me/919311361888" className="btn btn-whatsapp">Compare Fund Costs</a>
     </div>
 

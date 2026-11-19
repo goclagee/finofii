@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import "@/App.css";
 import HomePage from "@/pages/HomePage";
+import NotFoundPage from "@/pages/NotFoundPage";
 import TreasuryPage from "@/pages/TreasuryPage";
 import FoundersPage from "@/pages/FoundersPage";
 import FamilyOfficePage from "@/pages/FamilyOfficePage";
@@ -17,37 +18,16 @@ import GrievanceRedressal from "@/pages/GrievanceRedressal";
 import MutualFundDisclosure from "@/pages/MutualFundDisclosure";
 import BlogListPage from "@/pages/BlogListPage";
 import BlogDetailPage from "@/pages/BlogDetailPage";
-import RiskDisclosureGuide from "@/pages/RiskDisclosureGuide";
-import NavCalculator from "@/pages/NavCalculator";
 import useSEO from "@/hooks/useSEO";
 import { SEO_CONFIG } from "@/data/seoConfig";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import TreasuryVsFD from "@/pages/TreasuryVsFD";
-import TreasuryVsSIP from "@/pages/TreasuryVsSIP";
-import TreasuryVsCurrentAccount from "@/pages/TreasuryVsCurrentAccount";
-import UnderstandingNAV from "@/pages/UnderstandingNAV";
-import UnderstandingLiquidFunds from "@/pages/UnderstandingLiquidFunds";
-import ComparisonCurrentAccount from "@/pages/ComparisonCurrentAccount";
-import TermsAndConditions from "@/pages/TermsAndConditions";
-import WhatIsTreasury from "@/pages/WhatIsTreasury";
-import IdleCashStartups from "@/pages/IdleCashStartups";
-import IdleCashMSMEs from "@/pages/IdleCashMSMEs";
-import TreasuryCorporates from "@/pages/TreasuryCorporates";
-import WealthFamilyOffices from "@/pages/WealthFamilyOffices";
-import TreasuryDelhi from "@/pages/TreasuryDelhi";
-import TreasuryBangalore from "@/pages/TreasuryBangalore";
-import TreasuryMumbai from "@/pages/TreasuryMumbai";
-import TreasuryPune from "@/pages/TreasuryPune";
-import TreasuryHyderabad from "@/pages/TreasuryHyderabad";
-import EmergencyFundPlanning from "@/pages/EmergencyFundPlanning";
-import QuarterlyPlanning from "@/pages/QuarterlyPlanning";
-import TaxOptimization from "@/pages/TaxOptimization";
-import LiquidityPlanning from "@/pages/LiquidityPlanning";
 
 // ✅ NEW: All comparison pages from ComparisonPages.js (ICICI-grade design)
 import {
+  TreasuryVsFD,
+  TreasuryVsSIP,
   TreasuryVsSavings,
   TreasuryVsDebt,
   TreasuryVsEquity,
@@ -154,8 +134,6 @@ function App() {
           <Route path="/grievance-redressal" element={<GrievanceRedressal />} />
           <Route path="/mutual-fund-disclosure" element={<MutualFundDisclosure />} />
           <Route path="/risk-disclosure" element={<RiskDisclosure />} />
-          <Route path="/risk-disclosure-guide" element={<RiskDisclosureGuide />} />
-          <Route path="/nav-calculator" element={<NavCalculator />} />
 
           {/* Comparison Routes */}
           <Route path="/treasuryvsfd" element={<TreasuryVsFD />} />
@@ -207,17 +185,7 @@ function App() {
           <Route path="/internationaltreasury" element={<InternationalTreasury />} />
 
           {/* Legacy routes */}
-          <Route path="/treasuryvsca" element={<TreasuryVsCurrentAccount />} />
-          <Route path="/understandingnav" element={<UnderstandingNAV />} />
-          <Route path="/understandingliquidfunds" element={<UnderstandingLiquidFunds />} />
-          <Route path="/comparisoncurrentaccount" element={<ComparisonCurrentAccount />} />
-          <Route path="/termsandconditions" element={<TermsAndConditions />} />
-                  <Route path="/navcalculator" element={<NavCalculator />} />
-                  <Route path="/riskdisclosureguide" element={<RiskDisclosureGuide />} />
-                  <Route path="/idlecashmsmes" element={<IdleCashMSMEs />} />
-                  <Route path="/treasurycorporates" element={<TreasuryCorporates />} />
-                  <Route path="/wealthfamilyoffices" element={<WealthFamilyOffices />} />
-                  <Route path="/emergencyfundplanning" element={<EmergencyFundPlanning />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
         <Footer />
         <WhatsAppButton />

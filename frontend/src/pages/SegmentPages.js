@@ -57,7 +57,7 @@ export const IdleCashStartups = () => (
         </div>
       </div>
       <div className="stat-comparison">
-        <div className="stat-diff">₹3,00,000/Year Extra</div>
+        <div className="stat-diff">Idle cash, put to work</div>
         <div className="stat-diff-label">Without touching your operational cash</div>
       </div>
     </div>
@@ -68,7 +68,7 @@ export const IdleCashStartups = () => (
         <li><strong>🌊 Lumpy funding:</strong> You get ₹5 crore, not ₹40L per month</li>
         <li><strong>📉 Variable expenses:</strong> Payroll, server costs, marketing change monthly</li>
         <li><strong>⏱️ Liquidity needed:</strong> Cash must be available in 1-2 days for opportunities</li>
-        <li><strong>💰 Every rupee matters:</strong> ₹3L/year extra = growth hiring or runway extension</li>
+        <li><strong>Every rupee matters:</strong> idle cash can be put to work instead of sitting unproductive</li>
       </ul>
     </div>
 
@@ -77,13 +77,13 @@ export const IdleCashStartups = () => (
       <ul>
         <li><strong>Months 1-3 expenses:</strong> Emergency fund in current account (no return, pure safety)</li>
         <li><strong>Months 4+ cash:</strong> Park in liquid funds (market-linked returns, 1-2 day access)</li>
-        <li><strong>Quarterly surplus:</strong> Invest in 3-6 month liquid funds (slightly higher return)</li>
+        <li><strong>Quarterly surplus:</strong> Invest in 3-6 month liquid funds (slightly longer horizon)</li>
         <li><strong>Next funding round prep:</strong> Keep 30 days expenses liquid, park rest</li>
       </ul>
     </div>
 
     <div className="cta">
-      <p>Turn your idle cash into ₹3L+/year. Get set up in 24 hours, no complex paperwork.</p>
+      <p>Put your idle cash to work. Get set up in 24 hours, no complex paperwork.</p>
       <a href="https://wa.me/919311361888" className="btn btn-whatsapp">
         Set Up Treasury for Your Startup
       </a>
@@ -116,8 +116,8 @@ export const IdleCashMSME = () => (
         </div>
         <div className="stat-item winner">
           <div className="stat-label">Lean Months (Use for ops)</div>
-          <div className="stat-amount">+₹1,50,000</div>
-          <div className="stat-label">Extra runway without debt</div>
+          <div className="stat-amount">Market-linked</div>
+          <div className="stat-label">Supports runway planning</div>
         </div>
       </div>
     </div>
@@ -126,14 +126,14 @@ export const IdleCashMSME = () => (
       <h2>MSME-Specific Benefits</h2>
       <ul>
         <li><strong>🔄 Seasonal smoothing:</strong> Earn on peak season cash, use returns in low season</li>
-        <li><strong>💳 Avoid costly loans:</strong> ₹1.5L return > ₹18k+ loan interest</li>
-        <li><strong>📊 Tax efficiency:</strong> Indexation benefit reduces tax on gains</li>
+        <li><strong>Avoid costly loans:</strong> surplus cash can reduce the need for short-term borrowing</li>
+        <li><strong>Tax planning:</strong> Gains are taxed as per your entity's applicable rate; consult your CA</li>
         <li><strong>🛡️ Reputation:</strong> Healthy balance sheet attracts suppliers and lenders</li>
       </ul>
     </div>
 
     <div className="cta">
-      <p>Smart MSMEs earn on seasonal cash. Don't leave ₹3-5L/year on the table.</p>
+      <p>Put seasonal surplus cash to work instead of leaving it idle.</p>
       <a href="https://wa.me/919311361888" className="btn btn-whatsapp">
         Optimize Your Cash (No Fees Setup)
       </a>
@@ -162,7 +162,7 @@ export const CorporateTreasury = () => (
         <div className="stat-item">
           <div className="stat-label">Status Quo (Current account)</div>
           <div className="stat-amount">₹0</div>
-          <div className="stat-label">Annual return</div>
+          <div className="stat-label">Interest on balance</div>
         </div>
         <div className="stat-item winner">
           <div className="stat-label">Treasury Strategy</div>
@@ -241,13 +241,13 @@ export const WealthFamilyOffice = () => (
       <div className="stat-example">
         <div className="stat-item">
           <div className="stat-label">Liquid Reserves (₹5Cr)</div>
-          <div className="stat-amount">₹30-35L/Year</div>
-          <div className="stat-label">Treasury returns</div>
+          <div className="stat-amount">Market-linked</div>
+          <div className="stat-label">Liquid reserves, put to work</div>
         </div>
         <div className="stat-item winner">
           <div className="stat-label">+ Equity/Real Estate Growth</div>
-          <div className="stat-amount">₹2-3 Crores</div>
-          <div className="stat-label">Annual appreciation</div>
+          <div className="stat-amount">Long-term</div>
+          <div className="stat-label">Growth focus</div>
         </div>
       </div>
     </div>
@@ -302,7 +302,7 @@ export const NRIDollarParking = () => (
         </div>
       </div>
       <div className="stat-comparison">
-        <div className="stat-diff">₹20,000/Year Extra</div>
+        <div className="stat-diff">Idle rupees, put to work</div>
         <div className="stat-diff-label">Fully liquid, withdraw anytime to convert to forex</div>
       </div>
     </div>
@@ -318,7 +318,7 @@ export const NRIDollarParking = () => (
     </div>
 
     <div className="cta">
-      <p>Stop leaving money on the table with savings accounts. Earn while you wait for the right forex moment.</p>
+      <p>Put idle rupees to work while you wait for the right forex moment.</p>
       <a href="https://wa.me/919311361888" className="btn btn-whatsapp">
         Set Up NRI Rupee Treasury
       </a>

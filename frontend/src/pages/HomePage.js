@@ -550,7 +550,7 @@ const HomePage = () => {
                   Tax-Efficient Strategies for HNI Investors
                 </h3>
                 <p className="text-sm text-gray-500 leading-relaxed">
-                  From debt fund indexation benefits to international diversification — how India's affluent are optimizing their tax burden...
+                  From the tax treatment of debt funds to international diversification — what HNI investors should know about tax planning...
                 </p>
               </div>
             </div>
